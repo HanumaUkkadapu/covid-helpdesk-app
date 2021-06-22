@@ -92,6 +92,7 @@ span#ap{
     position: absolute;
     top: 0;
     right: -18px;
+    line-height: 8px;
 }
 
 
