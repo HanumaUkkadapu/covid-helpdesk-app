@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+:root{
+    --usafa-blue: #00509D;
+    --royal-blue-dark: #00296B;
+    --mikado-yellow: #FDC500;
+    --blue-crayola: #4E80FF;
+    --rich-black: #000814;
+    /*--white: #ffffff;*/
+    --alicia-blue: #E7F2FF;
+    --med-champagne: #FFF0B4;
+}
+*{
+    box-sizing: border-box;
+}
+html, body{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
