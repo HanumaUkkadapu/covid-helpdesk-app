@@ -23,23 +23,4 @@ function init(){
         });
     });
 
-    /* Hanuma */
-    typeCheckIns = document.querySelectorAll(".inWrap input[type='checkbox']");
-    addSVGChecks();
-
-}
-
-
-/* Hanuma */
-
-let typeChkIns;
-
-function addSVGChecks(){
-    let svgCheck = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 100 100" version="1.1" >
-<path d="m 15 55 l 20 20 l 50 -50"
-     fill="none" stroke-width="10" />
-</svg>`;
-    typeCheckIns.forEach((el)=>{
-        el.insertAdjacentHTML('afterend',svgCheck);
-    });
 }
