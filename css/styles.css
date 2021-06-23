@@ -320,7 +320,46 @@ nav ul li a:focus{
 
 /*** Siva ************************/
 
+/* Normal */
+.container_full{
+    width: 100%;
+    margin: 0px auto;
+}
+.container{
+    width: 90%;
+    margin: 0px auto;
+}
+/* Normal */
+/* Total Hospitals */
+.total_hospitals_list{
+	width: 100%;
+	border-collapse: collapse;
+}
+.total_hospitals_list td,.total_hospitals_list th{
+  padding:12px 15px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:16px;
+}
+/* Total Hospitals */
+/* filters */
+.frm_filtr{
+    padding: 15px;
+    background-color: #7ea8e6;
+    margin-top: 10px;
+}
+.frm_p{
+    padding: 0px 10px;
+}
+#Hsp_type{
+    margin-left: 50px;
+    padding: 4px;
+}
+.sbt_btn, .fa-search{
+    padding: 3px;
+}
 
+/* filters */
 
 /*** Basha ***********************/
 
@@ -368,6 +407,22 @@ nav ul li a:focus{
     #menu{
         display: flex;
     }
+	/* siva */
+   .container{
+       width: 100%;
+       margin: 0px auto;
+   }
+   .total_hospitals_list td,.total_hospitals_list th{
+  padding:8px 10px;
+  border:1px solid #ddd;
+  text-align: center;
+  font-size:12px;
+    }
+    .frm_p{
+        padding: 0px;
+        font-size: 14px;
+    }
+
 }
 
 /*** Hanuma **********************/
