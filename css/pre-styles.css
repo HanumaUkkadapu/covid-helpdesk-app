@@ -17,7 +17,7 @@ html, body{
     margin: 0;
 }
 body{
-    font-family: sans-serif;
+font-family: 'Work Sans', sans-serif;
 }
 .bg-img{
 	background-image:url("../img/precautions/1.jpg");
