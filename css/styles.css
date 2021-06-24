@@ -332,7 +332,7 @@ nav ul li a:focus{
     text-align: center;
     margin: 20px 0px;
 }
-.Hsptl_list_name span{
+.Hsptl_list_name lable{
     color: #e43c26;
 }
 /* head_title */
