@@ -321,10 +321,6 @@ nav ul li a:focus{
 /*** Siva ************************/
 
 /* Normal */
-.container_full{
-    width: 100%;
-    margin: 0px auto;
-}
 .container{
     width: 90%;
     margin: 0px auto;
@@ -360,6 +356,9 @@ nav ul li a:focus{
 }
 
 /* filters */
+
+
+/*** Siva ************************/
 
 /*** Basha ***********************/
 
@@ -422,7 +421,7 @@ nav ul li a:focus{
         padding: 0px;
         font-size: 14px;
     }
-
+/* siva */
 }
 
 /*** Hanuma **********************/
