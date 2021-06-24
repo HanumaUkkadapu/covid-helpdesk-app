@@ -326,6 +326,17 @@ nav ul li a:focus{
     margin: 0px auto;
 }
 /* Normal */
+
+/* head_title */
+.Hsptl_list_name{
+    text-align: center;
+    margin: 20px 0px;
+}
+.Hsptl_list_name span{
+    color: #e43c26;
+}
+/* head_title */
+
 /* Total Hospitals */
 .total_hospitals_list{
 	width: 100%;
