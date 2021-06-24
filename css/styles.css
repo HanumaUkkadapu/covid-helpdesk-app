@@ -361,9 +361,11 @@ nav ul li a:focus{
 #Hsp_type{
     margin-left: 50px;
     padding: 4px;
+background-color: #fff;
 }
 .sbt_btn, .fa-search{
     padding: 3px;
+	background-color: #fff;
 }
 
 /* filters */
