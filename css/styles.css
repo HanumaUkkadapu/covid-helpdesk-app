@@ -18,15 +18,15 @@
 html, body{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 body{
     width: 100vw;
     font-family: 'Work Sans', sans-serif;
-    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 body.menu-open {
-    position: fixed;
+    overflow-y: hidden;
 }
 nav a{
     text-decoration: none;
@@ -178,7 +178,9 @@ nav ul li a:focus{
 }
 
 
-
+section{
+	padding-top: 80px;
+}
 
 
 /*** Hanuma **********************/
@@ -319,16 +321,22 @@ nav ul li a:focus{
 .medcontainer{
     width: 100%;
     display: flex;
-    background: burlywood;
+    background: var(--med-champagne);
     padding: 50px;
     box-sizing: border-box;
 }
+.storecontainerL{
+    max-height: 360px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .storecontainerL img{
-    max-width: 80%;
+    max-width: 100%;
 }
 .storecontainerR {
-    flex:1;
-    padding: 30px;
+    padding: 0 30px;
     font-size: 20px;
 }
 .storecontainerR h3{
@@ -350,14 +358,7 @@ nav ul li a:focus{
     padding:4rem 0;
     flex:1;
 }
-.storecontainerR {
-    flex:1;
-    padding: 30px;
-    font-size: 20px;
-}
-.storecontainerR h3{
-    color: green;
-}
+
 
 /*** Siva ************************/
 
@@ -508,4 +509,16 @@ nav ul li a:focus{
         margin: 0;
         margin: 4px 0;
     }
+    
+    /*** Gayatri ******/
+    .medcontainer{
+        flex-flow: column nowrap;
+    }
+    .storecontainerL{
+        max-height: 240px;
+    }
+    .storecontainerL img{
+        width: 100%;
+    }
+    
 }
