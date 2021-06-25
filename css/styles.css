@@ -326,6 +326,9 @@ section{
     padding: 50px;
     box-sizing: border-box;
 }
+.medStoreHead{
+    text-align: center;
+}
 .storecontainerL{
     max-height: 360px;
     overflow: hidden;
