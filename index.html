@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COVID_supplies_Dashboard_AP</title>
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
     <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
 </head>
-
-<body>
+<body class="flex-cc col">
     <header class="flex-cc">
         <a id="logo" href="#" tabindex="0">
             <h1 class="flex-cc">
@@ -23,13 +20,15 @@
                     <span id="covid">COVID</span>
                     <span class="flex-cc" id="helpDesk">HELP DESK</span>
                 </span>
-                <span id="ap">AP</span>
+                <span id="ap" >AP</span>
             </h1>
         </a>
-        <button id="menu" class="flex-cc">
-            <svg width="40" height="32" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g stroke="none" stroke-width="0">
+        <button id="menu" class="flex-cc" >
+            <svg width="40" height="32"
+                 viewBox="0 0 100 100" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g stroke="none" stroke-width="0" >
                     <rect id="rect1" x="8" y="25" width="84" height="10" rx="5" ry="5" />
                     <rect id="rect2" x="8" y="45" width="84" height="10" rx="5" ry="5" />
                     <rect id="rect3" x="8" y="65" width="84" height="10" rx="5" ry="5" />
@@ -37,7 +36,7 @@
             </svg>
         </button>
         <nav id="nav_el" class="flex-cc">
-            <ul class="flex-cc noBullets">
+            <ul class="flex-cc noBullets" >
                 <li>
                     <a href="precautions.html">Precautions</a>
                 </li>
@@ -56,8 +55,55 @@
             </ul>
         </nav>
     </header>
-    <!------------- Gayatri ----------------->
-    <section class="MedicalStore">
+    <!------------- Hanuma ----------------->
+
+    <section id="searchSection" class="flex-cc col">
+        <div class="flex-cc" id="selectWrapper" >
+            <select name="districtSelect" id="distSel" >
+                <option disabled selected >Select your district</option>
+                <option value="Anantapur">Anantapur</option>
+                <option value="Chittoor">Chittoor</option>
+                <option value="East godavari">East Godavari</option>
+                <option value="Guntur">Guntur</option>
+                <option value="Krishna">Krishna</option>
+                <option value="Kurnool">Kurnool</option>
+                <option value="Prakasam">Prakasam</option>
+                <option value="Spsr nellore">Spsr Nellore</option>
+                <option value="Srikakulam">Srikakulam</option>
+                <option value="Visakhapatanam">Visakhapatanam</option>
+                <option value="Vizianagaram">Vizianagaram</option>
+                <option value="West godavari">West Godavari</option>
+                <option value="Y.s.r.">YSR District, Kadapa</option>
+            </select>
+            <span class="flex-cc">OR</span>
+            <button id="locateMeBtn" class="flex-cc">
+                <span>Locate Me</span>
+                <i class="fas fa-map-marker-alt"></i>
+            </button>
+        </div>
+        <div class="flex-cc col" id="typeChkWrapper" >
+            <span class="flex-cc">Search near by</span>
+            <div class="flex-cc" >
+                <label>
+                    <input type="checkbox" name="medChk" >
+                    Medical Stores
+                </label>
+                <label>
+                    <input type="checkbox" name="hspChk" >
+                    Hospitals
+                </label>
+                <label>
+                    <input type="checkbox" name="vaccChk" >
+                    Vaccination Centres
+                </label>
+            </div>
+        </div>
+        <button id="searchBtn">SEARCH</button>
+    </section>
+
+    <!------------- Gayatri ---------------->
+    
+     <section class="MedicalStore">
         <div class="medcontainer">
             <div class="storecontainerL">
                 <img src="img/pharmacy.jpg" alt="">
@@ -138,6 +184,166 @@
             <button class="btn btn-secondary">View More</button>
         </div>
     </section>
-</body>
 
+    <!------------- Siva ------------------->
+      <!-- Total Hospitals  -->
+    <section id="hospitalTabContainer">
+      <div class="container">
+          <h3 class="Hsptl_list_name">
+              <u>Hospitals in - <lable>Ananthapur</label></u>
+          </h3>
+          <table class="total_hospitals_list">
+        <thead>
+            <th>Total Hospitals</th>
+            <th>Regular Beds</th>
+            <th>Oxygen Beds</th>
+            <th>ICU Beds</th>
+            <th>Ventilator Beds</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>15</td>
+                <td>100</td>
+                <td>30</td>
+                <td>25</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Total Hospitals  -->
+<!-- filters -->
+        <form class="frm_filtr">
+            <span class="frm_p">
+                <input type="radio" id="regular_beds" name="fav_language" value="regular">
+                <label for="regular">Regular Beds</label>
+            </span>
+            <span class="frm_p">
+                <input type="radio" id="oxygen_beds" name="fav_language" value="oxygen">
+                <label for="oxygen">Oxygen Beds</label>
+            </span>
+            <span class="frm_p">
+                <input type="radio" id="icu_beds" name="fav_language" value="icu">
+                <label for="icu">ICU Beds</label>
+            </span>
+            <span class="frm_p">
+                <input type="radio" id="ventilator_beds" name="fav_language" value="ventilator">
+                <label for="ventilator">Ventilator Beds</label>
+            </span>
+                <select name="Type" id="Hsp_type">
+                <option value="Type">Type</option>
+                <option value="Private">Private</option>
+                <option value="Government">Government</option>
+                <option value="Arogyashree">Arogyashree</option>
+            </select>
+            <input type="text" placeholder="Hospital Name.." name="search" class="sbt_btn">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    <!-- filters -->
+<!-- Hospital availability list  -->
+     <table class="total_hospitals_list">
+        <thead>
+            <th>Hospitals Name</th>
+            <th>Regular Beds</th>
+            <th>Oxygen Beds</th>
+            <th>ICU Beds</th>
+            <th>Ventilator Beds</th>
+            <th>Phone</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="">Apollo Hospital</a> <br><br>
+                    <div>
+                        Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar, Visakhapatnam, Andhra Pradesh 530002
+                    </div>
+                </td>
+                <td>100</td>
+                <td>30</td>
+                <td>25</td>
+                <td>20</td>
+                <td>9876543210</td>
+            </tr>
+                <tr>
+                <td><a href="">Apollo Hospital</a> <br><br>
+                    <div>
+                        Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar, Visakhapatnam, Andhra Pradesh 530002
+                    </div>
+                </td>
+                <td>100</td>
+                <td>30</td>
+                <td>25</td>
+                <td>20</td>
+                <td>9876543210</td>
+            </tr>
+                <tr>
+                <td><a href="">Apollo Hospital</a> <br><br>
+                    <div>
+                        Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar, Visakhapatnam, Andhra Pradesh 530002
+                    </div>
+                </td>
+                <td>100</td>
+                <td>30</td>
+                <td>25</td>
+                <td>20</td>
+                <td>9876543210</td>
+            </tr>
+                <tr>
+                <td><a href="">Apollo Hospital</a> <br><br>
+                    <div>
+                        Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar, Visakhapatnam, Andhra Pradesh 530002
+                    </div>
+                </td>
+                <td>100</td>
+                <td>30</td>
+                <td>25</td>
+                <td>20</td>
+                <td>9876543210</td>
+            </tr>
+                <tr>
+                <td><a href="">Apollo Hospital</a> <br><br>
+                    <div>
+                        Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar, Visakhapatnam, Andhra Pradesh 530002
+                    </div>
+                </td>
+                <td>100</td>
+                <td>30</td>
+                <td>25</td>
+                <td>20</td>
+                <td>9876543210</td>
+            </tr>
+                <tr>
+                <td><a href="">Apollo Hospital</a> <br><br>
+                    <div>
+                        Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar, Visakhapatnam, Andhra Pradesh 530002
+                    </div>
+                </td>
+                <td>100</td>
+                <td>30</td>
+                <td>25</td>
+                <td>20</td>
+                <td>9876543210</td>
+            </tr>  
+            <tr>
+                <td><a href="">Apollo Hospital</a> <br><br>
+                    <div>
+                        Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar, Visakhapatnam, Andhra Pradesh 530002
+                    </div>
+                </td>
+                <td>100</td>
+                <td>30</td>
+                <td>25</td>
+                <td>20</td>
+                <td>9876543210</td>
+            </tr>
+        </tbody>
+    </table>    
+      </div>
+    </section>
+    <!-- Hospital availability list  -->
+    
+    <!------------- Siva ------------------->
+   
+    <!------------- Basha ------------------>
+
+</body>
 </html>
+    
