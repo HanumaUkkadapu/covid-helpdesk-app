@@ -316,7 +316,48 @@ nav ul li a:focus{
 
 /*** Gayatri *********************/
 
-
+.medcontainer{
+    width: 100%;
+    display: flex;
+    background: burlywood;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.storecontainerL img{
+    max-width: 80%;
+}
+.storecontainerR {
+    flex:1;
+    padding: 30px;
+    font-size: 20px;
+}
+.storecontainerR h3{
+    color: green;
+}
+.storecontainerL span{
+    text-align: left;
+}
+.storecontainerL .location img{
+    height: 24px;
+}
+.storecontainerL .phone img{
+    height: 24px;
+}
+.storecontainerL .clock img{
+    height: 24px;
+}
+.text-center .btn-wrapper{
+    padding:4rem 0;
+    flex:1;
+}
+.storecontainerR {
+    flex:1;
+    padding: 30px;
+    font-size: 20px;
+}
+.storecontainerR h3{
+    color: green;
+}
 
 /*** Siva ************************/
 
