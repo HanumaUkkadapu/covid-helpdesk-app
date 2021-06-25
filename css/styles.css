@@ -15,12 +15,21 @@
 *{
     box-sizing: border-box;
 }
+.flex-cc{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.col{
+    flex-flow: column nowrap;
+}
+
 html, body{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
 }
-body{
+body.col{
     width: 100vw;
     font-family: 'Work Sans', sans-serif;
     overflow-x: hidden;
@@ -38,14 +47,6 @@ button, select, input, label, option{
     font-family: 'Work Sans', sans-serif;
 }
 
-.flex-cc{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-.col{
-    flex-flow: column nowrap;
-}
 .noBullets{
     list-style-type: none;
     padding: 0;
