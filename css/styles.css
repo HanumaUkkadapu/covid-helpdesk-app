@@ -1,57 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
-:root{
-    --usafa-blue: #00509D;
-    --royal-blue-dark: #00296B;
-    --mikado-yellow: #FDC500;
-    --blue-crayola: #4E80FF;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+:root {
+    --usafa-blue: #00509d;
+    --royal-blue-dark: #00296b;
+    --mikado-yellow: #fdc500;
+    --blue-crayola: #4e80ff;
     --rich-black: #000814;
     /*--white: #ffffff;*/
-    --alicia-blue: #E7F2FF;
-    --med-champagne: #FFF0B4;
+    --alicia-blue: #e7f2ff;
+    --med-champagne: #fff0b4;
 
     /**************************/
-    
 }
-*{
+* {
     box-sizing: border-box;
 }
-html, body{
-    padding: 0;
-    margin: 0;
-}
-body{
-    width: 100vw;
-    font-family: 'Work Sans', sans-serif;
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-body.menu-open {
-    position: fixed;
-}
-nav a{
-    text-decoration: none;
-}
-button, select, input, label, option{
-    cursor: pointer;
-    background: none;
-    border: none;
-    font-family: 'Work Sans', sans-serif;
-}
-
-.flex-cc{
+.flex-cc {
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
-.col{
+.col {
     flex-flow: column nowrap;
 }
-.noBullets{
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+body.col {
+    width: 100vw;
+    font-family: "Work Sans", sans-serif;
+    overflow-x: hidden;
+    align-items: stretch;
+}
+body.menu-open {
+    overflow-y: hidden;
+}
+nav a {
+    text-decoration: none;
+}
+button,
+select,
+input,
+label,
+option {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: "Work Sans", sans-serif;
+}
+
+.noBullets {
     list-style-type: none;
     padding: 0;
 }
 
-header.flex-cc{
+header.flex-cc {
     position: sticky;
     top: 0;
     height: 80px;
@@ -63,7 +69,7 @@ header.flex-cc{
     align-self: stretch;
 }
 
-#logo{
+#logo {
     /* background: #eee; */
     user-select: none;
     text-decoration: none;
@@ -71,23 +77,23 @@ header.flex-cc{
     color: var(--royal-blue-dark);
     border: 2px solid transparent;
 }
-#logo:focus{
+#logo:focus {
     outline: none;
     border-color: var(--royal-blue-dark);
 }
-#logo h1{
+#logo h1 {
     position: relative;
     margin: 0;
     font-size: 12px;
     align-items: center;
 }
-span#covid{
+span#covid {
     width: 112px;
     /* background: #eee; */
     font-size: 36px;
     line-height: 22px;
 }
-span#helpDesk{
+span#helpDesk {
     width: 112px;
     margin-top: 4px;
     text-align: center;
@@ -96,20 +102,19 @@ span#helpDesk{
     letter-spacing: 2.4px;
     line-height: 12px;
 }
-span#ap{
+span#ap {
     position: absolute;
     top: 0;
     right: -18px;
 }
 
-
-nav ul li{
+nav ul li {
     margin: 2px 4px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-nav ul li a{
+nav ul li a {
     --acc-clr: var(--usafa-blue);
     padding: 6px 10px;
     font-weight: bold;
@@ -121,18 +126,17 @@ nav ul li a{
     justify-content: center;
     align-items: center;
 }
-nav ul li a:hover{
+nav ul li a:hover {
     /* background: rgba(255, 255, 255, 0.1); */
     background: rgba(0, 0, 0, 0.1);
-
 }
-nav ul li a:focus{
+nav ul li a:focus {
     outline: none;
     border-color: var(--acc-clr);
 }
 
 /*** Menu Button ***/
-#menu{
+#menu {
     display: none;
     cursor: pointer;
     padding: 0;
@@ -146,90 +150,91 @@ nav ul li a:focus{
     align-items: center !important;
     z-index: 10;
 }
-#menu:hover{
-    background: rgba(0,0,0,0.1);
+#menu:hover {
+    background: rgba(0, 0, 0, 0.1);
     outline: none;
 }
-#menu:focus{
+#menu:focus {
     border-color: var(--usafa-blue);
     outline: none;
 }
-#menu svg{
+#menu svg {
     background: transparent;
 }
-#menu svg g{
+#menu svg g {
     fill: var(--usafa-blue);
 }
-#menu svg g rect{
+#menu svg g rect {
     transition: transform 100ms ease-in-out;
     transform-origin: 50% 50%;
 }
 /* #menu svg g rect{
 } */
 #menu.open g #rect1 {
-	transform: translateX(-14px) translateY(14px) rotate(45deg);
+    transform: translateX(-14px) translateY(14px) rotate(45deg);
 }
 #menu.open g #rect2 {
-	transform: translateX(-100px);
-	height: 0;
+    transform: translateX(-100px);
+    height: 0;
 }
 #menu.open g #rect3 {
-	transform: translateX(-14px) translateY(-14px) rotate(-45deg);
+    transform: translateX(-14px) translateY(-14px) rotate(-45deg);
 }
 
-
-
-
+section {
+    padding-top: 80px;
+}
 
 /*** Hanuma **********************/
 
-#searchSection{
-    height: calc( 100vh - 80px );
+#searchSection {
+    height: 100vh;
+    margin-top: -80px;
     font-size: 18px;
     align-items: stretch;
     align-self: center;
 }
-#searchSection > *{
+#searchSection > * {
     margin: 14px 0;
 }
 #searchSection select,
 #searchSection button,
-#searchSection label{
+#searchSection label {
     height: 60px;
     padding: 12px 18px;
     border-radius: 4px;
 }
 #searchSection select:focus,
-#searchSection button:focus{
+#searchSection button:focus {
     outline: none;
     box-shadow: 0 0 0 3px var(--rich-black);
 }
 #searchSection select,
-#searchSection label{
+#searchSection label {
     background: var(--alicia-blue);
 }
-#searchSection button{
+#searchSection button {
     transition: filter 80ms ease-in-out;
 }
-#searchSection button:hover{
+#searchSection button:hover {
     filter: brightness(1.24);
 }
-#selectWrapper{
+#selectWrapper {
     align-items: center;
 }
 #selectWrapper span,
-#typeChkWrapper span{
+#typeChkWrapper span {
     margin: 0 12px;
     font-weight: 600;
 }
 
 #distSel,
-#locateMeBtn{
+#locateMeBtn {
     width: 40%;
     flex: 2 1 auto;
     font-size: 18px;
 }
-#locateMeBtn{
+#locateMeBtn {
     color: white;
     background: var(--blue-crayola);
     font-weight: 600;
@@ -237,27 +242,27 @@ nav ul li a:focus{
     align-items: center;
 }
 
-#typeChkWrapper{
+#typeChkWrapper {
     align-items: center;
 }
-#typeChkWrapper > *{
+#typeChkWrapper > * {
     margin: 6px 0;
 }
 
-#typeChkWrapper label{
+#typeChkWrapper label {
     height: 56px;
     margin: 0 8px;
     display: flex;
     align-items: center;
 }
-#typeChkWrapper label:first-child{
+#typeChkWrapper label:first-child {
     margin-left: 0;
 }
-#typeChkWrapper label:last-child{
+#typeChkWrapper label:last-child {
     margin-right: 0;
 }
 
-#typeChkWrapper input[type="checkbox"]{
+#typeChkWrapper input[type="checkbox"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -269,204 +274,355 @@ nav ul li a:focus{
     border: none;
     border: 2px solid var(--blue-crayola);
     border-radius: 3px;
-    background: #BEDCFF;
+    background: #bedcff;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#typeChkWrapper input[type="checkbox"]:after{
-    content: '\f00c';
-    font-family: 'Font Awesome 5 Free';
+#typeChkWrapper input[type="checkbox"]:after {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 14px;
     color: transparent;
 }
-#typeChkWrapper input[type="checkbox"]:checked:after{
+#typeChkWrapper input[type="checkbox"]:checked:after {
     color: white;
 }
 
-#typeChkWrapper input[type="checkbox"]:focus{
+#typeChkWrapper input[type="checkbox"]:focus {
     outline: none;
     box-shadow: 0 0 0 2px var(--rich-black);
 }
-#typeChkWrapper input[type="checkbox"]:checked{
+#typeChkWrapper input[type="checkbox"]:checked {
     background: var(--blue-crayola);
 }
 
-#locateMeBtn:focus{
+#locateMeBtn:focus {
     border-color: var(--royal-blue-dark);
 }
-#locateMeBtn:active{
+#locateMeBtn:active {
     background: var(--usafa-blue);
 }
 
-#searchBtn{
+#searchBtn {
     color: white;
     background: var(--usafa-blue);
     font-size: 30px;
     font-weight: 700;
 }
-#searchBtn:focus{
+#searchBtn:focus {
     border-color: var(--rich-black);
 }
-#searchBtn:active{
+#searchBtn:active {
     background: var(--royal-blue-dark);
 }
 
 /*** Gayatri *********************/
 
-
+#medStoreTabContainer.col {
+    align-items: stretch;
+    background: var(--med-champagne);
+}
+.medcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 0 auto;
+}
+.medStoreHead {
+    text-align: center;
+}
+.storecontainerL {
+    max-height: 360px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.storecontainerL img {
+    max-width: 100%;
+}
+.storecontainerR {
+    padding: 0 30px;
+    font-size: 20px;
+}
+.storecontainerR h3 {
+    color: green;
+}
+.storecontainerL span {
+    text-align: left;
+}
+.storecontainerL .location img {
+    height: 24px;
+}
+.storecontainerL .phone img {
+    height: 24px;
+}
+.storecontainerL .clock img {
+    height: 24px;
+}
+.text-center .btn-wrapper {
+    padding: 4rem 0;
+    flex: 1;
+}
 
 /*** Siva ************************/
 
 /* Normal */
-.container{
+.container {
     width: 90%;
     margin: 0px auto;
 }
 /* Normal */
 
 /* head_title */
-.Hsptl_list_name{
+.Hsptl_list_name {
     text-align: center;
     margin: 20px 0px;
 }
-.Hsptl_list_name lable{
+.Hsptl_list_name label {
     color: #e43c26;
 }
 /* head_title */
 
 /* Total Hospitals */
-.total_hospitals_list{
-	width: 100%;
-	border-collapse: collapse;
+.total_hospitals_list {
+    width: 100%;
+    border-collapse: collapse;
 }
-.total_hospitals_list td,.total_hospitals_list th{
-  padding:12px 15px;
-  border:1px solid #ddd;
-  text-align: center;
-  font-size:16px;
+.total_hospitals_list td,
+.total_hospitals_list th {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
 }
 /* Total Hospitals */
 /* filters */
-.frm_filtr{
+.frm_filtr {
     padding: 15px;
     background-color: #7ea8e6;
     margin-top: 10px;
 }
-.frm_p{
+.frm_p {
     padding: 0px 10px;
 }
-#Hsp_type{
+#Hsp_type {
     margin-left: 50px;
     padding: 4px;
 background-color: #fff;
 }
-.sbt_btn, .fa-search{
+.sbt_btn,
+.fa-search {
     padding: 3px;
 	background-color: #fff;
 }
 
 /* filters */
 
-
 /*** Siva ************************/
 
 /*** Basha ***********************/
 
+#vaccCentreTabContainer .total_Vaccination_list {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 16px;
+}
+#vaccCentreTabContainer .total_Vaccination_list label {
+    color: #4e80ff;
+}
 
+/*** check-box****/
+.dbgOuter {
+    border: solid 3px black;
+    border-radius: 4px;
+    margin: 0 auto;
+    padding: 4px;
+    align-items: center;
+}
+.dbgCont {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 8px;
+    margin: 4px;
+    color: black;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+.dbgCheck {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    margin-right: 8.0px;
+}
 
+#vaccCentreTabContainer button {
+    color: white;
+    background-color: white;
+    height: 100%;
+    margin-left: 8px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    background: var(--blue-crayola);
+    font-weight: bold;
+    font-size: 18px;
+}
+#vaccCentreTabContainer p {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    align-self: stretch;
+}
 
+#vaccCentreTabContainer table{
+    align-self: stretch;
+}
+#vaccCentreTabContainer table,
+#vaccCentreTabContainer td,
+#vaccCentreTabContainer th {
+    border: 1px solid black;
+    padding: 2px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    background-color: #c4c4c4;
+}
+#vaccCentreTabContainer table {
+    border: collapse;
+}
+
+#vaccCentreTabContainer table i {
+    color: #666;
+    font-size: 12px;
+    margin: 5px 0px;
+    display: block;
+}
+#vaccCentreTabContainer table p{
+    font-size: 12px;
+}
+#vaccCentreTabContainer table p a {
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+    color: yellow;
+}
+#vaccCentreTabContainer sup {
+    color: white;
+    font-size: 6pt;
+    border: 1px solid blue;
+    background-color: blue;
+    border-radius: 5px;
+    font-weight: bold;
+}
 
 /*** Media Queries ***************************************/
 
 @media (max-width: 768px) {
-    #nav_el{
+    #nav_el {
         --w: 100vw;
         --h: 100vh;
         position: absolute;
-        transform: translateY( calc( -1 * var(--h) ) );
+        transform: translateY(calc(-1 * var(--h)));
         top: 0;
         left: 0;
         width: var(--w);
         height: var(--h);
         /* padding-top: 50px; */
-        background: rgb(255,240,180, 0.9);
+        background: rgb(255, 240, 180, 0.9);
         flex-flow: column nowrap;
         align-items: stretch;
         transition: transform 120ms ease-in-out;
     }
-    #nav_el.open{
-        transform: translateY( 0 );
+    #nav_el.open {
+        transform: translateY(0);
     }
-    #nav_el ul.flex-cc{
+    #nav_el ul.flex-cc {
         flex-flow: column nowrap;
         justify-content: center;
         align-items: stretch;
     }
-    #nav_el#nav_el ul li{
+    #nav_el#nav_el ul li {
         padding: 0;
         margin: 0;
         flex-flow: column nowrap;
         align-items: stretch;
     }
-    #nav_el ul li a{
+    #nav_el ul li a {
         padding: min(4vh, 30px);
         font-size: 30px;
         justify-content: center;
     }
-    #menu{
+    #menu {
         display: flex;
     }
-	/* siva */
-   .container{
-       width: 100%;
-       margin: 0px auto;
-   }
-   .total_hospitals_list td,.total_hospitals_list th{
-  padding:8px 10px;
-  border:1px solid #ddd;
-  text-align: center;
-  font-size:12px;
+    /* siva */
+    .container {
+        width: 100%;
+        margin: 0px auto;
     }
-    .frm_p{
+    .total_hospitals_list td,
+    .total_hospitals_list th {
+        padding: 8px 10px;
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size: 12px;
+    }
+    .frm_p {
         padding: 0px;
         font-size: 14px;
     }
-/* siva */
+    /* siva */
 }
 
 /*** Hanuma **********************/
 
-
-@media (max-width: 700px){
-
-    #searchSection{
+@media (max-width: 700px) {
+    #searchSection {
         margin: 0 10vw;
+        margin-top: -80px;
         align-self: stretch;
     }
-    #searchSection > *{
+    #searchSection > * {
         margin: 8px 0;
     }
     #selectWrapper,
-    #typeChkWrapper > div{
+    #typeChkWrapper > div {
         flex-flow: column nowrap;
         align-items: stretch;
     }
-    #selectWrapper > *{
-        margin: 6px 0;;
+    #selectWrapper > * {
+        margin: 6px 0;
     }
     #distSel,
-    #locateMeBtn{
+    #locateMeBtn {
         width: auto;
     }
 
-    #typeChkWrapper{
+    #typeChkWrapper {
         align-items: stretch;
     }
-    #typeChkWrapper label{
+    #typeChkWrapper label {
         margin: 0;
         margin: 4px 0;
+    }
+
+    /*** Gayatri ******/
+    .medcontainer {
+        flex-flow: column nowrap;
+    }
+    .storecontainerL {
+        max-height: 240px;
+    }
+    .storecontainerL img {
+        width: 100%;
     }
 }
