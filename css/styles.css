@@ -481,6 +481,9 @@ section {
     align-self: stretch;
 }
 
+#vaccCentreTabContainer table{
+    align-self: stretch;
+}
 #vaccCentreTabContainer table,
 #vaccCentreTabContainer td,
 #vaccCentreTabContainer th {
