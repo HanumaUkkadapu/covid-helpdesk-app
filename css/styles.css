@@ -33,6 +33,7 @@ body.col{
     width: 100vw;
     font-family: 'Work Sans', sans-serif;
     overflow-x: hidden;
+    align-items: stretch;
 }
 body.menu-open {
     overflow-y: hidden;
@@ -320,12 +321,16 @@ section{
 
 /*** Gayatri *********************/
 
-.medcontainer{
-    width: 100%;
-    display: flex;
+#medStoreTabContainer.col{
+    align-items: stretch;
     background: var(--med-champagne);
+}
+.medcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 50px;
-    box-sizing: border-box;
+    margin: 0 auto;
 }
 .medStoreHead{
     text-align: center;
@@ -390,10 +395,10 @@ section{
 	border-collapse: collapse;
 }
 .total_hospitals_list td,.total_hospitals_list th{
-  padding:12px 15px;
-  border:1px solid #ddd;
-  text-align: center;
-  font-size:16px;
+    padding:12px 15px;
+    border:1px solid #ddd;
+    text-align: center;
+    font-size:16px;
 }
 /* Total Hospitals */
 /* filters */
@@ -470,10 +475,10 @@ section{
        margin: 0px auto;
    }
    .total_hospitals_list td,.total_hospitals_list th{
-  padding:8px 10px;
-  border:1px solid #ddd;
-  text-align: center;
-  font-size:12px;
+        padding:8px 10px;
+        border:1px solid #ddd;
+        text-align: center;
+        font-size:12px;
     }
     .frm_p{
         padding: 0px;
