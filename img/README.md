@@ -1,1 +1,1 @@
-### Image files
+### Holds images for precautions page.
