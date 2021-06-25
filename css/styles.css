@@ -18,15 +18,15 @@
 html, body{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 body{
     width: 100vw;
     font-family: 'Work Sans', sans-serif;
-    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 body.menu-open {
-    position: fixed;
+    overflow-y: hidden;
 }
 nav a{
     text-decoration: none;
@@ -178,13 +178,16 @@ nav ul li a:focus{
 }
 
 
-
+section{
+	padding-top: 80px;
+}
 
 
 /*** Hanuma **********************/
 
 #searchSection{
-    height: calc( 100vh - 80px );
+    height: 100vh;
+    margin-top: -80px;
     font-size: 18px;
     align-items: stretch;
     align-self: center;
@@ -316,6 +319,49 @@ nav ul li a:focus{
 
 /*** Gayatri *********************/
 
+.medcontainer{
+    width: 100%;
+    display: flex;
+    background: var(--med-champagne);
+    padding: 50px;
+    box-sizing: border-box;
+}
+.medStoreHead{
+    text-align: center;
+}
+.storecontainerL{
+    max-height: 360px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.storecontainerL img{
+    max-width: 100%;
+}
+.storecontainerR {
+    padding: 0 30px;
+    font-size: 20px;
+}
+.storecontainerR h3{
+    color: green;
+}
+.storecontainerL span{
+    text-align: left;
+}
+.storecontainerL .location img{
+    height: 24px;
+}
+.storecontainerL .phone img{
+    height: 24px;
+}
+.storecontainerL .clock img{
+    height: 24px;
+}
+.text-center .btn-wrapper{
+    padding:4rem 0;
+    flex:1;
+}
 
 
 /*** Siva ************************/
@@ -332,7 +378,7 @@ nav ul li a:focus{
     text-align: center;
     margin: 20px 0px;
 }
-.Hsptl_list_name lable{
+.Hsptl_list_name label{
     color: #e43c26;
 }
 /* head_title */
@@ -442,6 +488,7 @@ nav ul li a:focus{
 
     #searchSection{
         margin: 0 10vw;
+        margin-top: -80px;
         align-self: stretch;
     }
     #searchSection > *{
@@ -467,4 +514,16 @@ nav ul li a:focus{
         margin: 0;
         margin: 4px 0;
     }
+    
+    /*** Gayatri ******/
+    .medcontainer{
+        flex-flow: column nowrap;
+    }
+    .storecontainerL{
+        max-height: 240px;
+    }
+    .storecontainerL img{
+        width: 100%;
+    }
+    
 }
