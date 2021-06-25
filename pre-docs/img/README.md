@@ -1,1 +1,1 @@
-### add images here
+### Holds images for precautions page.
