@@ -186,7 +186,8 @@ section{
 /*** Hanuma **********************/
 
 #searchSection{
-    height: calc( 100vh - 80px );
+    height: 100vh;
+    margin-top: -80px;
     font-size: 18px;
     align-items: stretch;
     align-self: center;
@@ -484,6 +485,7 @@ section{
 
     #searchSection{
         margin: 0 10vw;
+        margin-top: -80px;
         align-self: stretch;
     }
     #searchSection > *{
