@@ -10,7 +10,7 @@ function init(){
     menuBtn = document.getElementById('menu');
     navEl = document.getElementById('nav_el');
     navLinks = document.querySelectorAll("#nav_el a");
-
+    
     menuBtn.addEventListener('click', () => {
         menuBtn.classList.toggle("open");
         navEl.classList.toggle('open');
@@ -22,4 +22,5 @@ function init(){
             if (menuBtn.classList.contains("open")) menuBtn.click();
         });
     });
+
 }
