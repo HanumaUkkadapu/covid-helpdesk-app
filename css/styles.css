@@ -386,7 +386,6 @@ section {
 .Hsptl_list_name label {
     color: #e43c26;
 }
-/* head_title */
 
 /* Total Hospitals */
 .total_hospitals_list {
@@ -400,7 +399,7 @@ section {
     text-align: center;
     font-size: 16px;
 }
-/* Total Hospitals */
+
 /* filters */
 .frm_filtr {
     padding: 15px;
@@ -413,13 +412,16 @@ section {
 #Hsp_type {
     margin-left: 50px;
     padding: 4px;
+    border: 1px solid #ddd;
 }
 .sbt_btn,
 .fa-search {
     padding: 3px;
+    border: 1px solid #ddd;
+    padding: 5px;
 }
 
-/* filters */
+
 
 /*** Siva ************************/
 

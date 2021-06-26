@@ -212,24 +212,32 @@
                     </tr>
                 </tbody>
             </table>
-            <!-- Total Hospitals  -->
+            
             <!-- filters -->
             <form class="frm_filtr">
                 <span class="frm_p">
-                    <input type="radio" id="regular_beds" name="fav_language" value="regular">
-                    <label for="regular">Regular Beds</label>
+                    <label>
+                        <input type="checkbox" id="regular_beds">
+                        Regular Beds
+                    </label>
                 </span>
                 <span class="frm_p">
-                    <input type="radio" id="oxygen_beds" name="fav_language" value="oxygen">
-                    <label for="oxygen">Oxygen Beds</label>
+                    <label>
+                        <input type="checkbox" id="oxygen_beds">
+                        Oxygen Beds
+                    </label>
                 </span>
                 <span class="frm_p">
-                    <input type="radio" id="icu_beds" name="fav_language" value="icu">
-                    <label for="icu">ICU Beds</label>
+                    <label>
+                        <input type="checkbox" id="icu_beds">
+                        ICU Beds
+                    </label>
                 </span>
                 <span class="frm_p">
-                    <input type="radio" id="ventilator_beds" name="fav_language" value="ventilator">
-                    <label for="ventilator">Ventilator Beds</label>
+                     <label>
+                        <input type="checkbox" id="ventilator_beds">
+                        Ventilator Beds
+                    </label>
                 </span>
                 <select name="Type" id="Hsp_type">
                     <option value="Type">Type</option>
@@ -240,7 +248,7 @@
                 <input type="text" placeholder="Hospital Name.." name="search" class="sbt_btn">
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
-            <!-- filters -->
+           
             <!-- Hospital availability list  -->
             <table class="total_hospitals_list">
                 <thead>
