@@ -522,6 +522,25 @@ section {
     font-weight: bold;
 }
 
+
+footer.col{
+    padding: 20px;
+    margin-top: 24px;
+    background-color: var(--mikado-yellow);
+    align-items: center;
+}
+#footerNav ul{
+    margin: 0;
+}
+footer div span{
+    margin: 8px 0;
+}
+footer div span i.fa-heart{
+    color: red;
+    margin: 0 5px;
+}
+
+
 /*** Media Queries ***************************************/
 
 @media (max-width: 768px) {
