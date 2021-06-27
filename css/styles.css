@@ -376,7 +376,18 @@ section {
     width: 90%;
     margin: 0px auto;
 }
-/* Normal */
+.clr_fix{
+    clear: both;
+}
+.clps_mbl{
+    width: 60%;
+    float: left;
+}
+.clps_mbl_fil{
+    width: 40%;
+    float: left;
+}
+
 
 /* head_title */
 .Hsptl_list_name {
@@ -586,14 +597,20 @@ footer div span i.fa-heart{
     /* siva */
     .container {
         width: 100%;
+        text-align: center;
         margin: 0px auto;
+    }
+    .clps_mbl, .clps_mbl_fil{
+        width: 100%;
+        margin: 0px auto;
+        font-size: 12px;
     }
     .total_hospitals_list td,
     .total_hospitals_list th {
-        padding: 8px 10px;
+        padding: 5px 8px;
         border: 1px solid #ddd;
         text-align: center;
-        font-size: 12px;
+        font-size: 10px;
     }
     .frm_p {
         padding: 0px;
