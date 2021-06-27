@@ -215,7 +215,8 @@
             
             <!-- filters -->
             <form class="frm_filtr">
-                <span class="frm_p">
+               <div class="clps_mbl">
+                    <span class="frm_p">
                     <label>
                         <input type="checkbox" id="regular_beds">
                         Regular Beds
@@ -239,7 +240,9 @@
                         Ventilator Beds
                     </label>
                 </span>
-                <select name="Type" id="Hsp_type">
+               </div>
+                <div class="clps_mbl_fil">
+                    <select name="Type" id="Hsp_type">
                     <option value="Type">Type</option>
                     <option value="Private">Private</option>
                     <option value="Government">Government</option>
@@ -247,6 +250,8 @@
                 </select>
                 <input type="text" placeholder="Hospital Name.." name="search" class="sbt_btn">
                 <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="clr_fix"></div>
             </form>
            
             <!-- Hospital availability list  -->
