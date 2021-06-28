@@ -376,6 +376,9 @@ section {
     width: 90%;
     margin: 0px auto;
 }
+.clr_fix{
+    clear: both;
+}
 /* Normal */
 
 /* head_title */
@@ -402,23 +405,32 @@ section {
 }
 /* Total Hospitals */
 /* filters */
-.frm_filtr {
-    padding: 15px;
-    background-color: #7ea8e6;
-    margin-top: 10px;
+.frm_filtr{
+    background-color: #7EA8E6;
+    padding: 10px;
 }
-.frm_p {
-    padding: 0px 10px;
+.clps_mbl{
+    width: 50%;
+    float: left;
+    text-align: center;
 }
-#Hsp_type {
-    margin-left: 50px;
-    padding: 4px;
-background-color: #fff;
+.clps_mbl_fil{
+    width: 50%;
+    float: left;
+    text-align: center;
 }
-.sbt_btn,
-.fa-search {
+#Hsp_type, .sbt_btn{
+    background-color: #fff;
     padding: 3px;
-	background-color: #fff;
+    border: 1px solid rgb(85, 83, 83);
+}
+.clps_mbl button{
+    background: #fff;
+    padding: 3px;
+    border: 1px solid rgb(85, 83, 83);
+}
+.total_hospitals_list p{
+    margin: 0px auto;
 }
 
 /* filters */
@@ -576,10 +588,25 @@ background-color: #fff;
         text-align: center;
         font-size: 12px;
     }
-    .frm_p {
-        padding: 0px;
-        font-size: 14px;
-    }
+       .clps_mbl{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.clps_mbl_fil{
+    width: 100%;
+   margin: 0px auto;
+   text-align: center;
+   font-size: 14px;
+}
+.clps_mbl_fil input{
+    width: 100px;
+}
+#Hsp_type{
+    width: 100px;
+}
     /* siva */
 }
 
