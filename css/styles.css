@@ -457,8 +457,9 @@ body > section {
 
 /*** Siva ************************/
 
-
-/* Normal */
+#hospitalTabContainer .container{
+    align-items: stretch;
+}
 
 /* head_title */
 .Hsptl_list_name {
@@ -476,7 +477,7 @@ body > section {
 .total_hospitals_list td,
 .total_hospitals_list th {
     padding: 12px 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #7EA8E6;
     text-align: center;
     font-size: 16px;
 }
@@ -637,14 +638,9 @@ footer div span i.fa-heart{
     .total_hospitals_list td,
     .total_hospitals_list th {
         padding: 8px 10px;
-        border: 1px solid #ddd;
-        text-align: center;
-        font-size: 12px;
-    }
-    .frm_p {
-        padding: 0px;
         font-size: 14px;
     }
+    
     /* siva */
 }
 
@@ -688,6 +684,14 @@ footer div span i.fa-heart{
     #menu {
         display: flex;
     }
+
+    /* siva */
+    .total_hospitals_list td,
+    .total_hospitals_list th {
+        font-size: 12px;
+    }
+    /* siva */
+
   
     footer > div.flex-cc{
         flex-flow: column nowrap;
