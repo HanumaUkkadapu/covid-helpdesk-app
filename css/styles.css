@@ -379,15 +379,8 @@ section {
 .clr_fix{
     clear: both;
 }
-.clps_mbl{
-    width: 60%;
-    float: left;
-}
-.clps_mbl_fil{
-    width: 40%;
-    float: left;
-}
 
+/* Normal */
 
 /* head_title */
 .Hsptl_list_name {
@@ -412,26 +405,33 @@ section {
 }
 
 /* filters */
-.frm_filtr {
-    padding: 15px;
-    background-color: #7ea8e6;
-    margin-top: 10px;
+.frm_filtr{
+    background-color: #7EA8E6;
+    padding: 10px;
+    text-align: center;
 }
-.frm_p {
-    padding: 0px 10px;
-}
-#Hsp_type {
-    margin-left: 50px;
-    padding: 4px;
-    border: 1px solid #ddd;
-}
-.sbt_btn,
-.fa-search {
+#Hsp_type, .sbt_btn{
+    background-color: #fff;
     padding: 3px;
-    border: 1px solid #ddd;
-    padding: 5px;
+    border: 1px solid rgb(85, 83, 83);
 }
 
+.frm_filtr button{
+    background: #fff;
+    padding: 3px;
+    border: 1px solid rgb(85, 83, 83);
+}
+.total_hospitals_list p{
+    margin: 0px auto;
+}
+.frm_filtr select{
+    background-color: #fff;
+    padding: 3px;
+    border: 1px solid rgb(85, 83, 83);
+}
+
+
+/* filters */
 
 
 /*** Siva ************************/
@@ -611,10 +611,6 @@ footer div span i.fa-heart{
         border: 1px solid #ddd;
         text-align: center;
         font-size: 10px;
-    }
-    .frm_p {
-        padding: 0px;
-        font-size: 14px;
     }
     /* siva */
 }
