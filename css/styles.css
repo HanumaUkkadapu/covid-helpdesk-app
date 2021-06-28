@@ -477,7 +477,7 @@ body > section {
 .total_hospitals_list td,
 .total_hospitals_list th {
     padding: 12px 15px;
-    border: 1px solid #7EA8E6;
+    border: 1px solid rgba(0,0,0,0.2);
     text-align: center;
     font-size: 16px;
 }
