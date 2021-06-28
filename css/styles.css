@@ -408,15 +408,6 @@ section {
 .frm_filtr{
     background-color: #7EA8E6;
     padding: 10px;
-}
-.clps_mbl{
-    width: 50%;
-    float: left;
-    text-align: center;
-}
-.clps_mbl_fil{
-    width: 50%;
-    float: left;
     text-align: center;
 }
 #Hsp_type, .sbt_btn{
@@ -424,7 +415,7 @@ section {
     padding: 3px;
     border: 1px solid rgb(85, 83, 83);
 }
-.clps_mbl button{
+.frm_filtr button{
     background: #fff;
     padding: 3px;
     border: 1px solid rgb(85, 83, 83);
@@ -432,6 +423,12 @@ section {
 .total_hospitals_list p{
     margin: 0px auto;
 }
+.frm_filtr select{
+    background-color: #fff;
+    padding: 3px;
+    border: 1px solid rgb(85, 83, 83);
+}
+
 
 /* filters */
 
@@ -588,22 +585,6 @@ section {
         text-align: center;
         font-size: 12px;
     }
-       .clps_mbl{
-    width: 100%;
-    margin: 0px auto;
-    text-align: center;
-    font-size: 14px;
-    margin-top: 10px;
-}
-.clps_mbl_fil{
-    width: 100%;
-   margin: 0px auto;
-   text-align: center;
-   font-size: 14px;
-}
-.clps_mbl_fil input{
-    width: 100px;
-}
 #Hsp_type{
     width: 100px;
 }

@@ -215,33 +215,24 @@
             <!-- Total Hospitals  -->
             <!-- filters -->
             <form class="frm_filtr">
-                <div class="clps_mbl">
-                    <span class="frm_p">
-                    <label>
-                        <input type="checkbox" id="regular_beds">
-                        Regular Beds
-                    </label>
-                </span>
-                <span class="frm_p">
-                    <label>
-                        <input type="checkbox" id="oxygen_beds">
-                        Oxygen Beds
-                    </label>
-                </span>
-                <span class="frm_p">
-                    <label>
-                        <input type="checkbox" id="icu_beds">
-                        ICU Beds
-                    </label>
-                </span>
-                <span class="frm_p">
-                        <label>
-                        <input type="checkbox" id="ventilator_beds">
-                        Ventilator Beds
-                    </label>
-                </span>
-                </div>
-                <div class="clps_mbl">
+              
+                    <select name="Select Beds" id="Slct_Beds">
+                        <option value="">
+                            Regular Beds
+                        </option>
+                        <option value="">
+                           Oxygen Beds
+                        </option>
+                        <option value="">
+                            ICU Beds
+                        </option>
+                        <option value="">
+                            Ventilator Beds
+                        </option>
+                    </select>                                   
+                        
+                
+                
                     <select name="Type" id="Hsp_type">
                         <option value="Type">Type</option>
                         <option value="Private">Private</option>
@@ -250,7 +241,7 @@
                     </select>
                 <input type="text" placeholder="Hospital Name.." name="search" class="sbt_btn">
                 <button type="submit">Submit</button>
-                </div>
+                
                 <div class="clr_fix"></div>
             </form>
             <!-- filters -->
