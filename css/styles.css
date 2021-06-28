@@ -69,6 +69,8 @@ option {
     padding: 0;
 }
 
+/***** Main Header ****************/
+
 header.flex-cc {
     position: sticky;
     top: 0;
@@ -195,6 +197,8 @@ nav ul li a > *{
 #menu.open g #rect3 {
     transform: translateX(-14px) translateY(-14px) rotate(-45deg);
 }
+
+/**** Main Header * END *****************/
 
 body > section {
     padding: 80px 0 0 0;
@@ -405,6 +409,7 @@ body > section {
     align-items: center;;
 }
 
+/*** Hanuma * END *********************/
 
 /*** Gayatri *********************/
 
@@ -454,6 +459,8 @@ body > section {
     padding: 4rem 0;
     flex: 1;
 }
+
+/*** Gayatri * END ********************/
 
 /*** Siva ************************/
 
@@ -512,7 +519,7 @@ body > section {
 /* filters */
 
 
-/*** Siva ************************/
+/*** Siva * END ***********************/
 
 /*** Basha ***********************/
 
@@ -624,6 +631,7 @@ footer div span i.fa-heart{
     margin: 0 1px;
 }
 
+/*** Basha * END ********************/
 
 
 /*** Media Queries ***************************************/
@@ -644,6 +652,55 @@ footer div span i.fa-heart{
     /* siva */
 }
 
+
+@media (max-width: 700px) {
+
+    /*** Hanuma **********************/
+
+    #searchSection {
+        margin: 0 10vw;
+        margin-top: -80px;
+        align-self: stretch;
+    }
+    #searchSection > * {
+        margin: 8px 0;
+    }
+    #selectWrapper,
+    #typeChkWrapper > div {
+        flex-flow: column nowrap;
+        align-items: stretch;
+    }
+    #selectWrapper > * {
+        margin: 6px 0;
+    }
+    #distSel,
+    #locateMeBtn {
+        width: auto;
+    }
+
+    #typeChkWrapper {
+        align-items: stretch;
+    }
+    #typeChkWrapper label {
+        margin: 0;
+        margin: 4px 0;
+    }
+
+    /*** Gayatri ****************/
+
+    .medcontainer {
+        flex-flow: column nowrap;
+    }
+    .storecontainerL {
+        max-height: 240px;
+    }
+    .storecontainerL img {
+        width: 100%;
+    }
+    
+}
+
+/***************************************/
 
 @media (max-width: 600px) {
 
@@ -706,48 +763,4 @@ footer div span i.fa-heart{
 
     }
 
-}
-
-/*** Hanuma **********************/
-
-@media (max-width: 700px) {
-    #searchSection {
-        margin: 0 10vw;
-        margin-top: -80px;
-        align-self: stretch;
-    }
-    #searchSection > * {
-        margin: 8px 0;
-    }
-    #selectWrapper,
-    #typeChkWrapper > div {
-        flex-flow: column nowrap;
-        align-items: stretch;
-    }
-    #selectWrapper > * {
-        margin: 6px 0;
-    }
-    #distSel,
-    #locateMeBtn {
-        width: auto;
-    }
-
-    #typeChkWrapper {
-        align-items: stretch;
-    }
-    #typeChkWrapper label {
-        margin: 0;
-        margin: 4px 0;
-    }
-
-    /*** Gayatri ******/
-    .medcontainer {
-        flex-flow: column nowrap;
-    }
-    .storecontainerL {
-        max-height: 240px;
-    }
-    .storecontainerL img {
-        width: 100%;
-    }
 }
