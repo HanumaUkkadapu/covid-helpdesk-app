@@ -458,6 +458,8 @@ body > section {
 /*** Siva ************************/
 
 
+/* Normal */
+
 /* head_title */
 .Hsptl_list_name {
     text-align: center;
@@ -466,7 +468,6 @@ body > section {
 .Hsptl_list_name label {
     color: #e43c26;
 }
-/* head_title */
 
 /* Total Hospitals */
 .total_hospitals_list {
@@ -479,26 +480,36 @@ body > section {
     text-align: center;
     font-size: 16px;
 }
-/* Total Hospitals */
-/* filters */
-.frm_filtr {
-    padding: 15px;
-    background-color: #7ea8e6;
-    margin-top: 10px;
-}
-.frm_p {
-    padding: 0px 10px;
-}
-#Hsp_type {
-    margin-left: 50px;
-    padding: 4px;
-}
-.sbt_btn,
-.fa-search {
-    padding: 3px;
-}
 
 /* filters */
+.frm_filtr{
+    background-color: #7EA8E6;
+    padding: 10px;
+    text-align: center;
+}
+#Hsp_type, .sbt_btn{
+    background-color: #fff;
+    padding: 3px;
+    border: 1px solid rgb(85, 83, 83);
+}
+
+.frm_filtr button{
+    background: #fff;
+    padding: 3px;
+    border: 1px solid rgb(85, 83, 83);
+}
+.total_hospitals_list p{
+    margin: 0px auto;
+}
+.frm_filtr select{
+    background-color: #fff;
+    padding: 3px;
+    border: 1px solid rgb(85, 83, 83);
+}
+
+
+/* filters */
+
 
 /*** Siva ************************/
 
@@ -622,7 +633,6 @@ footer div span i.fa-heart{
         font-size: 16px;
     }
 
-
     /* siva */
     .total_hospitals_list td,
     .total_hospitals_list th {
@@ -678,7 +688,7 @@ footer div span i.fa-heart{
     #menu {
         display: flex;
     }
-
+  
     footer > div.flex-cc{
         flex-flow: column nowrap;
         align-items: center;
@@ -689,6 +699,7 @@ footer div span i.fa-heart{
     #footerNav ul{
         margin: 0;
         margin-top: 4px;
+
     }
 
 }
