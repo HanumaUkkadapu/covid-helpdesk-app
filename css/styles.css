@@ -13,6 +13,18 @@
 }
 * {
     box-sizing: border-box;
+    /*****/
+    scrollbar-width: thin;/*8px*/
+    scrollbar-color: var(--blue-crayola) var(--alicia-blue);
+}
+*::-webkit-scrollbar{
+    width: 8px;
+}
+*::-webkit-scrollbar-track{
+    background-color: var(--alicia-blue);
+}
+*::-webkit-scrollbar-thumb{
+    background-color: var(--blue-crayola);
 }
 .flex-cc {
     display: flex;
@@ -117,7 +129,7 @@ nav ul li {
 nav ul li a {
     --acc-clr: var(--usafa-blue);
     padding: 6px 10px;
-    font-weight: bold;
+    font-weight: 600;
     color: var(--acc-clr);
     border: 2px solid transparent;
     transition: background 100ms ease-in-out;
@@ -133,6 +145,9 @@ nav ul li a:hover {
 nav ul li a:focus {
     outline: none;
     border-color: var(--acc-clr);
+}
+nav ul li a > *{
+    margin-left: 4px;
 }
 
 /*** Menu Button ***/
@@ -181,8 +196,8 @@ nav ul li a:focus {
     transform: translateX(-14px) translateY(-14px) rotate(-45deg);
 }
 
-section {
-    padding-top: 80px;
+body > section {
+    padding: 80px 0 0 0;
 }
 
 /*** Hanuma **********************/
@@ -214,15 +229,12 @@ section {
     background: var(--alicia-blue);
 }
 #searchSection button {
-    transition: filter 80ms ease-in-out;
-}
-#searchSection button:hover {
-    filter: brightness(1.24);
+    transition: background-color 20ms ease-in-out;
 }
 #selectWrapper {
     align-items: center;
 }
-#selectWrapper span,
+#selectWrapper > span,
 #typeChkWrapper span {
     margin: 0 12px;
     font-weight: 600;
@@ -236,10 +248,19 @@ section {
 }
 #locateMeBtn {
     color: white;
-    background: var(--blue-crayola);
+    background-color: var(--blue-crayola);
     font-weight: 600;
     justify-content: space-between;
     align-items: center;
+}
+#locateMeBtn:hover{
+    background-color: #7199ff;
+}
+#locateMeBtn:focus {
+    border-color: var(--royal-blue-dark);
+}
+#locateMeBtn:active {
+    background-color: var(--usafa-blue);
 }
 
 #typeChkWrapper {
@@ -299,31 +320,96 @@ section {
     background: var(--blue-crayola);
 }
 
-#locateMeBtn:focus {
-    border-color: var(--royal-blue-dark);
-}
-#locateMeBtn:active {
-    background: var(--usafa-blue);
-}
-
 #searchBtn {
     color: white;
-    background: var(--usafa-blue);
+    background-color: var(--usafa-blue);
     font-size: 30px;
     font-weight: 700;
+}
+#searchBtn:hover{
+    background-color: #3373b1;
 }
 #searchBtn:focus {
     border-color: var(--rich-black);
 }
 #searchBtn:active {
+    background-color: var(--royal-blue-dark);
+}
+
+/*** Tab Menu ********************/
+
+#resultSection{
+    margin: 0 6vw;
+    padding-top: 0;
+    overflow: hidden;
+}
+#resultSection > *{
+    align-self: stretch;
+}
+.tabBtnWrapper{
+    margin: 0 6vw;
+    padding-top: 90px;
+}
+.tabBtnWrapper div{
+    width: 100%;
     background: var(--royal-blue-dark);
 }
+.tabBtn{
+    user-select: none;
+    width: 33%;
+    height: 60px;
+    padding: 6px 24px;
+    margin: 0 1px;
+    margin-bottom: 2px;
+    color: black;
+    background-color: var(--alicia-blue);
+    font-size: 18px;
+    
+    flex: 2 1 auto;
+    align-items: center;
+}
+.tabBtn:first-child{
+    margin-left: 0;
+}
+.tabBtn:last-child{
+    margin-right: 0;
+}
+.tabBtn.active{
+    color: white;
+    background-color: var(--usafa-blue);
+    font-weight: bold;
+}
+
+.tabBtn input{
+    display: none;
+}
+
+.tabBtn .material-icons, .tabBtn i{
+    margin-right: 4px;
+}
+
+.tabContentWrapper{
+    height: calc( 100vh - 160px );
+    width: calc( 3 * 94vw );
+    background-color: var(--alicia-blue);
+    border: none;
+    overflow: hidden;
+    justify-content: flex-start;
+}
+.tabContentWrapper > section{
+    height: 100%;
+    width: 88vw;
+    padding: 16px;
+    overflow-y: scroll;
+    justify-content: flex-start;
+    align-items: center;;
+}
+
 
 /*** Gayatri *********************/
 
 #medStoreTabContainer.col {
     align-items: stretch;
-    background: var(--med-champagne);
 }
 .medcontainer {
     display: flex;
@@ -371,14 +457,6 @@ section {
 
 /*** Siva ************************/
 
-/* Normal */
-.container {
-    width: 90%;
-    margin: 0px auto;
-}
-.clr_fix{
-    clear: both;
-}
 
 /* Normal */
 
@@ -393,7 +471,6 @@ section {
 
 /* Total Hospitals */
 .total_hospitals_list {
-    width: 100%;
     border-collapse: collapse;
 }
 .total_hospitals_list td,
@@ -438,17 +515,6 @@ section {
 
 /*** Basha ***********************/
 
-#vaccCentreTabContainer .total_Vaccination_list {
-    width: 100%;
-    border-collapse: collapse;
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    text-align: center;
-    font-size: 16px;
-}
-#vaccCentreTabContainer .total_Vaccination_list label {
-    color: #4e80ff;
-}
 
 /*** check-box****/
 .dbgOuter {
@@ -475,9 +541,8 @@ section {
     margin-right: 8.0px;
 }
 
-#vaccCentreTabContainer button {
+.dbgOuter button {
     color: white;
-    background-color: white;
     height: 100%;
     margin-left: 8px;
     padding: 8px 12px;
@@ -538,12 +603,9 @@ section {
 
 footer.col{
     padding: 20px;
-    margin-top: 24px;
+    margin-top: 80px;
     background-color: var(--mikado-yellow);
     align-items: center;
-}
-#footerNav ul{
-    margin: 0;
 }
 footer div span{
     margin: 8px 0;
@@ -553,10 +615,42 @@ footer div span i.fa-heart{
     margin: 0 5px;
 }
 
+#footerNav ul{
+    margin: 0;
+    margin-left: 16px;
+}
+#footerNav ul li{
+    margin: 0 1px;
+}
+
+
 
 /*** Media Queries ***************************************/
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
+
+    .tabBtn{
+        font-size: 16px;
+    }
+
+    /* siva */
+    .total_hospitals_list td,
+    .total_hospitals_list th {
+        padding: 8px 10px;
+        border: 1px solid #ddd;
+        text-align: center;
+        font-size: 12px;
+    }
+    .frm_p {
+        padding: 0px;
+        font-size: 14px;
+    }
+    /* siva */
+}
+
+
+@media (max-width: 600px) {
+
     #nav_el {
         --w: 100vw;
         --h: 100vh;
@@ -588,31 +682,26 @@ footer div span i.fa-heart{
     }
     #nav_el ul li a {
         padding: min(4vh, 30px);
-        font-size: 30px;
+        font-size: 24px;
         justify-content: center;
     }
     #menu {
         display: flex;
     }
-    /* siva */
-    .container {
-        width: 100%;
-        text-align: center;
-        margin: 0px auto;
+  
+    footer > div.flex-cc{
+        flex-flow: column nowrap;
+        align-items: center;
     }
-    .clps_mbl, .clps_mbl_fil{
-        width: 100%;
-        margin: 0px auto;
-        font-size: 12px;
+    footer div span{
+        font-size: 16px;
     }
-    .total_hospitals_list td,
-    .total_hospitals_list th {
-        padding: 5px 8px;
-        border: 1px solid #ddd;
-        text-align: center;
-        font-size: 10px;
+    #footerNav ul{
+        margin: 0;
+        margin-top: 4px;
+
     }
-    /* siva */
+
 }
 
 /*** Hanuma **********************/
