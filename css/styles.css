@@ -389,7 +389,7 @@ body > section {
 }
 
 .tabContentWrapper{
-    height: 78vh;
+    height: calc( 100vh - 160px );
     width: calc( 3 * 94vw );
     background-color: var(--alicia-blue);
     border: none;
