@@ -342,19 +342,13 @@ body > section {
 
 /*** Tab Menu ********************/
 
-#resultSection{
+#resTabWrapper, #resultSection{
     margin: 0 6vw;
-    padding-top: 0;
-    overflow: hidden;
 }
-#resultSection > *{
-    align-self: stretch;
-}
-.tabBtnWrapper{
-    margin: 0 6vw;
+#resTabWrapper{
     padding-top: 90px;
 }
-.tabBtnWrapper div{
+#resTabWrapper div{
     width: 100%;
     background: var(--royal-blue-dark);
 }
@@ -388,10 +382,18 @@ body > section {
     display: none;
 }
 
-.tabBtn .material-icons, .tabBtn i{
+.tabBtn .material-icons{
+    font-size: 22px;
     margin-right: 4px;
 }
 
+#resultSection{
+    padding-top: 0;
+    overflow: hidden;
+}
+#resultSection > *{
+    align-self: stretch;
+}
 .tabContentWrapper{
     height: calc( 100vh - 160px );
     width: calc( 3 * 94vw );
@@ -641,6 +643,9 @@ footer div span i.fa-heart{
     .tabBtn{
         font-size: 16px;
     }
+    .tabBtn .material-icons{
+        font-size: 20px;
+    }
 
     /* siva */
     .total_hospitals_list td,
@@ -742,6 +747,14 @@ footer div span i.fa-heart{
         display: flex;
     }
 
+    #resTabWrapper, #resultSection{
+        margin: 0 4vw;
+    }
+    .tabContentWrapper > section{
+        width: 92vw;
+    }
+    
+    
     /* siva */
     .total_hospitals_list td,
     .total_hospitals_list th {
@@ -763,4 +776,39 @@ footer div span i.fa-heart{
 
     }
 
+}
+
+@media (max-width: 520px){
+
+    #searchSection{
+        font-size: 16px;
+    }
+    #distSel,
+    #locateMeBtn{
+        font-size: 16px;
+    }
+    #searchBtn {
+        font-size: 26px;
+    }
+
+    .tabBtn{
+        font-size: 14px;
+    }
+    .tabBtn .material-icons{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 440px){
+
+    #searchBtn {
+        font-size: 24px;
+    }
+
+    .tabBtn{
+        font-size: 13px;
+    }
+    .tabBtn .material-icons{
+        font-size: 16px;
+    }
 }
