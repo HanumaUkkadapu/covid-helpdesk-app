@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 
     <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
@@ -39,19 +42,22 @@
         <nav id="nav_el" class="flex-cc">
             <ul class="flex-cc noBullets">
                 <li>
-                    <a href="precautions.html">Precautions</a>
+                    <a href="precautions.html">
+                        Precautions
+                        <span class="material-icons">open_in_new</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#searchSection">Search</a>
+                    <a href="#searchSection">
+                        Search
+                        <span class="material-icons">search</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="#medStoreTabContainer">Med. Stores</a>
-                </li>
-                <li>
-                    <a href="#hospitalTabContainer">Hospitals</a>
-                </li>
-                <li>
-                    <a href="#vaccCentreTabContainer">Vacc. Centers</a>
+                    <a href="#resTabWrapper">
+                        Results
+                        <span class="material-icons">list_alt</span>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -79,7 +85,7 @@
             <span class="flex-cc">OR</span>
             <button id="locateMeBtn" class="flex-cc">
                 <span>Locate Me</span>
-                <i class="fas fa-map-marker-alt"></i>
+                <span class="material-icons">my_location</span>
             </button>
         </div>
         <div class="flex-cc col" id="typeChkWrapper">
@@ -102,377 +108,397 @@
         <button id="searchBtn">SEARCH</button>
     </section>
 
-    <!------------- Gayatri ---------------->
+    <div id="resTabWrapper" class="tabBtnWrapper flex-cc">
 
-    <section class="flex-cc col" id="medStoreTabContainer">
-        <h3 class="medStoreHead">Medical Stores in <span>Nellore</span></h3>
-        <div class="medcontainer">
-            <div class="storecontainerL">
-                <img src="img/pharmacy.jpg" alt="">
-            </div>
-            <div class="storecontainerR">
-                <h1>APOLLO PHARMACY</h1>
-                <h3>OPEN NOW</h3>
-                <p>Opp. XYZ University,Camp Road,Nellore,Andhra Pradesh- 524004</p>
-                <span> Call</span>
-                <img src="img/phone.svg" alt="">
-                <span>Location</span>
-                <img src="img/location.png" alt="">
-                <span>Working Hours</span>
-                <img src="img/clock-2.svg" alt="">
+        <div class="flex-cc">
+            <label class="tabBtn flex-cc active" data-targetelem="medStoreTabContainer" >
+                <input type="checkbox">
+                <!-- <i class="fas fa-prescription-bottle"></i> -->
+                <!-- <i class="fas fa-prescription-bottle-alt icon"></i> -->
+                <span class="material-icons">medication</span>
+                Medical Stores
+            </label>
+            <label class="tabBtn flex-cc" data-targetelem="hospitalTabContainer" >
+                <input type="checkbox">
+                <span class="material-icons icon">local_hospital</span>
+                Hospitals
+            </label>
+            <label class="tabBtn flex-cc" data-targetelem="vaccCentreTabContainer" >
+                <input type="checkbox">
+                <span class="material-icons icon">vaccines</span>
+                Vaccination Centers
+            </label>
+        </div>
+
+    </div>
+    
+    <section id="resultSection" class="flex-cc col">
+        
+
+        <div class="tabContentWrapper flex-cc">
+
+            <!------------- Gayatri ---------------->
+            <section id="medStoreTabContainer" class="flex-cc col">
+                <div class="medStoreWrapper">
+                    <div class="medcontainer">
+                        <div class="storecontainerL">
+                            <img src="img/pharmacy.jpg" alt="">
+                        </div>
+                        <div class="storecontainerR">
+                            <h1>APOLLO PHARMACY</h1>
+                            <h3>OPEN NOW</h3>
+                            <p>Opp. XYZ University,Camp Road,Nellore,Andhra Pradesh- 524004</p>
+                            <span> Call</span>
+                            <img src="img/phone.svg" alt="">
+                            <span>Location</span>
+                            <img src="img/location.png" alt="">
+                            <span>Working Hours</span>
+                            <img src="img/clock-2.svg" alt="">
+                            <div class="text-center btn-wrapper">
+                                <button class="btn btn-secondary">Directions</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="medcontainer">
+                        <div class="storecontainerL">
+                            <img src="img/newgen.jpg" alt="">
+                        </div>
+                        <div class="storecontainerR">
+                            <h1>NEWGEN PHARMACY</h1>
+                            <h3>OPEN NOW</h3>
+                            <p>Opp. XYZ University,Camp Road,Nellore,Andhra Pradesh- 524004</p>
+                            <span> Call</span>
+                            <img src="img/phone.svg" alt="">
+                            <span>Location</span>
+                            <img src="img/location.png" alt="">
+                            <span>Working Hours</span>
+                            <img src="img/clock-2.svg" alt="">
+                            <div class="text-center btn-wrapper">
+                                <button class="btn btn-secondary">Directions</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="medcontainer">
+                        <div class="storecontainerL">
+                            <img src="img/store.jpg" alt="">
+                        </div>
+                        <div class="storecontainerR">
+                            <h1>SRI PHARMACY</h1>
+                            <h3>OPEN NOW</h3>
+                            <p>Opp. XYZ University,Camp Road,Nellore,Andhra Pradesh- 524004</p>
+                            <span> Call</span>
+                            <img src="img/phone.svg" alt="">
+                            <span>Location</span>
+                            <img src="img/location.png" alt="">
+                            <span>Working Hours</span>
+                            <img src="img/clock-2.svg" alt="">
+                            <div class="text-center btn-wrappert">
+                                <button class="directions">Directions</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="medcontainer">
+                        <div class="storecontainerL">
+                            <img src="img/med_store.jpg" alt="">
+                        </div>
+                        <div class="storecontainerR">
+                            <h1>SARASWATHI MEDICALS</h1>
+                            <h3>OPEN NOW</h3>
+                            <p>Opp. XYZ University,Camp Road,Nellore,Andhra Pradesh- 524004</p>
+                            <span> Call</span>
+                            <img src="img/phone.svg" alt="">
+                            <span>Location</span>
+                            <img src="img/location.png" alt="">
+                            <span>Working Hours</span>
+                            <img src="img/clock-2.svg" alt="">
+                            <div class="text-center btn-wrapper">
+                                <button class="btn btn-secondary">Directions</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="text-center btn-wrapper">
-                    <button class="btn btn-secondary">Directions</button>
+                    <button class="btn btn-secondary">View More</button>
                 </div>
-            </div>
-        </div>
-        <div class="medcontainer">
-            <div class="storecontainerL">
-                <img src="img/newgen.jpg" alt="">
-            </div>
-            <div class="storecontainerR">
-                <h1>NEWGEN PHARMACY</h1>
-                <h3>OPEN NOW</h3>
-                <p>Opp. XYZ University,Camp Road,Nellore,Andhra Pradesh- 524004</p>
-                <span> Call</span>
-                <img src="img/phone.svg" alt="">
-                <span>Location</span>
-                <img src="img/location.png" alt="">
-                <span>Working Hours</span>
-                <img src="img/clock-2.svg" alt="">
-                <div class="text-center btn-wrapper">
-                    <button class="btn btn-secondary">Directions</button>
+            </section>
+
+            <!------------- Siva ------------------->
+            <section id="hospitalTabContainer" class="flex-cc col">
+
+                <table class="total_hospitals_list">
+                    <thead>
+                        <th>Total Hospitals</th>
+                        <th>Regular Beds</th>
+                        <th>Oxygen Beds</th>
+                        <th>ICU Beds</th>
+                        <th>Ventilator Beds</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15</td>
+                            <td>100</td>
+                            <td>30</td>
+                            <td>25</td>
+                            <td>20</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Total Hospitals  -->
+                <!-- filters -->
+                <form class="frm_filtr">
+                    <span class="frm_p">
+                        <input type="radio" id="regular_beds" name="fav_language" value="regular">
+                        <label for="regular">Regular Beds</label>
+                    </span>
+                    <span class="frm_p">
+                        <input type="radio" id="oxygen_beds" name="fav_language" value="oxygen">
+                        <label for="oxygen">Oxygen Beds</label>
+                    </span>
+                    <span class="frm_p">
+                        <input type="radio" id="icu_beds" name="fav_language" value="icu">
+                        <label for="icu">ICU Beds</label>
+                    </span>
+                    <span class="frm_p">
+                        <input type="radio" id="ventilator_beds" name="fav_language" value="ventilator">
+                        <label for="ventilator">Ventilator Beds</label>
+                    </span>
+                    <select name="Type" id="Hsp_type">
+                        <option value="Type">Type</option>
+                        <option value="Private">Private</option>
+                        <option value="Government">Government</option>
+                        <option value="Arogyashree">Arogyashree</option>
+                    </select>
+                    <input type="text" placeholder="Hospital Name.." name="search" class="sbt_btn">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <!-- filters -->
+                <!-- Hospital availability list  -->
+                <table class="total_hospitals_list">
+                    <thead>
+                        <th>Hospitals Name</th>
+                        <th>Regular Beds</th>
+                        <th>Oxygen Beds</th>
+                        <th>ICU Beds</th>
+                        <th>Ventilator Beds</th>
+                        <th>Phone</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="">Apollo Hospital</a> <br><br>
+                                <div>
+                                    Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar,
+                                    Visakhapatnam, Andhra Pradesh 530002
+                                </div>
+                            </td>
+                            <td>100</td>
+                            <td>30</td>
+                            <td>25</td>
+                            <td>20</td>
+                            <td>9876543210</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Apollo Hospital</a> <br><br>
+                                <div>
+                                    Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar,
+                                    Visakhapatnam, Andhra Pradesh 530002
+                                </div>
+                            </td>
+                            <td>100</td>
+                            <td>30</td>
+                            <td>25</td>
+                            <td>20</td>
+                            <td>9876543210</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Apollo Hospital</a> <br><br>
+                                <div>
+                                    Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar,
+                                    Visakhapatnam, Andhra Pradesh 530002
+                                </div>
+                            </td>
+                            <td>100</td>
+                            <td>30</td>
+                            <td>25</td>
+                            <td>20</td>
+                            <td>9876543210</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Apollo Hospital</a> <br><br>
+                                <div>
+                                    Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar,
+                                    Visakhapatnam, Andhra Pradesh 530002
+                                </div>
+                            </td>
+                            <td>100</td>
+                            <td>30</td>
+                            <td>25</td>
+                            <td>20</td>
+                            <td>9876543210</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Apollo Hospital</a> <br><br>
+                                <div>
+                                    Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar,
+                                    Visakhapatnam, Andhra Pradesh 530002
+                                </div>
+                            </td>
+                            <td>100</td>
+                            <td>30</td>
+                            <td>25</td>
+                            <td>20</td>
+                            <td>9876543210</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Apollo Hospital</a> <br><br>
+                                <div>
+                                    Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar,
+                                    Visakhapatnam, Andhra Pradesh 530002
+                                </div>
+                            </td>
+                            <td>100</td>
+                            <td>30</td>
+                            <td>25</td>
+                            <td>20</td>
+                            <td>9876543210</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Apollo Hospital</a> <br><br>
+                                <div>
+                                    Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar,
+                                    Visakhapatnam, Andhra Pradesh 530002
+                                </div>
+                            </td>
+                            <td>100</td>
+                            <td>30</td>
+                            <td>25</td>
+                            <td>20</td>
+                            <td>9876543210</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </section>
+
+            <!------------- Basha ------------------>
+            <section id="vaccCentreTabContainer" class="flex-cc col">
+        
+                <div class="dbgOuter flex-cc">
+                    <label class="dbgCont">
+                        <input type="checkbox" class="dbgCheck" />
+                        Covaxin
+                    </label>
+                    <label class="dbgCont">
+                        <input type="checkbox" class="dbgCheck" />
+                        Covisheld
+                    </label>
+                    <label class="dbgCont">
+                        <input type="checkbox" class="dbgCheck" />
+                        Age 45+
+                    </label>
+                    <label class="dbgCont">
+                        <input type="checkbox" class="dbgCheck" />
+                        Age 18+
+                    </label>
+                    <label class="dbgCont">
+                        <input type="checkbox" class="dbgCheck" />
+                        Paid
+                    </label>
+                    <label class="dbgCont">
+                        <input type="checkbox" class="dbgCheck" />
+                        Free
+                    </label>
+                    <button>Filter</button>
                 </div>
-            </div>
-        </div>
-        <div class="medcontainer">
-            <div class="storecontainerL">
-                <img src="img/store.jpg" alt="">
-            </div>
-            <div class="storecontainerR">
-                <h1>SRI PHARMACY</h1>
-                <h3>OPEN NOW</h3>
-                <p>Opp. XYZ University,Camp Road,Nellore,Andhra Pradesh- 524004</p>
-                <span> Call</span>
-                <img src="img/phone.svg" alt="">
-                <span>Location</span>
-                <img src="img/location.png" alt="">
-                <span>Working Hours</span>
-                <img src="img/clock-2.svg" alt="">
-                <div class="text-center btn-wrappert">
-                    <button class="directions">Directions</button>
-                </div>
-            </div>
-        </div>
-        <div class="medcontainer">
-            <div class="storecontainerL">
-                <img src="img/med_store.jpg" alt="">
-            </div>
-            <div class="storecontainerR">
-                <h1>SARASWATHI MEDICALS</h1>
-                <h3>OPEN NOW</h3>
-                <p>Opp. XYZ University,Camp Road,Nellore,Andhra Pradesh- 524004</p>
-                <span> Call</span>
-                <img src="img/phone.svg" alt="">
-                <span>Location</span>
-                <img src="img/location.png" alt="">
-                <span>Working Hours</span>
-                <img src="img/clock-2.svg" alt="">
-                <div class="text-center btn-wrapper">
-                    <button class="btn btn-secondary">Directions</button>
-                </div>
-            </div>
-        </div>
-        <div class="text-center btn-wrapper">
-            <button class="btn btn-secondary">View More</button>
-        </div>
-    </section>
-
-    <!------------- Siva ------------------->
-    <!-- Total Hospitals  -->
-    <section id="hospitalTabContainer">
-        <div class="container">
-            <h3 class="Hsptl_list_name">
-                <u>Hospitals in - <label>Visakhapatnam</label></u>
-            </h3>
-            <table class="total_hospitals_list">
-                <thead>
-                    <th>Total Hospitals</th>
-                    <th>Regular Beds</th>
-                    <th>Oxygen Beds</th>
-                    <th>ICU Beds</th>
-                    <th>Ventilator Beds</th>
-                </thead>
-                <tbody>
+                <p><strong style="color:red">NOTE:</strong>The slots availability data displayed in the pincode or district
+                    search is provided by the state govt and private hospitals. The total availability slots includes Dose-1
+                    and Dose-2 slots. While we have real-time data, slot availability on CoWin changes rapidly.D1: Dose 1,
+                    D2: Dose 2</p>
+                <p>On-site registration and vaccination services are now available</p>
+        
+                <ul>
+                    <li><a>At all vaccination centers – both Government and Private</a></li>
+                    <li><a>For all people aged 18 years or above.</a></li>
+                    <li><a>For slot availability and timing, please contact the vaccination center directly.</a></li>
+                </ul>
+        
+                <table>
                     <tr>
-                        <td>15</td>
-                        <td>100</td>
-                        <td>30</td>
-                        <td>25</td>
-                        <td>20</td>
+                        <th>HOSPITAL NAME</th>
+                        <th>22 jul 2021</th>
+                        <th>23 jul 2021</th>
+                        <th>24 jul 2021</th>
+                        <th>25 jul 2021</th>
+                        <th>26 jul 2021</th>
+                        <th>27 jul 2021</th>
                     </tr>
-                </tbody>
-            </table>
-            <!-- Total Hospitals  -->
-            <!-- filters -->
-            <form class="frm_filtr">
-                <span class="frm_p">
-                    <input type="radio" id="regular_beds" name="fav_language" value="regular">
-                    <label for="regular">Regular Beds</label>
-                </span>
-                <span class="frm_p">
-                    <input type="radio" id="oxygen_beds" name="fav_language" value="oxygen">
-                    <label for="oxygen">Oxygen Beds</label>
-                </span>
-                <span class="frm_p">
-                    <input type="radio" id="icu_beds" name="fav_language" value="icu">
-                    <label for="icu">ICU Beds</label>
-                </span>
-                <span class="frm_p">
-                    <input type="radio" id="ventilator_beds" name="fav_language" value="ventilator">
-                    <label for="ventilator">Ventilator Beds</label>
-                </span>
-                <select name="Type" id="Hsp_type">
-                    <option value="Type">Type</option>
-                    <option value="Private">Private</option>
-                    <option value="Government">Government</option>
-                    <option value="Arogyashree">Arogyashree</option>
-                </select>
-                <input type="text" placeholder="Hospital Name.." name="search" class="sbt_btn">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-            <!-- filters -->
-            <!-- Hospital availability list  -->
-            <table class="total_hospitals_list">
-                <thead>
-                    <th>Hospitals Name</th>
-                    <th>Regular Beds</th>
-                    <th>Oxygen Beds</th>
-                    <th>ICU Beds</th>
-                    <th>Ventilator Beds</th>
-                    <th>Phone</th>
-                </thead>
-                <tbody>
+                    <hr>
                     <tr>
-                        <td><a href="">Apollo Hospital</a> <br><br>
-                            <div>
-                                Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar,
-                                Visakhapatnam, Andhra Pradesh 530002
-                            </div>
+                        <td>Govt Hospital owk<sup>FREE</sup><br><i>owk mandal,kurnool,pincode:518122,cell:7780124053,</i>
                         </td>
-                        <td>100</td>
-                        <td>30</td>
-                        <td>25</td>
-                        <td>20</td>
-                        <td>9876543210</td>
+                        <td style="background-color:#791717">Covaxin<p><a>Age 18+</p><a></td>
+                        <td style="background-color:#7917">NA</td>
+                        <td style="background-color:#7917">NA</td>
+                        <td style="background-color:#7917">NA</td>
+                        <td style="background-color:#7917">NA</td>
+                        <td style="background-color:#791717">Covi-Shield<p><a>Age 45+</a></p>
+                        </td>
                     </tr>
                     <tr>
-                        <td><a href="">Apollo Hospital</a> <br><br>
-                            <div>
-                                Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar,
-                                Visakhapatnam, Andhra Pradesh 530002
-                            </div>
+                        <td>KGH Govt Hospital,Kurnool <sup>FREE</sup><br><i>Kurnool
+                                mandal,kurnool,pincode:518132,cell:7480134053,</i></td>
+                        <td style="background-color:#7917">NA</td>
+                        <td style="background-color:#791717">Covi-shield<p><a>Age 45+</a></p>
                         </td>
-                        <td>100</td>
-                        <td>30</td>
-                        <td>25</td>
-                        <td>20</td>
-                        <td>9876543210</td>
+                        <td style="background-color:#7917">NA</td>
+                        <td style="background-color:#791717">Covi-shield<p><a>Age 18+</a></p>
+                        </td>
+                        <td style="background-color:#7917">NA</td>
+                        <td style="background-color:#791717">Covaxin<p><a>Age 18+</a></p></td>
                     </tr>
                     <tr>
-                        <td><a href="">Apollo Hospital</a> <br><br>
-                            <div>
-                                Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar,
-                                Visakhapatnam, Andhra Pradesh 530002
-                            </div>
+                        <td>Adhoni Govt Hospital,Adhoni <sup>FREE</sup><br><i>Kurnool
+                                mandal,kurnool,pincode:518132,cell:70080134053,</i></td>
+                        <td style="background-color:#791717">Covi-shield<p><a>Age 45+</a></p>
                         </td>
-                        <td>100</td>
-                        <td>30</td>
-                        <td>25</td>
-                        <td>20</td>
-                        <td>9876543210</td>
+                        <td style="background-color:#791717">Covi-shield<p><a>Age 45+</a></p>
+                        </td>
+                        <td style="background-color:#7917">NA</td>
+                        <td style="background-color:#791717">Covi-shield<p><a>Age 18+</a></p>
+                        </td>
+                        <td style="background-color:#791717">Covaxin<p><a>Age 45+</a></p>
+                        </td>
+                        <td style="background-color:#7917">NA</td>
                     </tr>
                     <tr>
-                        <td><a href="">Apollo Hospital</a> <br><br>
-                            <div>
-                                Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar,
-                                Visakhapatnam, Andhra Pradesh 530002
-                            </div>
+                        <td>KGH Govt Hospital,Kurnool <sup>FREE</sup><br><i>Kurnool
+                                mandal,kurnool,pincode:518132,cell:7480134053,</i></td>
+                        <td style="background-color:#7917">NA</td>
+                        <td style="background-color:#791717">Covi-shield<p><a>Age 45+</a></p>
                         </td>
-                        <td>100</td>
-                        <td>30</td>
-                        <td>25</td>
-                        <td>20</td>
-                        <td>9876543210</td>
+                        <td style="background-color:#7917">NA</td>
+                        <td style="background-color:#7917">NA</td>
+                        <td style="background-color:#7917">NA</td>
+                        <td style="background-color:#791717">Covaxin<p><a>Age 18+</a></p>
+                        </td>
+        
                     </tr>
                     <tr>
-                        <td><a href="">Apollo Hospital</a> <br><br>
-                            <div>
-                                Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar,
-                                Visakhapatnam, Andhra Pradesh 530002
-                            </div>
+                        <td>SSB Govt Hospital,Kurnool <sup>PAID</sup><br><i>Kurnool
+                                mandal,kurnool,pincode:518132,cell:7480134053,</i></td>
+                        <td style="background-color:#7917">NA</td>
+                        <td style="background-color:#791717">Covi-shield<p><a>Age 45+</a></p>
                         </td>
-                        <td>100</td>
-                        <td>30</td>
-                        <td>25</td>
-                        <td>20</td>
-                        <td>9876543210</td>
-                    </tr>
-                    <tr>
-                        <td><a href="">Apollo Hospital</a> <br><br>
-                            <div>
-                                Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar,
-                                Visakhapatnam, Andhra Pradesh 530002
-                            </div>
+                        <td style="background-color:#7917">NA</td>
+                        <td style="background-color:#7917">NA</td>
+                        <td style="background-color:#7917">NA</td>
+                        <td style="background-color:#791717">Covaxin<p><a>Age 18+</a></p>
                         </td>
-                        <td>100</td>
-                        <td>30</td>
-                        <td>25</td>
-                        <td>20</td>
-                        <td>9876543210</td>
+        
                     </tr>
-                    <tr>
-                        <td><a href="">Apollo Hospital</a> <br><br>
-                            <div>
-                                Door No 10, Executive Court, 50-80, Waltair Main Rd, opp. Daspalla, Ram Nagar,
-                                Visakhapatnam, Andhra Pradesh 530002
-                            </div>
-                        </td>
-                        <td>100</td>
-                        <td>30</td>
-                        <td>25</td>
-                        <td>20</td>
-                        <td>9876543210</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-    <!-- Hospital availability list  -->
+                </table>
+                
+            </section>
 
-    <!------------- Siva ------------------->
-
-    <!------------- Basha ------------------>
-
-    <!---vaccination cen------->
-    <section id="vaccCentreTabContainer" class="flex-cc col">
-        <div class="container flex-cc col">
-            <h3 class="total_Vaccination_list">
-                <u>VACCINATION CENTERS -<label>KURNOOL</label></u>
-            </h3>
-            <div class="dbgOuter flex-cc">
-                <label class="dbgCont">
-                    <input type="checkbox" class="dbgCheck" />
-                    Covaxin
-                </label>
-                <label class="dbgCont">
-                    <input type="checkbox" class="dbgCheck" />
-                    Covisheld
-                </label>
-                <label class="dbgCont">
-                    <input type="checkbox" class="dbgCheck" />
-                    Age 45+
-                </label>
-                <label class="dbgCont">
-                    <input type="checkbox" class="dbgCheck" />
-                    Age 18+
-                </label>
-                <label class="dbgCont">
-                    <input type="checkbox" class="dbgCheck" />
-                    Paid
-                </label>
-                <label class="dbgCont">
-                    <input type="checkbox" class="dbgCheck" />
-                    Free
-                </label>
-                <button type="button">Filter</button>
-            </div>
-            <p><strong style="color:red">NOTE:</strong>The slots availability data displayed in the pincode or district
-                search is provided by the state govt and private hospitals. The total availability slots includes Dose-1
-                and Dose-2 slots. While we have real-time data, slot availability on CoWin changes rapidly.D1: Dose 1,
-                D2: Dose 2</p>
-            <p>On-site registration and vaccination services are now available</p>
-
-            <ul>
-                <li><a>At all vaccination centers – both Government and Private</a></li>
-                <li><a>For all people aged 18 years or above.</a></li>
-                <li><a>For slot availability and timing, please contact the vaccination center directly.</a></li>
-            </ul>
-
-            <table>
-                <tr>
-                    <th>HOSPITAL NAME</th>
-                    <th>22 jul 2021</th>
-                    <th>23 jul 2021</th>
-                    <th>24 jul 2021</th>
-                    <th>25 jul 2021</th>
-                    <th>26 jul 2021</th>
-                    <th>27 jul 2021</th>
-                </tr>
-                <hr>
-                <tr>
-                    <td>Govt Hospital owk<sup>FREE</sup><br><i>owk mandal,kurnool,pincode:518122,cell:7780124053,</i>
-                    </td>
-                    <td style="background-color:#791717">Covaxin<p><a>Age 18+</p><a></td>
-                    <td style="background-color:#7917">NA</td>
-                    <td style="background-color:#7917">NA</td>
-                    <td style="background-color:#7917">NA</td>
-                    <td style="background-color:#7917">NA</td>
-                    <td style="background-color:#791717">Covi-Shield<p><a>Age 45+</a></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>KGH Govt Hospital,Kurnool <sup>FREE</sup><br><i>Kurnool
-                            mandal,kurnool,pincode:518132,cell:7480134053,</i></td>
-                    <td style="background-color:#7917">NA</td>
-                    <td style="background-color:#791717">Covi-shield<p><a>Age 45+</a></p>
-                    </td>
-                    <td style="background-color:#7917">NA</td>
-                    <td style="background-color:#791717">Covi-shield<p><a>Age 18+</a></p>
-                    </td>
-                    <td style="background-color:#7917">NA</td>
-                    <td style="background-color:#791717">Covaxin<p><a>Age 18+</a></p></td>
-                </tr>
-                <tr>
-                    <td>Adhoni Govt Hospital,Adhoni <sup>FREE</sup><br><i>Kurnool
-                            mandal,kurnool,pincode:518132,cell:70080134053,</i></td>
-                    <td style="background-color:#791717">Covi-shield<p><a>Age 45+</a></p>
-                    </td>
-                    <td style="background-color:#791717">Covi-shield<p><a>Age 45+</a></p>
-                    </td>
-                    <td style="background-color:#7917">NA</td>
-                    <td style="background-color:#791717">Covi-shield<p><a>Age 18+</a></p>
-                    </td>
-                    <td style="background-color:#791717">Covaxin<p><a>Age 45+</a></p>
-                    </td>
-                    <td style="background-color:#7917">NA</td>
-                </tr>
-                <tr>
-                    <td>KGH Govt Hospital,Kurnool <sup>FREE</sup><br><i>Kurnool
-                            mandal,kurnool,pincode:518132,cell:7480134053,</i></td>
-                    <td style="background-color:#7917">NA</td>
-                    <td style="background-color:#791717">Covi-shield<p><a>Age 45+</a></p>
-                    </td>
-                    <td style="background-color:#7917">NA</td>
-                    <td style="background-color:#7917">NA</td>
-                    <td style="background-color:#7917">NA</td>
-                    <td style="background-color:#791717">Covaxin<p><a>Age 18+</a></p>
-                    </td>
-
-                </tr>
-                <tr>
-                    <td>SSB Govt Hospital,Kurnool <sup>PAID</sup><br><i>Kurnool
-                            mandal,kurnool,pincode:518132,cell:7480134053,</i></td>
-                    <td style="background-color:#7917">NA</td>
-                    <td style="background-color:#791717">Covi-shield<p><a>Age 45+</a></p>
-                    </td>
-                    <td style="background-color:#7917">NA</td>
-                    <td style="background-color:#7917">NA</td>
-                    <td style="background-color:#7917">NA</td>
-                    <td style="background-color:#791717">Covaxin<p><a>Age 18+</a></p>
-                    </td>
-
-                </tr>
-            </table>
         </div>
     </section>
 
@@ -484,11 +510,11 @@
                     <li>
                         <a href="#">About us</a>
                     </li>
+                    <li>
+                        <a href="#">Contact us</a>
+                    </li>
                 </ul>
             </nav>
-        </div>
-        <div class="flex-cc" >
-            <span class="flex-cc">Important Contacts:</span>
         </div>
     </footer>
 
