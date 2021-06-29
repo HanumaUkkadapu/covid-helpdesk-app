@@ -511,7 +511,7 @@ body > section {
 
 /* filters */
 .frm_filtr{
-    background-color: #7EA8E6;
+    background-color: #7199ff;
     padding: 10px;
     text-align: center;
 }
@@ -536,7 +536,119 @@ body > section {
 }
 
 
-/* filters */
+.card {
+	margin: 6px 0;
+	padding: 6px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+
+#hospitalData {
+	width: 100%;
+	flex-flow: column nowrap;
+	align-items: stretch;
+}
+.hospitalItem {
+    margin: 0;
+	padding: 0;
+	background: #fff;
+
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: stretch;
+}
+.hospitalItem ul.noBullets {
+	margin: 0;
+}
+
+.hospitalItem > * {
+	padding: 8px;
+}
+
+.hospitalDetails {
+	width: 60%;
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+	border-bottom: none;
+}
+.hospitalDetails > ul.noBullets {
+	align-items: flex-start;
+}
+.hospitalDetails > ul.noBullets li {
+	margin: 3px 4px;
+}
+
+li.hspNameLi {
+	align-self: stretch;
+	justify-content: space-between;
+}
+li.hspNameLi h4 {
+	margin: 0;
+	margin: 4px 0;
+	font-size: 24px;
+}
+li.hspChargesLi {
+	background: var(--alicia-blue);
+	margin-bottom: 6px;
+	padding: 4px 8px;
+	border-radius: 4px;
+}
+li.hspPhoneLi .phoneUl {
+	align-items: stretch;
+}
+li.hspPhoneLi .phoneUl li {
+	margin: 0 8px;
+}
+li.hspPhoneLi .phoneUl li:first-child {
+	margin-left: 0;
+}
+li.hspPhoneLi .phoneUl li.vertLine {
+	margin: 0;
+	width: 1px;
+	background: #222;
+}
+li.hspPhoneLi .phoneUl li:last-child {
+	margin-right: 0;
+}
+li.hspAddressLi {
+	font-size: 14px;
+}
+
+a.hspDetailsLink {
+	--dim: 36px;
+	height: var(--dim);
+	padding: 0 16px;
+	margin-left: 4px;
+	color: white;
+	background: var(--usafa-blue);
+	border-radius: calc(var(--dim) / 2);
+	font-size: 12px;
+	text-decoration: none;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: start;
+	flex: 0 0 auto;
+}
+a.hspDetailsLink:hover{
+	text-decoration: underline;
+}
+
+.bedData {
+	width: 40%;
+	background: var(--alicia-blue);
+	justify-content: center;
+	align-items: stretch;
+}
+.bedData > ul.noBullets {
+    margin: 3px 0;
+	justify-content: space-around;
+	align-items: stretch;
+}
+.bedData > ul.noBullets > li {
+	width: 25%;
+	text-align: center;
+}
 
 
 /*** Siva * END ***********************/
@@ -656,6 +768,46 @@ footer div span i.fa-heart{
 
 /*** Media Queries ***************************************/
 
+@media(max-width: 1024px){
+
+    .hospitalDetails {
+		width: 57%;
+	}
+	.bedData {
+		width: 43%;
+	}
+    li.hspNameLi h4 {
+        font-size: 22px;
+    }
+    li.hspChargesLi,
+    li.hspPhoneLi .phoneUl li {
+        font-size: 14px;
+    }
+    .bedData > ul.noBullets > li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 960px) {
+	.hospitalDetails {
+		width: 55%;
+	}
+	.bedData {
+		width: 45%;
+	}
+}
+
+@media(max-width: 900px){
+
+    li.hspNameLi h4 {
+        font-size: 20px;
+    }
+    .bedData > ul.noBullets > li,
+    li.hspAddressL{
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 768px){
 
     .tabBtn{
@@ -666,15 +818,15 @@ footer div span i.fa-heart{
     }
 
     /* siva */
-    .total_hospitals_list td,
-    .total_hospitals_list th {
-        padding: 8px 10px;
-        font-size: 14px;
+    .total_hospitals_list{
+        width: 100%;
+    }
+    .total_hospitals_list td, .total_hospitals_list th{
+        font-size: 12px;
+        padding: 5px;
     }
     
-    /* siva */
 }
-
 
 @media (max-width: 700px) {
 
@@ -727,6 +879,40 @@ footer div span i.fa-heart{
         width: 100%;
     }
     
+    /*** Siva ******************/
+
+    .hospitalData {
+		align-items: stretch;
+	}
+	.hospitalItem {
+        border-radius: 4px;
+        margin: 4px 0;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: stretch;
+	}
+	.hospitalDetails {
+		width: 100%;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+		border-right: none;
+	}
+	.bedData {
+		width: 100%;
+	}
+    .bedData li, li.hspAddressLi, .phoneUl a{
+        font-size: 12px;
+    }
+    .hspChargesLi{
+        font-size: 14px;
+    }
+    li.hspNameLi h4{
+        font-size: 20px;
+    }
+    a.hspDetailsLink{
+        padding: 0px 10px;
+        font-size: 12px;
+    }
+
 }
 
 /***************************************/
@@ -785,15 +971,6 @@ footer div span i.fa-heart{
     .tabContentWrapper > section{
         width: 92vw;
     }
-    
-    
-    /* siva */
-    .total_hospitals_list td,
-    .total_hospitals_list th {
-        font-size: 12px;
-    }
-    /* siva */
-
   
     footer > div.flex-cc{
         flex-flow: column nowrap;
@@ -838,6 +1015,7 @@ footer div span i.fa-heart{
 
     .tabBtn{
         font-size: 13px;
+        padding: 6px 12px;
     }
     .tabBtn .material-icons{
         font-size: 16px;
