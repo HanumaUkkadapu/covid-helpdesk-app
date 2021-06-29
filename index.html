@@ -65,47 +65,55 @@
     <!------------- Hanuma ----------------->
 
     <section id="searchSection" class="flex-cc col">
-        <div class="flex-cc" id="selectWrapper">
-            <select name="districtSelect" id="distSel">
-                <option disabled selected>Select your district</option>
-                <option value="Anantapur">Anantapur</option>
-                <option value="Chittoor">Chittoor</option>
-                <option value="East godavari">East Godavari</option>
-                <option value="Guntur">Guntur</option>
-                <option value="Krishna">Krishna</option>
-                <option value="Kurnool">Kurnool</option>
-                <option value="Prakasam">Prakasam</option>
-                <option value="Spsr nellore">Spsr Nellore</option>
-                <option value="Srikakulam">Srikakulam</option>
-                <option value="Visakhapatanam">Visakhapatanam</option>
-                <option value="Vizianagaram">Vizianagaram</option>
-                <option value="West godavari">West Godavari</option>
-                <option value="Y.s.r.">YSR District, Kadapa</option>
-            </select>
-            <span class="flex-cc">OR</span>
-            <button id="locateMeBtn" class="flex-cc">
-                <span>Locate Me</span>
-                <span class="material-icons">my_location</span>
-            </button>
-        </div>
-        <div class="flex-cc col" id="typeChkWrapper">
-            <span class="flex-cc">Search near by</span>
-            <div class="flex-cc">
-                <label>
-                    <input type="checkbox" name="medChk">
-                    Medical Stores
-                </label>
-                <label>
-                    <input type="checkbox" name="hspChk">
-                    Hospitals
-                </label>
-                <label>
-                    <input type="checkbox" name="vaccChk">
-                    Vaccination Centres
-                </label>
+        <div id="searchWrapper" class="flex-cc col">
+            <div class="flex-cc" id="selectWrapper">
+                <select name="districtSelect" id="distSel">
+                    <option disabled selected>Select your district</option>
+                    <option value="Anantapur">Anantapur</option>
+                    <option value="Chittoor">Chittoor</option>
+                    <option value="East godavari">East Godavari</option>
+                    <option value="Guntur">Guntur</option>
+                    <option value="Krishna">Krishna</option>
+                    <option value="Kurnool">Kurnool</option>
+                    <option value="Prakasam">Prakasam</option>
+                    <option value="Spsr nellore">Spsr Nellore</option>
+                    <option value="Srikakulam">Srikakulam</option>
+                    <option value="Visakhapatanam">Visakhapatanam</option>
+                    <option value="Vizianagaram">Vizianagaram</option>
+                    <option value="West godavari">West Godavari</option>
+                    <option value="Y.s.r.">YSR District, Kadapa</option>
+                </select>
+                <span class="flex-cc">OR</span>
+                <button id="locateMeBtn" class="flex-cc">
+                    <span>Locate Me</span>
+                    <span class="material-icons">my_location</span>
+                </button>
             </div>
+            <div class="flex-cc col" id="typeChkWrapper">
+                <span class="flex-cc">Search near by</span>
+                <div class="flex-cc">
+                    <label>
+                        <input type="checkbox" name="medChk">
+                        Medical Stores
+                    </label>
+                    <label>
+                        <input type="checkbox" name="hspChk">
+                        Hospitals
+                    </label>
+                    <label>
+                        <input type="checkbox" name="vaccChk">
+                        Vaccination Centres
+                    </label>
+                </div>
+            </div>
+            <button id="searchBtn">SEARCH</button>
         </div>
-        <button id="searchBtn">SEARCH</button>
+        <div id="disclaimer" class="flex-cc">
+            <span class="material-icons icon">warning</span>
+            <span>
+                <strong>Disclaimer</strong>: The data available on this site is not our own. We collect the data from different sites and services. The data we get is usually updated on a daily basis. For any queries or suggestions, contact us <a href="#footerNav">here</a>.
+            </span>
+        </div>
     </section>
 
     <div id="resTabWrapper" class="tabBtnWrapper flex-cc">

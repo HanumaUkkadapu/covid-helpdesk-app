@@ -69,6 +69,8 @@ option {
     padding: 0;
 }
 
+/***** Main Header ****************/
+
 header.flex-cc {
     position: sticky;
     top: 0;
@@ -196,6 +198,8 @@ nav ul li a > *{
     transform: translateX(-14px) translateY(-14px) rotate(-45deg);
 }
 
+/**** Main Header * END *****************/
+
 body > section {
     padding: 80px 0 0 0;
 }
@@ -206,29 +210,32 @@ body > section {
     height: 100vh;
     margin-top: -80px;
     font-size: 18px;
-    align-items: stretch;
-    align-self: center;
+    align-items: center;
+    align-self: stretch;
 }
-#searchSection > * {
+#searchWrapper{
+    align-items: stretch;
+}
+#searchWrapper > * {
     margin: 14px 0;
 }
-#searchSection select,
-#searchSection button,
-#searchSection label {
+#searchWrapper select,
+#searchWrapper button,
+#searchWrapper label {
     height: 60px;
     padding: 12px 18px;
     border-radius: 4px;
 }
-#searchSection select:focus,
-#searchSection button:focus {
+#searchWrapper select:focus,
+#searchWrapper button:focus {
     outline: none;
     box-shadow: 0 0 0 3px var(--rich-black);
 }
-#searchSection select,
-#searchSection label {
+#searchWrapper select,
+#searchWrapper label {
     background: var(--alicia-blue);
 }
-#searchSection button {
+#searchWrapper button {
     transition: background-color 20ms ease-in-out;
 }
 #selectWrapper {
@@ -336,21 +343,30 @@ body > section {
     background-color: var(--royal-blue-dark);
 }
 
+#disclaimer{
+    --mar: 140px;
+    margin: var(--mar) 0 calc( -1 * var(--mar) ) 0;
+    padding: 6px 36px;
+    background-color: var(--med-champagne);
+    font-size: 14px;
+    align-self: stretch;
+    justify-content: flex-start;
+}
+#disclaimer .icon{
+    margin-right: 4px;
+    font-size: 16px;
+}
+
+
 /*** Tab Menu ********************/
 
-#resultSection{
+#resTabWrapper, #resultSection{
     margin: 0 6vw;
-    padding-top: 0;
-    overflow: hidden;
 }
-#resultSection > *{
-    align-self: stretch;
-}
-.tabBtnWrapper{
-    margin: 0 6vw;
+#resTabWrapper{
     padding-top: 90px;
 }
-.tabBtnWrapper div{
+#resTabWrapper div{
     width: 100%;
     background: var(--royal-blue-dark);
 }
@@ -384,10 +400,18 @@ body > section {
     display: none;
 }
 
-.tabBtn .material-icons, .tabBtn i{
+.tabBtn .material-icons{
+    font-size: 22px;
     margin-right: 4px;
 }
 
+#resultSection{
+    padding-top: 0;
+    overflow: hidden;
+}
+#resultSection > *{
+    align-self: stretch;
+}
 .tabContentWrapper{
     height: calc( 100vh - 160px );
     width: calc( 3 * 94vw );
@@ -405,6 +429,7 @@ body > section {
     align-items: center;;
 }
 
+/*** Hanuma * END *********************/
 
 /*** Gayatri *********************/
 
@@ -454,6 +479,8 @@ body > section {
     padding: 4rem 0;
     flex: 1;
 }
+
+/*** Gayatri * END ********************/
 
 /*** Siva ************************/
 
@@ -733,7 +760,7 @@ a.hspDetailsLink {
 }
 
 
-/*** Siva ************************/
+/*** Siva * END ***********************/
 
 /*** Basha ***********************/
 
@@ -845,6 +872,7 @@ footer div span i.fa-heart{
     margin: 0 1px;
 }
 
+/*** Basha * END ********************/
 
 
 /*** Media Queries ***************************************/
@@ -853,6 +881,9 @@ footer div span i.fa-heart{
 
     .tabBtn{
         font-size: 16px;
+    }
+    .tabBtn .material-icons{
+        font-size: 20px;
     }
 
     /* siva */
@@ -867,6 +898,61 @@ footer div span i.fa-heart{
     /* siva */
 }
 
+
+@media (max-width: 700px) {
+
+    /*** Hanuma **********************/
+
+    #searchSection{
+        margin-top: -80px;
+    }
+    #searchWrapper {
+        margin: 0 10vw;
+        align-self: stretch;
+    }
+    #searchWrapper > * {
+        margin: 8px 0;
+    }
+    #selectWrapper,
+    #typeChkWrapper > div {
+        flex-flow: column nowrap;
+        align-items: stretch;
+    }
+    #selectWrapper > * {
+        margin: 6px 0;
+    }
+    #distSel,
+    #locateMeBtn {
+        width: auto;
+    }
+
+    #typeChkWrapper {
+        align-items: stretch;
+    }
+    #typeChkWrapper label {
+        margin: 0;
+        margin: 4px 0;
+    }
+    #disclaimer{
+        --mar: 30px;
+        padding: 6px 24px;
+    }
+
+    /*** Gayatri ****************/
+
+    .medcontainer {
+        flex-flow: column nowrap;
+    }
+    .storecontainerL {
+        max-height: 240px;
+    }
+    .storecontainerL img {
+        width: 100%;
+    }
+    
+}
+
+/***************************************/
 
 @media (max-width: 600px) {
 
@@ -908,6 +994,22 @@ footer div span i.fa-heart{
         display: flex;
     }
 
+    #disclaimer{
+        --mar: 28px;
+        font-size: 12px;
+    }
+    #disclaimer .icon{
+        font-size: 14px;
+    }
+
+    #resTabWrapper, #resultSection{
+        margin: 0 4vw;
+    }
+    .tabContentWrapper > section{
+        width: 92vw;
+    }
+    
+    
     /* siva */
     @media (max-width: 1080px) {
 	.hospitalDetails {
@@ -972,51 +1074,45 @@ footer div span i.fa-heart{
     #footerNav ul{
         margin: 0;
         margin-top: 4px;
-
     }
 
 }
 
-/*** Hanuma **********************/
+@media (max-width: 520px){
 
-@media (max-width: 700px) {
-    #searchSection {
-        margin: 0 10vw;
-        margin-top: -80px;
-        align-self: stretch;
-    }
-    #searchSection > * {
-        margin: 8px 0;
-    }
-    #selectWrapper,
-    #typeChkWrapper > div {
-        flex-flow: column nowrap;
-        align-items: stretch;
-    }
-    #selectWrapper > * {
-        margin: 6px 0;
+    #searchSection{
+        font-size: 16px;
     }
     #distSel,
-    #locateMeBtn {
-        width: auto;
+    #locateMeBtn{
+        font-size: 16px;
+    }
+    #searchBtn {
+        font-size: 26px;
     }
 
-    #typeChkWrapper {
-        align-items: stretch;
+    .tabBtn{
+        font-size: 14px;
     }
-    #typeChkWrapper label {
-        margin: 0;
-        margin: 4px 0;
+    .tabBtn .material-icons{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 440px){
+
+    #searchBtn {
+        font-size: 24px;
     }
 
-    /*** Gayatri ******/
-    .medcontainer {
-        flex-flow: column nowrap;
+    .tabBtn{
+        font-size: 13px;
     }
-    .storecontainerL {
-        max-height: 240px;
+    .tabBtn .material-icons{
+        font-size: 16px;
     }
-    .storecontainerL img {
-        width: 100%;
+
+    footer, footer div span{
+        font-size: 14px;
     }
 }
