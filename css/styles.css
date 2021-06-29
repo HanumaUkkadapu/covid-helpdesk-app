@@ -511,6 +511,227 @@ body > section {
 
 /* filters */
 
+.flex-cc {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+.col {
+	flex-flow: column nowrap;
+}
+html,
+body {
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+body.col{
+	align-items: stretch;
+}
+body,
+div,
+a,
+button {
+	font-family: sans-serif;
+	font-size: 16px;
+}
+a {
+	text-decoration: none;
+}
+button {
+	background: none;
+	border: none;
+}
+ul.noBullets {
+	list-style-type: none;
+	padding: 0;
+}
+.card {
+	margin: 6px 0;
+	padding: 6px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+/*
+body * {
+	background: rgba(0, 0, 0, 0.07);
+}*/
+
+header {
+	position: sticky;
+	top: 0;
+	height: 60px;
+	background: blue;
+	z-index: 101;
+}
+header nav a {
+	color: white;
+}
+
+section {
+	padding: 8px;
+	padding-top: 68px;
+	margin: 8px 0;
+}
+
+section h3 {
+	width: 100%;
+	background: none;
+	border: 1px solid #222;
+	border-radius: 4px;
+	padding: 8px 16px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.filters {
+	padding: 6px 6px;
+	margin: 4px 0;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	justify-content: space-between;
+	align-items: stretch;
+}
+.filters ul.noBullets {
+	padding: 0;
+	margin: 0;
+	flex-flow: row wrap;
+}
+.filters ul.noBullets li {
+	margin: 6px 4px;
+	padding: 0;
+}
+.filters ul li label {
+	cursor: pointer;
+	user-select: none;
+	background: rgba(0, 120, 255, 0.2);
+	padding: 4px 8px;
+	border: 2px solid transparent;
+	border-radius: 4px;
+}
+.filters ul li label.selected {
+	border-color: blue;
+}
+.filters ul li label input {
+	margin: 0;
+	margin-right: 6px;
+}
+.filterBtn {
+	cursor: pointer;
+	padding: 0 12px;
+	color: white;
+	background: blue;
+	border-radius: 4px;
+}
+
+#hospitalData {
+	width: 100%;
+	padding: 8px 16px;
+	background: rgba(0, 0, 250, 0.06);
+	flex-flow: column nowrap;
+	align-items: stretch;
+}
+.hospitalItem {
+	padding: 0;
+	background: #fff;
+
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: stretch;
+}
+.hospitalItem ul.noBullets {
+	margin: 0;
+}
+
+.hospitalItem > * {
+	padding: 8px;
+}
+
+.hospitalDetails {
+	position: relative;
+	width: 60%;
+	border-right: 1px solid rgba(0, 0, 0, 0.2);
+	border-bottom: none;
+}
+.hospitalDetails > ul.noBullets {
+	align-items: flex-start;
+}
+.hospitalDetails > ul.noBullets li {
+	margin: 3px 4px;
+}
+
+li.hspNameLi {
+	align-self: stretch;
+	justify-content: space-between;
+}
+li.hspNameLi h4 {
+	margin: 0;
+	margin: 4px 0;
+	font-size: 24px;
+}
+li.hspChargesLi {
+	background: rgba(0, 120, 255, 0.2);
+	margin-bottom: 6px;
+	padding: 4px 8px;
+	border-radius: 4px;
+}
+li.hspPhoneLi .phoneUl {
+	align-items: stretch;
+}
+li.hspPhoneLi .phoneUl li {
+	margin: 0 8px;
+}
+li.hspPhoneLi .phoneUl li:first-child {
+	margin-left: 0;
+}
+li.hspPhoneLi .phoneUl li.vertLine {
+	margin: 0;
+	width: 1px;
+	background: #222;
+}
+li.hspPhoneLi .phoneUl li:last-child {
+	margin-right: 0;
+}
+li.hspAddressLi {
+	font-size: 14px;
+}
+
+a.hspDetailsLink {
+	--dim: 36px;
+	height: var(--dim);
+	width: 110px;
+	padding: 0 16px;
+	margin-left: 4px;
+	color: white;
+	background: blue;
+	border-radius: calc(var(--dim) / 2);
+	font-size: 12px;
+	text-decoration: underline;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: start;
+	flex: 0 0 auto;
+}
+
+.bedData {
+	width: 40%;
+	background: #e0f0f8;
+	justify-content: center;
+	align-items: stretch;
+}
+.bedData > ul.noBullets {
+	justify-content: space-around;
+	align-items: stretch;
+}
+.bedData > ul.noBullets > li {
+	width: 25%;
+	text-align: center;
+}
+
 
 /*** Siva ************************/
 
@@ -635,11 +856,13 @@ footer div span i.fa-heart{
     }
 
     /* siva */
-    .total_hospitals_list td,
-    .total_hospitals_list th {
-        padding: 8px 10px;
-        font-size: 14px;
+    .total_hospitals_list{
+        width: 100%;
     }
+.total_hospitals_list td, .total_hospitals_list th{
+    font-size: 10px;
+    padding: 5px;
+}
     
     /* siva */
 }
@@ -686,16 +909,56 @@ footer div span i.fa-heart{
     }
 
     /* siva */
-    .total_hospitals_list td,
-    .total_hospitals_list th {
-        padding: 8px 10px;
-        border: 1px solid #ddd;
-        text-align: center;
-        font-size: 10px;
+    @media (max-width: 1080px) {
+	.hospitalDetails {
+		width: 57%;
+	}
+	.bedData {
+		width: 43%;
+	}
+}
+
+@media (max-width: 960px) {
+	.hospitalDetails {
+		width: 55%;
+	}
+	.bedData {
+		width: 45%;
+	}
+}
+   @media (max-width: 720px) {
+	.hospitalData {
+		align-items: stretch;
+	}
+	.hospitalItem {
+		position: relative;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: stretch;
+	}
+	.hospitalDetails {
+		width: 100%;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+		border-right: none;
+	}
+	.bedData {
+		width: 100%;
+	}
+    .bedData li, li.hspAddressLi, .phoneUl a{
+        font-size: 12px;
     }
-    .total_hospitals_list{
-        width: 100%;
+    .hspChargesLi{
+        font-size: 14px;
     }
+   li.hspNameLi h4{
+        font-size: 20px;
+    }
+    a.hspDetailsLink{
+        padding: 0px 10px;
+        font-size: 12px;
+        width: 100px;
+    }
+}
     /* siva */
 
   
