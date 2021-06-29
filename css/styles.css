@@ -583,7 +583,10 @@ section {
         padding: 8px 10px;
         border: 1px solid #ddd;
         text-align: center;
-        font-size: 12px;
+        font-size: 10px;
+    }
+    .total_hospitals_list{
+        width: 100%;
     }
     /* siva */
 }
