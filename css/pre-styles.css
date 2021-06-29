@@ -223,6 +223,21 @@ table td {
     padding: 8px;
 }
 
+.sources{
+    margin-top: 8px;
+    padding: 4px;
+    background-color: var(--med-champagne);
+    justify-content: flex-start;
+    align-items: center;
+}
+.sources .icon{
+    margin-right: 4px;
+    font-size: 20px;
+}
+.sources a{
+    margin: 0 6px;  
+}
+
 .awareness{
 	margin: 24px 0;
 	justify-content: space-between;
@@ -339,6 +354,17 @@ footer div span i.fa-heart{
 	}
 
 	/****** Pre-only ***************/
+
+    body, footer div span{
+        font-size: 16px;
+    }
+    .guidelines h2{
+        font-size: 24px;
+    }
+    .awareness h2, .awareness select {
+        font-size: 18px;
+    }
+
 	.img_pre {
 		width: 48%;
 	}
@@ -357,4 +383,28 @@ footer div span i.fa-heart{
 
     }
 
+}
+
+/****** Pre-Only ******************/
+@media (max-width: 440px){
+
+    body, footer div span{
+        font-size: 14px;
+    }
+    .guidelines h2{
+        font-size: 20px;
+    }
+    .awareness h2, .awareness select {
+        font-size: 16px;
+    }
+
+    .img_pre {
+		width: 85%;
+	}
+}
+
+@media (max-width: 360px){
+    .img_pre {
+		width: 90%;
+	}
 }
