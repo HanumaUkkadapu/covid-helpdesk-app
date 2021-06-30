@@ -426,7 +426,7 @@ body > section {
     padding: 16px;
     overflow-y: scroll;
     justify-content: flex-start;
-    align-items: center;
+    align-items: stretch;
 }
 
 /*** Hanuma * END *********************/
@@ -654,23 +654,6 @@ a.hspDetailsLink:hover {
 /*** Siva * END ***********************/
 
 /*** Basha ***********************/
-#vaccCentreTabContainer section {
-    padding: 8px;
-    padding-top: 68px;
-    margin: 8px 0;
-}
-
-#vaccCentreTabContainer section h3 {
-    width: 100%;
-    background: none;
-    border: 1px solid #222;
-    border-radius: 4px;
-    padding: 8px 16px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .filters {
     padding: 8px;
@@ -734,11 +717,13 @@ a.hspDetailsLink:hover {
 }
 
 .vaccCentreDetails {
-    width: 40%;
+    width: 55%;
     border-right: 1px solid rgba(0, 0, 0, 0.2);
     border-bottom: none;
 }
 .vaccCentreDetails > ul.noBullets {
+    height: 100%;
+    justify-content: space-evenly;
     align-items: flex-start;
 }
 .vaccCentreDetails > ul.noBullets li {
@@ -760,7 +745,7 @@ li.vcChargesLi {
 li.vcChargesLi span {
     background-color: rgba(0, 120, 255, 0.2);
     margin: 2px 1px;
-    padding: 4px 8px;
+    padding: 3px 6px;
     border-radius: 3px;
     text-align: center;
 }
@@ -782,7 +767,6 @@ li.vcChargesLi span.free {
 li.vcChargesLi span.vacc {
     background-color: #5ab;
 }
-
 li.vcChargesLi span.age {
     background-color: yellow;
 }
@@ -809,7 +793,7 @@ li.vcAddressLi {
 }
 
 .vaccData {
-    width: 60%;
+    width: 55%;
     background: var(--alicia-blue);
     justify-content: center;
     align-items: stretch;
@@ -825,7 +809,8 @@ li.vcAddressLi {
 .vaccDataTable td span{
     display: inline-block;
     width: 100%;
-    padding: 1px;
+    max-width: 100px;
+    padding: 3px 0;
     background-color: #999;
 }
 .vaccDataTable td span.booked{
