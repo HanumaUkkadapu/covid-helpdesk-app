@@ -435,6 +435,7 @@ body > section {
 
 #medStoreTabContainer.col {
     align-items: stretch;
+    background: lightblue;
 }
 .medcontainer {
     display: flex;
@@ -445,6 +446,7 @@ body > section {
 }
 .medStoreHead {
     text-align: center;
+    
 }
 .storecontainerL {
     max-height: 360px;
@@ -454,32 +456,34 @@ body > section {
     align-items: center;
 }
 .storecontainerL img {
-    max-width: 100%;
+    max-width: 50%;
+    height: 150px;
 }
 .storecontainerR {
     padding: 0 30px;
-    font-size: 20px;
+    font-size: 14px;
+    flex-wrap: wrap;
 }
-.storecontainerR h3 {
-    color: green;
+.storecontainerR h6 {
+    color:green;
 }
 .storecontainerL span {
     text-align: left;
 }
-.storecontainerL .location img {
-    height: 24px;
+.storecontainerL{
+    border: 1px solid rgba(0, 0, 0, 0.7);
 }
-.storecontainerL .phone img {
-    height: 24px;
+.container{
+    padding: 3em;
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
-.storecontainerL .clock img {
-    height: 24px;
+.med{
+    padding: 2em;
+    border-radius: .1em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
-.text-center .btn-wrapper {
-    padding: 4rem 0;
-    flex: 1;
-}
-
 /*** Gayatri * END ********************/
 
 /*** Siva ************************/
