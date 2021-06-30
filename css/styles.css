@@ -14,16 +14,16 @@
 * {
     box-sizing: border-box;
     /*****/
-    scrollbar-width: thin;/*8px*/
+    scrollbar-width: thin; /*8px*/
     scrollbar-color: var(--blue-crayola) var(--alicia-blue);
 }
-*::-webkit-scrollbar{
+*::-webkit-scrollbar {
     width: 8px;
 }
-*::-webkit-scrollbar-track{
+*::-webkit-scrollbar-track {
     background-color: var(--alicia-blue);
 }
-*::-webkit-scrollbar-thumb{
+*::-webkit-scrollbar-thumb {
     background-color: var(--blue-crayola);
 }
 .flex-cc {
@@ -148,7 +148,7 @@ nav ul li a:focus {
     outline: none;
     border-color: var(--acc-clr);
 }
-nav ul li a > *{
+nav ul li a > * {
     margin-left: 4px;
 }
 
@@ -213,7 +213,7 @@ body > section {
     align-items: center;
     align-self: stretch;
 }
-#searchWrapper{
+#searchWrapper {
     align-items: stretch;
 }
 #searchWrapper > * {
@@ -260,7 +260,7 @@ body > section {
     justify-content: space-between;
     align-items: center;
 }
-#locateMeBtn:hover{
+#locateMeBtn:hover {
     background-color: #7199ff;
 }
 #locateMeBtn:focus {
@@ -333,7 +333,7 @@ body > section {
     font-size: 30px;
     font-weight: 700;
 }
-#searchBtn:hover{
+#searchBtn:hover {
     background-color: #3373b1;
 }
 #searchBtn:focus {
@@ -343,34 +343,34 @@ body > section {
     background-color: var(--royal-blue-dark);
 }
 
-#disclaimer{
+#disclaimer {
     --mar: 140px;
-    margin: var(--mar) 0 calc( -1 * var(--mar) ) 0;
+    margin: var(--mar) 0 calc(-1 * var(--mar)) 0;
     padding: 6px 36px;
     background-color: var(--med-champagne);
     font-size: 14px;
     align-self: stretch;
     justify-content: flex-start;
 }
-#disclaimer .icon{
+#disclaimer .icon {
     margin-right: 4px;
     font-size: 16px;
 }
 
-
 /*** Tab Menu ********************/
 
-#resTabWrapper, #resultSection{
+#resTabWrapper,
+#resultSection {
     margin: 0 6vw;
 }
-#resTabWrapper{
+#resTabWrapper {
     padding-top: 90px;
 }
-#resTabWrapper div{
+#resTabWrapper div {
     width: 100%;
     background: var(--royal-blue-dark);
 }
-.tabBtn{
+.tabBtn {
     user-select: none;
     width: 33%;
     height: 60px;
@@ -380,53 +380,53 @@ body > section {
     color: black;
     background-color: var(--alicia-blue);
     font-size: 18px;
-    
+
     flex: 2 1 auto;
     align-items: center;
 }
-.tabBtn:first-child{
+.tabBtn:first-child {
     margin-left: 0;
 }
-.tabBtn:last-child{
+.tabBtn:last-child {
     margin-right: 0;
 }
-.tabBtn.active{
+.tabBtn.active {
     color: white;
     background-color: var(--usafa-blue);
     font-weight: bold;
 }
 
-.tabBtn input{
+.tabBtn input {
     display: none;
 }
 
-.tabBtn .material-icons{
+.tabBtn .material-icons {
     font-size: 22px;
     margin-right: 4px;
 }
 
-#resultSection{
+#resultSection {
     padding-top: 0;
     overflow: hidden;
 }
-#resultSection > *{
+#resultSection > * {
     align-self: stretch;
 }
-.tabContentWrapper{
-    height: calc( 100vh - 160px );
-    width: calc( 3 * 94vw );
+.tabContentWrapper {
+    height: calc(100vh - 160px);
+    width: calc(3 * 94vw);
     background-color: var(--alicia-blue);
     border: none;
     overflow: hidden;
     justify-content: flex-start;
 }
-.tabContentWrapper > section{
+.tabContentWrapper > section {
     height: 100%;
     width: 88vw;
     padding: 16px;
     overflow-y: scroll;
     justify-content: flex-start;
-    align-items: center;;
+    align-items: center;
 }
 
 /*** Hanuma * END *********************/
@@ -484,7 +484,7 @@ body > section {
 
 /*** Siva ************************/
 
-#hospitalTabContainer .container{
+#hospitalTabContainer .container {
     align-items: stretch;
 }
 
@@ -504,152 +504,152 @@ body > section {
 .total_hospitals_list td,
 .total_hospitals_list th {
     padding: 12px 15px;
-    border: 1px solid rgba(0,0,0,0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
     text-align: center;
     font-size: 16px;
 }
 
 /* filters */
-.frm_filtr{
+.frm_filtr {
     background-color: #7199ff;
     padding: 10px;
     text-align: center;
 }
-#Hsp_type, .sbt_btn{
+#Hsp_type,
+.sbt_btn {
     background-color: #fff;
     padding: 3px;
     border: 1px solid rgb(85, 83, 83);
 }
 
-.frm_filtr button{
+.frm_filtr button {
     background: #fff;
     padding: 3px;
     border: 1px solid rgb(85, 83, 83);
 }
-.total_hospitals_list p{
+.total_hospitals_list p {
     margin: 0px auto;
 }
-.frm_filtr select{
+.frm_filtr select {
     background-color: #fff;
     padding: 3px;
     border: 1px solid rgb(85, 83, 83);
 }
 
-
 .card {
-	margin: 6px 0;
-	padding: 6px;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	border-radius: 4px;
+    margin: 6px 0;
+    padding: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 #hospitalData {
-	width: 100%;
-	flex-flow: column nowrap;
-	align-items: stretch;
+    width: 100%;
+    flex-flow: column nowrap;
+    align-items: stretch;
 }
 .hospitalItem {
-    margin: 0;
-	padding: 0;
-	background: #fff;
+    margin: 4px 0;
+    padding: 0;
+    background: #fff;
 
-	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: stretch;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
 }
 .hospitalItem ul.noBullets {
-	margin: 0;
+    margin: 0;
 }
 
 .hospitalItem > * {
-	padding: 8px;
+    padding: 8px;
 }
 
 .hospitalDetails {
-	width: 60%;
-	border-right: 1px solid rgba(0, 0, 0, 0.2);
-	border-bottom: none;
+    width: 60%;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: none;
 }
 .hospitalDetails > ul.noBullets {
-	align-items: flex-start;
+    align-items: flex-start;
 }
 .hospitalDetails > ul.noBullets li {
-	margin: 3px 4px;
+    margin: 3px 4px;
 }
 
 li.hspNameLi {
-	align-self: stretch;
-	justify-content: space-between;
+    align-self: stretch;
+    justify-content: space-between;
 }
 li.hspNameLi h4 {
-	margin: 0;
-	margin: 4px 0;
-	font-size: 24px;
+    margin: 0;
+    margin: 4px 0;
+    font-size: 24px;
 }
 li.hspChargesLi {
-	background: var(--alicia-blue);
-	margin-bottom: 6px;
-	padding: 4px 8px;
-	border-radius: 4px;
+    background: var(--alicia-blue);
+    margin-bottom: 6px;
+    padding: 4px 8px;
+    border-radius: 4px;
 }
 li.hspPhoneLi .phoneUl {
-	align-items: stretch;
+    align-items: stretch;
 }
 li.hspPhoneLi .phoneUl li {
-	margin: 0 8px;
+    margin: 0 8px;
 }
 li.hspPhoneLi .phoneUl li:first-child {
-	margin-left: 0;
+    margin-left: 0;
 }
 li.hspPhoneLi .phoneUl li.vertLine {
-	margin: 0;
-	width: 1px;
-	background: #222;
+    margin: 0;
+    width: 1px;
+    background: #222;
 }
 li.hspPhoneLi .phoneUl li:last-child {
-	margin-right: 0;
+    margin-right: 0;
 }
 li.hspAddressLi {
-	font-size: 14px;
+    font-size: 14px;
 }
 
 a.hspDetailsLink {
-	--dim: 36px;
-	height: var(--dim);
-	padding: 0 16px;
-	margin-left: 4px;
-	color: white;
-	background: var(--usafa-blue);
-	border-radius: calc(var(--dim) / 2);
-	font-size: 12px;
-	text-decoration: none;
+    --dim: 36px;
+    height: var(--dim);
+    padding: 0 16px;
+    margin-left: 4px;
+    color: white;
+    background: var(--usafa-blue);
+    border-radius: calc(var(--dim) / 2);
+    font-size: 12px;
+    text-decoration: none;
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	align-self: start;
-	flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: start;
+    flex: 0 0 auto;
 }
-a.hspDetailsLink:hover{
-	text-decoration: underline;
+a.hspDetailsLink:hover {
+    text-decoration: underline;
 }
 
 .bedData {
-	width: 40%;
-	background: var(--alicia-blue);
-	justify-content: center;
-	align-items: stretch;
+    width: 40%;
+    background: var(--alicia-blue);
+    justify-content: center;
+    align-items: stretch;
 }
 .bedData > ul.noBullets {
     margin: 3px 0;
-	justify-content: space-around;
-	align-items: stretch;
+    justify-content: space-around;
+    align-items: stretch;
 }
 .bedData > ul.noBullets > li {
-	width: 25%;
-	text-align: center;
+    width: 25%;
+    text-align: center;
 }
-
 
 /*** Siva * END ***********************/
 
@@ -673,13 +673,12 @@ a.hspDetailsLink:hover{
 }
 
 .filters {
-    padding: 8px 8px;
+    padding: 8px;
     margin: 4px 0;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     justify-content: space-between;
     align-items: stretch;
-    font-weight: 600;
 }
 .filters ul.noBullets {
     padding: 0;
@@ -687,16 +686,15 @@ a.hspDetailsLink:hover{
     flex-flow: row wrap;
 }
 .filters ul.noBullets li {
-    margin: 6px 4px;
+    margin: 10px 4px;
     padding: 0;
 }
 .filters ul li label {
     cursor: pointer;
     user-select: none;
-    background: rgba(0, 120, 255, 0.2);
-    padding: 8px 10px;
-    border: 2px solid transparent;
-    border-radius: 16px;
+    border: 2px solid #7199ff;
+    border-radius: 32px;
+    padding: 6px 12px;
 }
 .filters ul li label.selected {
     border-color: blue;
@@ -711,27 +709,21 @@ a.hspDetailsLink:hover{
     color: white;
     background: blue;
     border-radius: 4px;
-    
 }
 
 #vaccCentreData {
     width: 100%;
-    padding: 8px 16px;
-    background: rgba(0, 0, 250, 0.06);
     flex-flow: column nowrap;
     align-items: stretch;
-    border: 1px solid black;
-    border-radius: 10px;
-
 }
 .vaccCentreItem {
+    margin: 4px 0;
     padding: 0;
     background: #fff;
 
     flex-flow: row nowrap;
     justify-content: center;
     align-items: stretch;
-
 }
 .vaccCentreItem ul.noBullets {
     margin: 0;
@@ -753,11 +745,9 @@ a.hspDetailsLink:hover{
     margin: 3px 4px;
 }
 
-
 li.vcNameLi {
     align-self: stretch;
     justify-content: space-between;
-
 }
 li.vcNameLi h4 {
     margin: 0;
@@ -767,33 +757,33 @@ li.vcNameLi h4 {
 li.vcChargesLi {
     margin-bottom: 6px;
 }
-li.vcChargesLi span{
+li.vcChargesLi span {
     background-color: rgba(0, 120, 255, 0.2);
     margin: 2px 1px;
     padding: 4px 8px;
     border-radius: 3px;
     text-align: center;
 }
-li.vcChargesLi span:first-child{
+li.vcChargesLi span:first-child {
     margin-left: 0;
     text-align: center;
 }
-li.vcChargesLi span:last-child{
+li.vcChargesLi span:last-child {
     margin-right: 0;
 }
-li.vcChargesLi span.paid{
+li.vcChargesLi span.paid {
     background-color: brown;
     color: white;
 }
-li.vcChargesLi span.free{
+li.vcChargesLi span.free {
     background-color: green;
     color: white;
 }
-li.vcChargesLi span.vacc{
+li.vcChargesLi span.vacc {
     background-color: #5ab;
 }
 
-li.vcChargesLi span.age{
+li.vcChargesLi span.age {
     background-color: yellow;
 }
 
@@ -817,76 +807,70 @@ li.vcPhoneLi .phoneUl li:last-child {
 li.vcAddressLi {
     font-size: 14px;
 }
-#vaccCentreTabContainer table {
-    border-collapse: separate;
-    text-indent: initial;
-    white-space: normal;
-    line-height: normal;
-    font-weight: normal;
-    font-size: medium;
-    font-style: normal;
-    color: -internal-quirk-inherit;
-    text-align: start;
-    border-spacing: 2px;
-    font-variant: normal;
-    text-align: center;
-    padding: 0 8px;
-
-}
-
 
 .vaccData {
     width: 60%;
-    background: #e0f0f8;
+    background: var(--alicia-blue);
     justify-content: center;
     align-items: stretch;
-
 }
-.vaccData > ul.noBullets {
-    justify-content: space-around;
-    align-items: stretch;
-}
-.vaccData > ul.noBullets > li {
-    width: 25%;
+.vaccDataTable {
     text-align: center;
 }
+.vaccDataTable th,
+.vaccDataTable td {
+    margin: 0;
+    padding: 2px;
+}
+.vaccDataTable td span{
+    display: inline-block;
+    width: 100%;
+    padding: 1px;
+    background-color: #999;
+}
+.vaccDataTable td span.booked{
+    background-color: brown;
+    color: white;
+}
+.vaccDataTable td span.na{
+    background-color: #d6d6d6;
+    color: #666;
+}
 
+/*** Basha * END ********************/
 
-footer.col{
+footer.col {
     padding: 20px;
     margin-top: 80px;
     background-color: var(--mikado-yellow);
     align-items: center;
 }
-footer div span{
+footer div span {
     margin: 8px 0;
 }
-footer div span i.fa-heart{
+footer div span i.fa-heart {
     color: red;
     margin: 0 5px;
 }
 
-#footerNav ul{
+#footerNav ul {
     margin: 0;
     margin-left: 16px;
 }
-#footerNav ul li{
+#footerNav ul li {
     margin: 0 1px;
 }
 
-/*** Basha * END ********************/
-
-
 /*** Media Queries ***************************************/
 
-@media(max-width: 1024px){
+@media (max-width: 1024px) {
 
     .hospitalDetails {
-		width: 57%;
-	}
-	.bedData {
-		width: 43%;
-	}
+        width: 57%;
+    }
+    .bedData {
+        width: 43%;
+    }
     li.hspNameLi h4 {
         font-size: 22px;
     }
@@ -897,69 +881,84 @@ footer div span i.fa-heart{
     .bedData > ul.noBullets > li {
         font-size: 14px;
     }
-}
-@media (max-width: 1080px) {
-    .vaccCentreDetails {
-        width: 43%;
+
+    li.vcNameLi h4{
+        font-size: 22px;
     }
-    .vaccData {
-        width: 57%;
+    #vaccCentreTabContainer .filters,
+    li.vcChargesLi,
+    li.vcPhoneLi .phoneUl li,
+    .vaccDataTable {
+        font-size: 14px;
     }
+
 }
 
+
 @media (max-width: 960px) {
-	.hospitalDetails {
-		width: 55%;
-	}
-	.bedData {
-		width: 45%;
-	}
-}
-@media (max-width: 960px) {
+
+    .hospitalDetails {
+        width: 55%;
+    }
+    .bedData {
+        width: 45%;
+    }
+
     .vaccCentreDetails {
         width: 45%;
     }
     .vaccData {
         width: 55%;
     }
+
 }
 
-@media(max-width: 900px){
-
+@media (max-width: 900px) {
+    
     li.hspNameLi h4 {
         font-size: 20px;
     }
     .bedData > ul.noBullets > li,
-    li.hspAddressL{
+    li.hspAddressLi {
         font-size: 12px;
     }
+
+    li.vcNameLi h4 {
+        font-size: 20px;
+    }
+    #vaccCentreTabContainer .filters,
+    #vcFilterBtn,
+    li.vcAddressLi,
+    .vaccDataTable {
+        font-size: 12px;
+    }
+
 }
 
-@media (max-width: 768px){
-
-    .tabBtn{
+@media (max-width: 768px) {
+    .tabBtn {
         font-size: 16px;
     }
-    .tabBtn .material-icons{
+    .tabBtn .material-icons {
         font-size: 20px;
     }
 
     /* siva */
-    .total_hospitals_list{
+    .total_hospitals_list {
         width: 100%;
     }
-    .total_hospitals_list td, .total_hospitals_list th{
+    .total_hospitals_list td,
+    .total_hospitals_list th {
         font-size: 12px;
         padding: 5px;
     }
-    
 }
+
 @media (max-width: 720px) {
     .vaccCentreData {
         align-items: stretch;
     }
     .vaccCentreItem {
-        position: relative;
         flex-flow: column nowrap;
         justify-content: center;
         align-items: stretch;
@@ -975,10 +974,9 @@ footer div span i.fa-heart{
 }
 
 @media (max-width: 700px) {
-
     /*** Hanuma **********************/
 
-    #searchSection{
+    #searchSection {
         margin-top: -80px;
     }
     #searchWrapper {
@@ -1008,7 +1006,7 @@ footer div span i.fa-heart{
         margin: 0;
         margin: 4px 0;
     }
-    #disclaimer{
+    #disclaimer {
         --mar: 30px;
         padding: 6px 24px;
     }
@@ -1024,37 +1022,37 @@ footer div span i.fa-heart{
     .storecontainerL img {
         width: 100%;
     }
-    
+
     /*** Siva ******************/
 
     .hospitalData {
-		align-items: stretch;
-	}
-	.hospitalItem {
-        border-radius: 4px;
-        margin: 4px 0;
-		flex-flow: column nowrap;
-		justify-content: center;
-		align-items: stretch;
-	}
-	.hospitalDetails {
-		width: 100%;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-		border-right: none;
-	}
-	.bedData {
-		width: 100%;
-	}
-    .bedData li, li.hspAddressLi, .phoneUl a{
+        align-items: stretch;
+    }
+    .hospitalItem {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+    .hospitalDetails {
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        border-right: none;
+    }
+    .bedData {
+        width: 100%;
+    }
+    .bedData li,
+    li.hspAddressLi,
+    .phoneUl a {
         font-size: 12px;
     }
-    .hspChargesLi{
+    .hspChargesLi {
         font-size: 14px;
     }
-    li.hspNameLi h4{
+    li.hspNameLi h4 {
         font-size: 20px;
     }
-    a.hspDetailsLink{
+    a.hspDetailsLink {
         padding: 0px 10px;
         font-size: 12px;
     }
@@ -1064,7 +1062,6 @@ footer div span i.fa-heart{
 /***************************************/
 
 @media (max-width: 600px) {
-
     #nav_el {
         --w: 100vw;
         --h: 100vh;
@@ -1103,71 +1100,70 @@ footer div span i.fa-heart{
         display: flex;
     }
 
-    #disclaimer{
+    #disclaimer {
         --mar: 28px;
         font-size: 12px;
     }
-    #disclaimer .icon{
+    #disclaimer .icon {
         font-size: 14px;
     }
 
-    #resTabWrapper, #resultSection{
+    #resTabWrapper,
+    #resultSection {
         margin: 0 4vw;
     }
-    .tabContentWrapper > section{
+    .tabContentWrapper > section {
         width: 92vw;
     }
-  
-    footer > div.flex-cc{
+
+    footer > div.flex-cc {
         flex-flow: column nowrap;
         align-items: center;
     }
-    footer div span{
+    footer div span {
         font-size: 16px;
     }
-    #footerNav ul{
+    #footerNav ul {
         margin: 0;
         margin-top: 4px;
     }
-
 }
 
-@media (max-width: 520px){
-
-    #searchSection{
+@media (max-width: 520px) {
+    #searchSection {
         font-size: 16px;
     }
     #distSel,
-    #locateMeBtn{
+    #locateMeBtn {
         font-size: 16px;
     }
     #searchBtn {
         font-size: 26px;
     }
 
-    .tabBtn{
+    .tabBtn {
         font-size: 14px;
     }
-    .tabBtn .material-icons{
+    .tabBtn .material-icons {
         font-size: 18px;
     }
 }
 
-@media (max-width: 440px){
-
+@media (max-width: 440px) {
     #searchBtn {
         font-size: 24px;
     }
 
-    .tabBtn{
+    .tabBtn {
         font-size: 13px;
         padding: 6px 12px;
     }
-    .tabBtn .material-icons{
+    .tabBtn .material-icons {
         font-size: 16px;
     }
 
-    footer, footer div span{
+    footer,
+    footer div span {
         font-size: 14px;
     }
 }
