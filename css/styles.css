@@ -435,55 +435,75 @@ body > section {
 
 #medStoreTabContainer.col {
     align-items: stretch;
-    background: lightblue;
-}
-.medcontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    margin: 0 auto;
 }
 .medStoreHead {
     text-align: center;
-    
 }
-.storecontainerL {
-    max-height: 360px;
+#medStoreTabContainer .container{
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+}
+.med{
+    padding: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.storecontainerL{
+    height: 180px;
+    max-width: 180px;
+    margin-right: 16px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.storecontainerL img {
-    max-width: 50%;
-    height: 150px;
+.storecontainerL img{
+    height: 100%;
 }
 .storecontainerR {
-    padding: 0 30px;
+    height: 100%;
+    width: 50%;
     font-size: 14px;
-    flex-wrap: wrap;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+.storecontainerR > *{
+    margin: 0;
+    margin: 4px 0;
 }
 .storecontainerR h6 {
     color:green;
 }
-.storecontainerL span {
-    text-align: left;
+.storecontainerR > div.flex-cc{
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
-.storecontainerL{
-    border: 1px solid rgba(0, 0, 0, 0.7);
+.storecontainerR div .btn{
+    padding: 8px 16px;
+    color: white;
+    background: var(--usafa-blue);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.container{
-    padding: 3em;
-    display: grid;
-    grid-gap: 2em;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.storecontainerR div .btn .icon{
+    margin-left: 6px;
+    font-size: 14px;
 }
-.med{
-    padding: 2em;
-    border-radius: .1em;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
+
+
 /*** Gayatri * END ********************/
 
 /*** Siva ************************/
@@ -660,90 +680,7 @@ a.hspDetailsLink:hover{
 /*** Basha ***********************/
 
 
-/*** check-box****/
-.dbgOuter {
-    border: solid 3px black;
-    border-radius: 4px;
-    margin: 0 auto;
-    padding: 4px;
-    align-items: center;
-}
-.dbgCont {
-    display: inline-flex;
-    align-items: center;
-    padding: 6px 8px;
-    margin: 4px;
-    color: black;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
-}
-.dbgCheck {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0;
-    margin-right: 8.0px;
-}
-
-.dbgOuter button {
-    color: white;
-    height: 100%;
-    margin-left: 8px;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 4px;
-    background: var(--blue-crayola);
-    font-weight: bold;
-    font-size: 18px;
-}
-#vaccCentreTabContainer p {
-    text-align: center;
-    font-weight: bold;
-    text-decoration: none;
-    align-self: stretch;
-}
-
-#vaccCentreTabContainer table{
-    align-self: stretch;
-}
-#vaccCentreTabContainer table,
-#vaccCentreTabContainer td,
-#vaccCentreTabContainer th {
-    border: 1px solid black;
-    padding: 2px;
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    background-color: #c4c4c4;
-}
-#vaccCentreTabContainer table {
-    border: collapse;
-}
-
-#vaccCentreTabContainer table i {
-    color: #666;
-    font-size: 12px;
-    margin: 5px 0px;
-    display: block;
-}
-#vaccCentreTabContainer table p{
-    font-size: 12px;
-}
-#vaccCentreTabContainer table p a {
-    color: black;
-    text-align: center;
-    text-decoration: underline;
-    color: yellow;
-}
-#vaccCentreTabContainer sup {
-    color: white;
-    font-size: 6pt;
-    border: 1px solid blue;
-    background-color: blue;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
+/*** Basha * END ********************/
 
 footer.col{
     padding: 20px;
@@ -766,8 +703,6 @@ footer div span i.fa-heart{
 #footerNav ul li{
     margin: 0 1px;
 }
-
-/*** Basha * END ********************/
 
 
 /*** Media Queries ***************************************/
@@ -873,15 +808,7 @@ footer div span i.fa-heart{
 
     /*** Gayatri ****************/
 
-    .medcontainer {
-        flex-flow: column nowrap;
-    }
-    .storecontainerL {
-        max-height: 240px;
-    }
-    .storecontainerL img {
-        width: 100%;
-    }
+    
     
     /*** Siva ******************/
 
@@ -976,6 +903,13 @@ footer div span i.fa-heart{
         width: 92vw;
     }
   
+    /*** Gayatri ***********/
+    #medStoreTabContainer .container{
+        grid-gap: 24px;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
+
+
     footer > div.flex-cc{
         flex-flow: column nowrap;
         align-items: center;
@@ -1024,6 +958,31 @@ footer div span i.fa-heart{
     .tabBtn .material-icons{
         font-size: 16px;
     }
+
+
+    .med{
+        flex-flow: column nowrap;
+    }
+    .storecontainerL, .storecontainerR{
+        width: 100%;
+    }
+    .storecontainerL{
+        height: 80px;
+        margin: 0;
+        margin-bottom: 8px;
+        overflow: hidden;
+    }
+    .storecontainerL img{
+        height: auto;
+        width: 100%;
+    }
+    .storecontainerR{
+        height: auto;
+    }
+    .storecontainerR, .storecontainerR div .btn, .storecontainerR div .btn .icon{
+        font-size: 12px;
+    }
+
 
     footer, footer div span{
         font-size: 14px;
