@@ -654,90 +654,201 @@ a.hspDetailsLink:hover{
 /*** Siva * END ***********************/
 
 /*** Basha ***********************/
+#vaccCentreTabContainer section {
+    padding: 8px;
+    padding-top: 68px;
+    margin: 8px 0;
+}
 
-
-/*** check-box****/
-.dbgOuter {
-    border: solid 3px black;
+#vaccCentreTabContainer section h3 {
+    width: 100%;
+    background: none;
+    border: 1px solid #222;
     border-radius: 4px;
-    margin: 0 auto;
-    padding: 4px;
+    padding: 8px 16px;
+
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-.dbgCont {
-    display: inline-flex;
-    align-items: center;
-    padding: 6px 8px;
-    margin: 4px;
-    color: black;
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 3px;
+
+.filters {
+    padding: 8px 8px;
+    margin: 4px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    justify-content: space-between;
+    align-items: stretch;
+    font-weight: 600;
 }
-.dbgCheck {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
+.filters ul.noBullets {
+    padding: 0;
     margin: 0;
-    margin-right: 8.0px;
+    flex-flow: row wrap;
 }
-
-.dbgOuter button {
+.filters ul.noBullets li {
+    margin: 6px 4px;
+    padding: 0;
+}
+.filters ul li label {
+    cursor: pointer;
+    user-select: none;
+    background: rgba(0, 120, 255, 0.2);
+    padding: 8px 10px;
+    border: 2px solid transparent;
+    border-radius: 16px;
+}
+.filters ul li label.selected {
+    border-color: blue;
+}
+.filters ul li label input {
+    margin: 0;
+    margin-right: 6px;
+}
+.filterBtn {
+    cursor: pointer;
+    padding: 0px 12px;
     color: white;
-    height: 100%;
-    margin-left: 8px;
-    padding: 8px 12px;
-    border: none;
+    background: blue;
     border-radius: 4px;
-    background: var(--blue-crayola);
-    font-weight: bold;
-    font-size: 18px;
-}
-#vaccCentreTabContainer p {
-    text-align: center;
-    font-weight: bold;
-    text-decoration: none;
-    align-self: stretch;
+    
 }
 
-#vaccCentreTabContainer table{
-    align-self: stretch;
-}
-#vaccCentreTabContainer table,
-#vaccCentreTabContainer td,
-#vaccCentreTabContainer th {
+#vaccCentreData {
+    width: 100%;
+    padding: 8px 16px;
+    background: rgba(0, 0, 250, 0.06);
+    flex-flow: column nowrap;
+    align-items: stretch;
     border: 1px solid black;
-    padding: 2px;
-    color: black;
-    font-weight: bold;
+    border-radius: 10px;
+
+}
+.vaccCentreItem {
+    padding: 0;
+    background: #fff;
+
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: stretch;
+
+}
+.vaccCentreItem ul.noBullets {
+    margin: 0;
+}
+
+.vaccCentreItem > * {
+    padding: 8px;
+}
+
+.vaccCentreDetails {
+    width: 40%;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: none;
+}
+.vaccCentreDetails > ul.noBullets {
+    align-items: flex-start;
+}
+.vaccCentreDetails > ul.noBullets li {
+    margin: 3px 4px;
+}
+
+
+li.vcNameLi {
+    align-self: stretch;
+    justify-content: space-between;
+
+}
+li.vcNameLi h4 {
+    margin: 0;
+    margin: 4px 0;
+    font-size: 24px;
+}
+li.vcChargesLi {
+    margin-bottom: 6px;
+}
+li.vcChargesLi span{
+    background-color: rgba(0, 120, 255, 0.2);
+    margin: 2px 1px;
+    padding: 4px 8px;
+    border-radius: 3px;
     text-align: center;
-    background-color: #c4c4c4;
+}
+li.vcChargesLi span:first-child{
+    margin-left: 0;
+    text-align: center;
+}
+li.vcChargesLi span:last-child{
+    margin-right: 0;
+}
+li.vcChargesLi span.paid{
+    background-color: brown;
+    color: white;
+}
+li.vcChargesLi span.free{
+    background-color: green;
+    color: white;
+}
+li.vcChargesLi span.vacc{
+    background-color: #5ab;
+}
+
+li.vcChargesLi span.age{
+    background-color: yellow;
+}
+
+li.vcPhoneLi .phoneUl {
+    align-items: stretch;
+}
+li.vcPhoneLi .phoneUl li {
+    margin: 0 8px;
+}
+li.vcPhoneLi .phoneUl li:first-child {
+    margin-left: 0px;
+}
+li.vcPhoneLi .phoneUl li.vertLine {
+    margin: 0;
+    width: 1px;
+    background: #222;
+}
+li.vcPhoneLi .phoneUl li:last-child {
+    margin-right: 0;
+}
+li.vcAddressLi {
+    font-size: 14px;
 }
 #vaccCentreTabContainer table {
-    border: collapse;
+    border-collapse: separate;
+    text-indent: initial;
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    border-spacing: 2px;
+    font-variant: normal;
+    text-align: center;
+    padding: 0 8px;
+
 }
 
-#vaccCentreTabContainer table i {
-    color: #666;
-    font-size: 12px;
-    margin: 5px 0px;
-    display: block;
+
+.vaccData {
+    width: 60%;
+    background: #e0f0f8;
+    justify-content: center;
+    align-items: stretch;
+
 }
-#vaccCentreTabContainer table p{
-    font-size: 12px;
+.vaccData > ul.noBullets {
+    justify-content: space-around;
+    align-items: stretch;
 }
-#vaccCentreTabContainer table p a {
-    color: black;
+.vaccData > ul.noBullets > li {
+    width: 25%;
     text-align: center;
-    text-decoration: underline;
-    color: yellow;
-}
-#vaccCentreTabContainer sup {
-    color: white;
-    font-size: 6pt;
-    border: 1px solid blue;
-    background-color: blue;
-    border-radius: 5px;
-    font-weight: bold;
 }
 
 
@@ -787,6 +898,14 @@ footer div span i.fa-heart{
         font-size: 14px;
     }
 }
+@media (max-width: 1080px) {
+    .vaccCentreDetails {
+        width: 43%;
+    }
+    .vaccData {
+        width: 57%;
+    }
+}
 
 @media (max-width: 960px) {
 	.hospitalDetails {
@@ -795,6 +914,14 @@ footer div span i.fa-heart{
 	.bedData {
 		width: 45%;
 	}
+}
+@media (max-width: 960px) {
+    .vaccCentreDetails {
+        width: 45%;
+    }
+    .vaccData {
+        width: 55%;
+    }
 }
 
 @media(max-width: 900px){
@@ -826,6 +953,25 @@ footer div span i.fa-heart{
         padding: 5px;
     }
     
+}
+@media (max-width: 720px) {
+    .vaccCentreData {
+        align-items: stretch;
+    }
+    .vaccCentreItem {
+        position: relative;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+    .vaccCentreDetails {
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        border-right: none;
+    }
+    .vaccData {
+        width: 100%;
+    }
 }
 
 @media (max-width: 700px) {
