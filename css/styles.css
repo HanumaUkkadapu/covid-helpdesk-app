@@ -436,49 +436,73 @@ body > section {
 #medStoreTabContainer.col {
     align-items: stretch;
 }
-.medcontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    margin: 0 auto;
-}
 .medStoreHead {
     text-align: center;
 }
-.storecontainerL {
-    max-height: 360px;
+#medStoreTabContainer .container{
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+}
+.med{
+    padding: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.storecontainerL{
+    height: 180px;
+    max-width: 180px;
+    margin-right: 16px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.storecontainerL img {
-    max-width: 100%;
+.storecontainerL img{
+    height: 100%;
 }
 .storecontainerR {
-    padding: 0 30px;
-    font-size: 20px;
+    height: 100%;
+    width: 50%;
+    font-size: 14px;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
 }
-.storecontainerR h3 {
-    color: green;
+.storecontainerR > *{
+    margin: 0;
+    margin: 4px 0;
 }
-.storecontainerL span {
-    text-align: left;
+.storecontainerR h6 {
+    color:green;
 }
-.storecontainerL .location img {
-    height: 24px;
+.storecontainerR > div.flex-cc{
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
-.storecontainerL .phone img {
-    height: 24px;
+.storecontainerR div .btn{
+    padding: 8px 16px;
+    color: white;
+    background: var(--usafa-blue);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.storecontainerL .clock img {
-    height: 24px;
+.storecontainerR div .btn .icon{
+    margin-left: 6px;
+    font-size: 14px;
 }
-.text-center .btn-wrapper {
-    padding: 4rem 0;
-    flex: 1;
-}
+
 
 /*** Gayatri * END ********************/
 
@@ -998,16 +1022,6 @@ footer div span i.fa-heart {
 
     /*** Gayatri ****************/
 
-    .medcontainer {
-        flex-flow: column nowrap;
-    }
-    .storecontainerL {
-        max-height: 240px;
-    }
-    .storecontainerL img {
-        width: 100%;
-    }
-
     /*** Siva ******************/
 
     .hospitalData {
@@ -1100,8 +1114,14 @@ footer div span i.fa-heart {
     .tabContentWrapper > section {
         width: 92vw;
     }
+  
+    /*** Gayatri ***********/
+    #medStoreTabContainer .container{
+        grid-gap: 24px;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    }
 
-    footer > div.flex-cc {
+    footer > div.flex-cc{
         flex-flow: column nowrap;
         align-items: center;
     }
@@ -1147,8 +1167,34 @@ footer div span i.fa-heart {
         font-size: 16px;
     }
 
+  
+    .med{
+        flex-flow: column nowrap;
+    }
+    .storecontainerL, .storecontainerR{
+        width: 100%;
+    }
+    .storecontainerL{
+        height: 80px;
+        margin: 0;
+        margin-bottom: 8px;
+        overflow: hidden;
+    }
+    .storecontainerL img{
+        height: auto;
+        width: 100%;
+    }
+    .storecontainerR{
+        height: auto;
+    }
+    .storecontainerR, .storecontainerR div .btn, .storecontainerR div .btn .icon{
+        font-size: 12px;
+    }
+
+
     footer,
     footer div span {
+
         font-size: 14px;
     }
 }
