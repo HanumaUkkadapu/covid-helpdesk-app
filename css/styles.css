@@ -1003,7 +1003,7 @@ footer div span i.fa-heart {
         align-items: stretch;
     }
     #selectWrapper > * {
-        margin: 10px 0;
+        margin: 6px 0;
     }
     #distSel,
     #locateMeBtn {
@@ -1106,7 +1106,7 @@ footer div span i.fa-heart {
         font-size: 12px;
     }
     #disclaimer .icon {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     #resTabWrapper,
