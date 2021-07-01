@@ -351,10 +351,12 @@ body > section {
     font-size: 14px;
     align-self: stretch;
     justify-content: flex-start;
+    align-items: center;
 }
 #disclaimer .icon {
-    margin-right: 4px;
-    font-size: 16px;
+    --dim: 10px;
+    margin: 0 var(--dim) 0 calc( -1 * var(--dim) );
+    font-size: 24px;
 }
 
 /*** Tab Menu ********************/
@@ -1155,8 +1157,12 @@ footer div span i.fa-heart {
 }
 
 @media (max-width: 440px) {
+    
+    #searchSection {
+        font-size: 14px;
+    }
     #searchBtn {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .tabBtn {
@@ -1196,5 +1202,14 @@ footer div span i.fa-heart {
     footer div span {
 
         font-size: 14px;
+    }
+}
+
+@media (max-height: 660px){
+    #searchWrapper select,
+    #searchWrapper button,
+    #searchWrapper label {
+        height: 48px;
+        padding: 8px 18px;
     }
 }
