@@ -9,8 +9,7 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
     <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon">
@@ -111,7 +110,9 @@
         <div id="disclaimer" class="flex-cc">
             <span class="material-icons icon">warning</span>
             <span>
-                <strong>Disclaimer</strong>: The data available on this site is not our own. We collect the data from different sites and services. The data we get is usually updated on a daily basis. For any queries or suggestions, contact us <a href="#footerNav">here</a>.
+                <strong>Disclaimer</strong>: The data available on this site is not our own. We collect the data from
+                different sites and services. The data we get is usually updated on a daily basis. For any queries or
+                suggestions, contact us <a href="#footerNav">here</a>.
             </span>
         </div>
     </section>
@@ -119,19 +120,19 @@
     <div id="resTabWrapper" class="tabBtnWrapper flex-cc">
 
         <div class="flex-cc">
-            <label class="tabBtn flex-cc active" data-targetelem="medStoreTabContainer" >
+            <label class="tabBtn flex-cc active" data-targetelem="medStoreTabContainer">
                 <input type="checkbox">
                 <!-- <i class="fas fa-prescription-bottle"></i> -->
                 <!-- <i class="fas fa-prescription-bottle-alt icon"></i> -->
                 <span class="material-icons">medication</span>
                 Medical Stores
             </label>
-            <label class="tabBtn flex-cc" data-targetelem="hospitalTabContainer" >
+            <label class="tabBtn flex-cc" data-targetelem="hospitalTabContainer">
                 <input type="checkbox">
                 <span class="material-icons icon">local_hospital</span>
                 Hospitals
             </label>
-            <label class="tabBtn flex-cc" data-targetelem="vaccCentreTabContainer" >
+            <label class="tabBtn flex-cc" data-targetelem="vaccCentreTabContainer">
                 <input type="checkbox">
                 <span class="material-icons icon">vaccines</span>
                 Vaccination Centers
@@ -139,9 +140,9 @@
         </div>
 
     </div>
-    
+
     <section id="resultSection" class="flex-cc col">
-        
+
         <div class="tabContentWrapper flex-cc">
 
             <!------------- Gayatri ---------------->
@@ -225,7 +226,7 @@
                 </div>
             </section>
 
-                <!------------- Siva ------------------->
+            <!------------- Siva ------------------->
             <!-- Total Hospitals  -->
             <section id="hospitalTabContainer">
                 <div class="container flex-cc col">
@@ -250,361 +251,809 @@
                             </tr>
                         </tbody>
                     </table>
-                    
+
                     <!-- filters -->
                     <form class="frm_filtr">
-                
-                            <select name="Select Beds" id="Slct_Beds">
-                                <option value="">
-                                    Regular Beds
-                                </option>
-                                <option value="">
+
+                        <select name="Select Beds" id="Slct_Beds">
+                            <option value="">
+                                Regular Beds
+                            </option>
+                            <option value="">
                                 Oxygen Beds
-                                </option>
-                                <option value="">
-                                    ICU Beds
-                                </option>
-                                <option value="">
-                                    Ventilator Beds
-                                </option>
-                            </select>                                   
-                                
-                        
-                        
-                            <select name="Type" id="Hsp_type">
-                                <option value="Private">Private</option>
-                                <option value="Government">Government</option>
-                                <option value="Arogyashree">Arogyashree</option>
-                            </select>
+                            </option>
+                            <option value="">
+                                ICU Beds
+                            </option>
+                            <option value="">
+                                Ventilator Beds
+                            </option>
+                        </select>
+
+
+
+                        <select name="Type" id="Hsp_type">
+                            <option value="Private">Private</option>
+                            <option value="Government">Government</option>
+                            <option value="Arogyashree">Arogyashree</option>
+                        </select>
                         <input type="text" placeholder="Hospital Name.." name="search" class="sbt_btn">
                         <button type="submit">Submit</button>
-                        
+
                         <div class="clr_fix"></div>
                     </form>
-                
+
                     <!-- Hospital availability list  -->
-                   <div id="hospitalData" class="flex-cc col">
-				<div class="hospitalItem card flex-cc">
-				<div class="hospitalDetails">
-					<ul class="flex-cc col noBullets">
-						<li class="hspNameLi flex-cc">
-							<h4>RK Hospital</h4>
-							<a class="hspDetailsLink" href="https://www.google.com/search?q=rk+hospital+visakhapatnam&newwindow=1&safe=active&rlz=1C1NDCM_enIN870IN870&tbm=lcl&sxsrf=ALeKk031sdxCL0Rwp8wlR5vGEXVtb2pM-Q%3A1624946054051&ei=hrXaYODEAuiO4-EPirSbuAs&oq=rk+hospital+visa&gs_l=psy-ab.3.0.0j0i67k1j0i22i30k1l6.1217929.1224082.0.1224967.8.8.0.0.0.0.244.1364.0j7j1.8.0....0...1c.1.64.psy-ab..0.8.1363...35i39k1j0i273k1j0i433i131k1j0i263i433i20k1j0i263i433i131i20k1j35i457i39k1j0i402k1j0i433i67k1j0i433k1j0i433i131i67k1.0.GVxzB9qYYrs" title="open in maps" target="-blank" rel="noreferrer noopener">Open in maps</a>
-						</li>
-						<li class="hspChargesLi">Partially Empanelled</li>
-						<li class="hspPhoneLi">
-							<ul class="flex-cc noBullets phoneUl">
-								<li><a href="#">0891 232323</a></li>
-								<li class="vertLine"></li>
-								<li><a href="#">93484 23777</a></li>
-							</ul>
-						</li>
-						<li class="hspAddressLi">Gajuwaka, Visakhapatanam, Andhra Pradesh 530026, India</li>
-					</ul>
-				</div>
-				<div class="bedData flex-cc col">
-					<ul class="flex-cc noBullets">
-						<li>Without Oxygen</li>
-						<li>With Oxygen</li>
-						<li>ICU</li>
-						<li>ICU with Ventilator</li>
-					</ul>
-					<ul class="flex-cc noBullets">
-						<li><span>10</span>/<span>10</span></li>
-						<li><span>0</span>/<span>8</span></li>
-						<li><span>0</span>/<span>0</span></li>
-						<li><span>0</span>/<span>0</span></li>
-					</ul>
-				</div>
-			</div><div class="hospitalItem card flex-cc">
-				<div class="hospitalDetails">
-					<ul class="flex-cc col noBullets">
-						<li class="hspNameLi flex-cc">
-							<h4>Kranthi Hospital</h4>
-							<a class="hspDetailsLink" href="https://www.google.com/maps/search/?api=1&amp;query=Kranthi Hospital, Ramachandra Nagar, Anantapur, Andhra Pradesh 515001, India" title="open in maps" target="-blank" rel="noreferrer noopener">Open in maps</a>
-						</li>
-						<li class="hspChargesLi">Private</li>
-						<li class="hspPhoneLi">
-							<ul class="flex-cc noBullets phoneUl">
-								<li><a href="#">08554-221414</a></li>
-								<li class="vertLine"></li>
-								<li><a href="#">9884182449</a></li>
-							</ul>
-						</li>
-						<li class="hspAddressLi">Ramachandra Nagar, Anantapur, Andhra Pradesh 515001, India</li>
-					</ul>
-				</div>
-				<div class="bedData flex-cc col">
-					<ul class="flex-cc noBullets">
-						<li>Without Oxygen</li>
-						<li>With Oxygen</li>
-						<li>ICU</li>
-						<li>ICU with Ventilator</li>
-					</ul>
-					<ul class="flex-cc noBullets">
-						<li><span>3</span>/<span>3</span></li>
-						<li><span>0</span>/<span>2</span></li>
-						<li><span>0</span>/<span>0</span></li>
-						<li><span>0</span>/<span>0</span></li>
-					</ul>
-				</div>
-			</div><div class="hospitalItem card flex-cc">
-				<div class="hospitalDetails">
-					<ul class="flex-cc col noBullets">
-						<li class="hspNameLi flex-cc">
-							<h4>Amaravathi Multi Speciality Hospital</h4>
-							<a class="hspDetailsLink" href="https://www.google.com/maps/search/?api=1&amp;query=Amaravathi Multi Speciality Hospital, 11-1-234, Aravind Nagar, 3rd Cross Road Govt Hospital Road, Near Satya Sai Bajana Mandiram, Old TDP office, Aravinda Nagar, Maruthi Nagar, Anantapur, Andhra Pradesh 515001, India" title="open in maps" target="-blank" rel="noreferrer noopener">Open in maps</a>
-						</li>
-						<li class="hspChargesLi">Partially Empanelled</li>
-						<li class="hspPhoneLi">
-							<ul class="flex-cc noBullets phoneUl">
-								<li><a href="#">7207436153</a></li>
-								<li class="vertLine"></li>
-								<li><a href="#">9550845863</a></li>
-							</ul>
-						</li>
-						<li class="hspAddressLi">11-1-234, Aravind Nagar, 3rd Cross Road Govt Hospital Road, Near Satya Sai Bajana Mandiram, Old TDP office, Aravinda Nagar, Maruthi Nagar, Anantapur, Andhra Pradesh 515001, India</li>
-					</ul>
-				</div>
-				<div class="bedData flex-cc col">
-					<ul class="flex-cc noBullets">
-						<li>Without Oxygen</li>
-						<li>With Oxygen</li>
-						<li>ICU</li>
-						<li>ICU with Ventilator</li>
-					</ul>
-					<ul class="flex-cc noBullets">
-						<li><span>2</span>/<span>7</span></li>
-						<li><span>0</span>/<span>13</span></li>
-						<li><span>0</span>/<span>0</span></li>
-						<li><span>0</span>/<span>0</span></li>
-					</ul>
-				</div>
-			</div><div class="hospitalItem card flex-cc">
-				<div class="hospitalDetails">
-					<ul class="flex-cc col noBullets">
-						<li class="hspNameLi flex-cc">
-							<h4>Harshitha Multispeciality Hospital</h4>
-							<a class="hspDetailsLink" href="https://www.google.com/maps/search/?api=1&amp;query=Harshitha Multispeciality Hospital, #6-3-984, 1st Cross Rd, Maruthi Nagar, Anantapur, Andhra Pradesh 515002, India" title="open in maps" target="-blank" rel="noreferrer noopener">Open in maps</a>
-						</li>
-						<li class="hspChargesLi">Private</li>
-						<li class="hspPhoneLi">
-							<ul class="flex-cc noBullets phoneUl">
-								<li><a href="#">08554243422</a></li>
-								<li class="vertLine"></li>
-								<li><a href="#">8333991253</a></li>
-							</ul>
-						</li>
-						<li class="hspAddressLi">#6-3-984, 1st Cross Rd, Maruthi Nagar, Anantapur, Andhra Pradesh 515002, India</li>
-					</ul>
-				</div>
-				<div class="bedData flex-cc col">
-					<ul class="flex-cc noBullets">
-						<li>Without Oxygen</li>
-						<li>With Oxygen</li>
-						<li>ICU</li>
-						<li>ICU with Ventilator</li>
-					</ul>
-					<ul class="flex-cc noBullets">
-						<li><span>13</span>/<span>13</span></li>
-						<li><span>15</span>/<span>17</span></li>
-						<li><span>0</span>/<span>12</span></li>
-						<li><span>0</span>/<span>0</span></li>
-					</ul>
-				</div>
-			</div><div class="hospitalItem card flex-cc">
-				<div class="hospitalDetails">
-					<ul class="flex-cc col noBullets">
-						<li class="hspNameLi flex-cc">
-							<h4>Pavani Multi Specility  Hospital</h4>
-							<a class="hspDetailsLink" href="https://www.google.com/maps/search/?api=1&amp;query=Pavani Multi Specility  Hospital, 5th Cross Rd, Sai Nagar, Anantapur, Andhra Pradesh 515001, India" title="open in maps" target="-blank" rel="noreferrer noopener">Open in maps</a>
-						</li>
-						<li class="hspChargesLi">Partially Empanelled</li>
-						<li class="hspPhoneLi">
-							<ul class="flex-cc noBullets phoneUl">
-								<li><a href="#">7207266081</a></li>
-								<li class="vertLine"></li>
-								<li><a href="#">7569300279</a></li>
-							</ul>
-						</li>
-						<li class="hspAddressLi">5th Cross Rd, Sai Nagar, Anantapur, Andhra Pradesh 515001, India</li>
-					</ul>
-				</div>
-				<div class="bedData flex-cc col">
-					<ul class="flex-cc noBullets">
-						<li>Without Oxygen</li>
-						<li>With Oxygen</li>
-						<li>ICU</li>
-						<li>ICU with Ventilator</li>
-					</ul>
-					<ul class="flex-cc noBullets">
-						<li><span>11</span>/<span>15</span></li>
-						<li><span>0</span>/<span>15</span></li>
-						<li><span>0</span>/<span>0</span></li>
-						<li><span>0</span>/<span>0</span></li>
-					</ul>
-				</div>
-			</div><div class="hospitalItem card flex-cc">
-				<div class="hospitalDetails">
-					<ul class="flex-cc col noBullets">
-						<li class="hspNameLi flex-cc">
-							<h4>Asha Hospital</h4>
-							<a class="hspDetailsLink" href="https://www.google.com/maps/search/?api=1&amp;query=Asha Hospital, # 7/201, Court Road, Rahamat Nagar, Anantapur, Andhra Pradesh 515001, India" title="open in maps" target="-blank" rel="noreferrer noopener">Open in maps</a>
-						</li>
-						<li class="hspChargesLi">Partially Empanelled</li>
-						<li class="hspPhoneLi">
-							<ul class="flex-cc noBullets phoneUl">
-								<li><a href="#">08554274194</a></li>
-								<li class="vertLine"></li>
-								<li><a href="#">8096002131</a></li>
-							</ul>
-						</li>
-						<li class="hspAddressLi"># 7/201, Court Road, Rahamat Nagar, Anantapur, Andhra Pradesh 515001, India</li>
-					</ul>
-				</div>
-				<div class="bedData flex-cc col">
-					<ul class="flex-cc noBullets">
-						<li>Without Oxygen</li>
-						<li>With Oxygen</li>
-						<li>ICU</li>
-						<li>ICU with Ventilator</li>
-					</ul>
-					<ul class="flex-cc noBullets">
-						<li><span>6</span>/<span>6</span></li>
-						<li><span>6</span>/<span>16</span></li>
-						<li><span>3</span>/<span>8</span></li>
-						<li><span>0</span>/<span>0</span></li>
-					</ul>
-				</div>
-			</div><div class="hospitalItem card flex-cc">
-				<div class="hospitalDetails">
-					<ul class="flex-cc col noBullets">
-						<li class="hspNameLi flex-cc">
-							<h4>Sri Anand Hospital</h4>
-							<a class="hspDetailsLink" href="https://www.google.com/maps/search/?api=1&amp;query=Sri Anand Hospital, Kamalanagar, Anantapur, Andhra Pradesh 515001, India" title="open in maps" target="-blank" rel="noreferrer noopener">Open in maps</a>
-						</li>
-						<li class="hspChargesLi">Partially Empanelled</li>
-						<li class="hspPhoneLi">
-							<ul class="flex-cc noBullets phoneUl">
-								<li><a href="#">0855 4239494</a></li>
-								<li class="vertLine"></li>
-								<li><a href="#">7093931206</a></li>
-							</ul>
-						</li>
-						<li class="hspAddressLi">Kamalanagar, Anantapur, Andhra Pradesh 515001, India</li>
-					</ul>
-				</div>
-				<div class="bedData flex-cc col">
-					<ul class="flex-cc noBullets">
-						<li>Without Oxygen</li>
-						<li>With Oxygen</li>
-						<li>ICU</li>
-						<li>ICU with Ventilator</li>
-					</ul>
-					<ul class="flex-cc noBullets">
-						<li><span>0</span>/<span>0</span></li>
-						<li><span>0</span>/<span>12</span></li>
-						<li><span>0</span>/<span>3</span></li>
-						<li><span>0</span>/<span>0</span></li>
-					</ul>
-				</div>
-			</div><div class="hospitalItem card flex-cc">
-				<div class="hospitalDetails">
-					<ul class="flex-cc col noBullets">
-						<li class="hspNameLi flex-cc">
-							<h4>K.K NURSING HOME</h4>
-							<a class="hspDetailsLink" href="https://www.google.com/maps/search/?api=1&amp;query=K.K NURSING HOME, Old Town, Anantapur, Andhra Pradesh 515001, India" title="open in maps" target="-blank" rel="noreferrer noopener">Open in maps</a>
-						</li>
-						<li class="hspChargesLi">Partially Empanelled</li>
-						<li class="hspPhoneLi">
-							<ul class="flex-cc noBullets phoneUl">
-								<li><a href="#">08554222133</a></li>
-								<li class="vertLine"></li>
-								<li><a href="#">6301583617</a></li>
-							</ul>
-						</li>
-						<li class="hspAddressLi">Old Town, Anantapur, Andhra Pradesh 515001, India</li>
-					</ul>
-				</div>
-				<div class="bedData flex-cc col">
-					<ul class="flex-cc noBullets">
-						<li>Without Oxygen</li>
-						<li>With Oxygen</li>
-						<li>ICU</li>
-						<li>ICU with Ventilator</li>
-					</ul>
-					<ul class="flex-cc noBullets">
-						<li><span>7</span>/<span>9</span></li>
-						<li><span>0</span>/<span>5</span></li>
-						<li><span>0</span>/<span>6</span></li>
-						<li><span>0</span>/<span>0</span></li>
-					</ul>
-				</div>
-			</div><div class="hospitalItem card flex-cc">
-				<div class="hospitalDetails">
-					<ul class="flex-cc col noBullets">
-						<li class="hspNameLi flex-cc">
-							<h4>GGH</h4>
-							<a class="hspDetailsLink" href="https://www.google.com/maps/search/?api=1&amp;query=GGH, Government Hospital Road, near Arvind Colony, Gulzarpet, Anantapur, Andhra Pradesh 515001, India" title="open in maps" target="-blank" rel="noreferrer noopener">Open in maps</a>
-						</li>
-						<li class="hspChargesLi">Government</li>
-						<li class="hspPhoneLi">
-							<ul class="flex-cc noBullets phoneUl">
-								<li><a href="#">085542 75043</a></li>
-								<li class="vertLine"></li>
-								<li><a href="#">9849905852</a></li>
-							</ul>
-						</li>
-						<li class="hspAddressLi">Government Hospital Road, near Arvind Colony, Gulzarpet, Anantapur, Andhra Pradesh 515001, India</li>
-					</ul>
-				</div>
-				<div class="bedData flex-cc col">
-					<ul class="flex-cc noBullets">
-						<li>Without Oxygen</li>
-						<li>With Oxygen</li>
-						<li>ICU</li>
-						<li>ICU with Ventilator</li>
-					</ul>
-					<ul class="flex-cc noBullets">
-						<li><span>0</span>/<span>277</span></li>
-						<li><span>0</span>/<span>322</span></li>
-						<li><span>0</span>/<span>57</span></li>
-						<li><span>0</span>/<span>40</span></li>
-					</ul>
-				</div>
-			</div><div class="hospitalItem card flex-cc">
-				<div class="hospitalDetails">
-					<ul class="flex-cc col noBullets">
-						<li class="hspNameLi flex-cc">
-							<h4>RDT Hospital</h4>
-							<a class="hspDetailsLink" href="https://www.google.com/maps/search/?api=1&amp;query=RDT Hospital, Lenin Nagar, Anantapur, Andhra Pradesh 515002, India" title="open in maps" target="-blank" rel="noreferrer noopener">Open in maps</a>
-						</li>
-						<li class="hspChargesLi">Partially Empanelled</li>
-						<li class="hspPhoneLi">
-							<ul class="flex-cc noBullets phoneUl">
-								<li><a href="#">08559244267</a></li>
-								<li class="vertLine"></li>
-								<li><a href="#">9989441014</a></li>
-							</ul>
-						</li>
-						<li class="hspAddressLi">Lenin Nagar, Anantapur, Andhra Pradesh 515002, India</li>
-					</ul>
-				</div>
-				<div class="bedData flex-cc col">
-					<ul class="flex-cc noBullets">
-						<li>Without Oxygen</li>
-						<li>With Oxygen</li>
-						<li>ICU</li>
-						<li>ICU with Ventilator</li>
-					</ul>
-					<ul class="flex-cc noBullets">
-						<li><span>10</span>/<span>57</span></li>
-						<li><span>16</span>/<span>213</span></li>
-						<li><span>0</span>/<span>7</span></li>
-						<li><span>0</span>/<span>7</span></li>
-					</ul>
-				</div>
-			</div></div>
+                    <div id="hospitalData" class="flex-cc col">
+                        <div class="hospitalItem card flex-cc">
+                            <div class="hospitalDetails">
+                                <ul class="flex-cc col noBullets">
+                                    <li class="hspNameLi flex-cc">
+                                        <h4>RK Hospital</h4>
+                                        <a class="hspDetailsLink"
+                                            href="https://www.google.com/search?q=rk+hospital+visakhapatnam&newwindow=1&safe=active&rlz=1C1NDCM_enIN870IN870&tbm=lcl&sxsrf=ALeKk031sdxCL0Rwp8wlR5vGEXVtb2pM-Q%3A1624946054051&ei=hrXaYODEAuiO4-EPirSbuAs&oq=rk+hospital+visa&gs_l=psy-ab.3.0.0j0i67k1j0i22i30k1l6.1217929.1224082.0.1224967.8.8.0.0.0.0.244.1364.0j7j1.8.0....0...1c.1.64.psy-ab..0.8.1363...35i39k1j0i273k1j0i433i131k1j0i263i433i20k1j0i263i433i131i20k1j35i457i39k1j0i402k1j0i433i67k1j0i433k1j0i433i131i67k1.0.GVxzB9qYYrs"
+                                            title="open in maps" target="-blank" rel="noreferrer noopener">Open in
+                                            maps</a>
+                                    </li>
+                                    <li class="hspChargesLi">Partially Empanelled</li>
+                                    <li class="hspPhoneLi">
+                                        <ul class="flex-cc noBullets phoneUl">
+                                            <li><a href="#">0891 232323</a></li>
+                                            <li class="vertLine"></li>
+                                            <li><a href="#">93484 23777</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hspAddressLi">Gajuwaka, Visakhapatanam, Andhra Pradesh 530026, India</li>
+                                </ul>
+                            </div>
+                            <div class="bedData flex-cc col">
+                                <table>
+                                    <tr>
+                                        <th></th>
+                                        <th>
+                                            Without Oxygen
+                                        </th>
+                                        <th>
+                                            With Oxygen
+                                        </th>
+                                        <th>
+                                            ICU
+                                        </th>
+                                        <th>
+                                            ICU with Ventilator
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Available
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>8</span>
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>2</span>
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>6</span>
+                                        </td>
+                                        <td class="zero_beds">
+                                            <span>0</span>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Total
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>8</span>
+                                        </td>
+                                        <td>
+                                            <span>5</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="hospitalItem card flex-cc">
+                            <div class="hospitalDetails">
+                                <ul class="flex-cc col noBullets">
+                                    <li class="hspNameLi flex-cc">
+                                        <h4>Kranthi Hospital</h4>
+                                        <a class="hspDetailsLink"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Kranthi Hospital, Ramachandra Nagar, Anantapur, Andhra Pradesh 515001, India"
+                                            title="open in maps" target="-blank" rel="noreferrer noopener">Open in
+                                            maps</a>
+                                    </li>
+                                    <li class="hspChargesLi">Private</li>
+                                    <li class="hspPhoneLi">
+                                        <ul class="flex-cc noBullets phoneUl">
+                                            <li><a href="#">08554-221414</a></li>
+                                            <li class="vertLine"></li>
+                                            <li><a href="#">9884182449</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hspAddressLi">Ramachandra Nagar, Anantapur, Andhra Pradesh 515001, India
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bedData flex-cc col">
+                                <table>
+                                    <tr>
+                                        <th>
+                                        </th>
+                                        <th>
+                                            Without Oxygen
+                                        </th>
+                                        <th>
+                                            With Oxygen
+                                        </th>
+                                        <th>
+                                            ICU
+                                        </th>
+                                        <th>
+                                            ICU with Ventilator
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Available
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>8</span>
+                                        </td>
+                                        <td class="zero_beds">
+                                            <span>0</span>
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>6</span>
+                                        </td>
+                                        <td class="zero_beds">
+                                            <span>0</span>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Total
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>8</span>
+                                        </td>
+                                        <td>
+                                            <span>0</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="hospitalItem card flex-cc">
+                            <div class="hospitalDetails">
+                                <ul class="flex-cc col noBullets">
+                                    <li class="hspNameLi flex-cc">
+                                        <h4>Amaravathi Multi Speciality Hospital</h4>
+                                        <a class="hspDetailsLink"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Amaravathi Multi Speciality Hospital, 11-1-234, Aravind Nagar, 3rd Cross Road Govt Hospital Road, Near Satya Sai Bajana Mandiram, Old TDP office, Aravinda Nagar, Maruthi Nagar, Anantapur, Andhra Pradesh 515001, India"
+                                            title="open in maps" target="-blank" rel="noreferrer noopener">Open in
+                                            maps</a>
+                                    </li>
+                                    <li class="hspChargesLi">Partially Empanelled</li>
+                                    <li class="hspPhoneLi">
+                                        <ul class="flex-cc noBullets phoneUl">
+                                            <li><a href="#">7207436153</a></li>
+                                            <li class="vertLine"></li>
+                                            <li><a href="#">9550845863</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hspAddressLi">11-1-234, Aravind Nagar, 3rd Cross Road Govt Hospital Road,
+                                        Near Satya Sai Bajana Mandiram, Old TDP office, Aravinda Nagar, Maruthi Nagar,
+                                        Anantapur, Andhra Pradesh 515001, India</li>
+                                </ul>
+                            </div>
+                            <div class="bedData flex-cc col">
+                                <table>
+                                    <tr>
+                                        <th></th>
+                                        <th>
+                                            Without Oxygen
+                                        </th>
+                                        <th>
+                                            With Oxygen
+                                        </th>
+                                        <th>
+                                            ICU
+                                        </th>
+                                        <th>
+                                            ICU with Ventilator
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Available
+                                        </td>
+                                        <td class="full_beds">
+                                            <span>10</span>
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>2</span>
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>6</span>
+                                        </td>
+                                        <td class="zero_beds">
+                                            <span>0</span>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            otal
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>8</span>
+                                        </td>
+                                        <td>
+                                            <span>0</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="hospitalItem card flex-cc">
+                            <div class="hospitalDetails">
+                                <ul class="flex-cc col noBullets">
+                                    <li class="hspNameLi flex-cc">
+                                        <h4>Harshitha Multispeciality Hospital</h4>
+                                        <a class="hspDetailsLink"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Harshitha Multispeciality Hospital, #6-3-984, 1st Cross Rd, Maruthi Nagar, Anantapur, Andhra Pradesh 515002, India"
+                                            title="open in maps" target="-blank" rel="noreferrer noopener">Open in
+                                            maps</a>
+                                    </li>
+                                    <li class="hspChargesLi">Private</li>
+                                    <li class="hspPhoneLi">
+                                        <ul class="flex-cc noBullets phoneUl">
+                                            <li><a href="#">08554243422</a></li>
+                                            <li class="vertLine"></li>
+                                            <li><a href="#">8333991253</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hspAddressLi">#6-3-984, 1st Cross Rd, Maruthi Nagar, Anantapur, Andhra
+                                        Pradesh 515002, India</li>
+                                </ul>
+                            </div>
+                            <div class="bedData flex-cc col">
+                                <table>
+                                    <tr>
+                                        <th></th>
+                                        <th>
+                                            Without Oxygen
+                                        </th>
+                                        <th>
+                                            With Oxygen
+                                        </th>
+                                        <th>
+                                            ICU
+                                        </th>
+                                        <th>
+                                            ICU with Ventilator
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Available
+                                        </td>
+                                        <td class="full_beds">
+                                            <span>10</span>
+                                        </td>
+                                        <td class="full_beds">
+                                            <span>10</span>
+                                        </td>
+                                        <td class="full_beds">
+                                            <span>8</span>
+                                        </td>
+                                        <td class="full_beds">
+                                            <span>5</span>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Total
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>8</span>
+                                        </td>
+                                        <td>
+                                            <span>5</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="hospitalItem card flex-cc">
+                            <div class="hospitalDetails">
+                                <ul class="flex-cc col noBullets">
+                                    <li class="hspNameLi flex-cc">
+                                        <h4>Pavani Multi Specility Hospital</h4>
+                                        <a class="hspDetailsLink"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Pavani Multi Specility  Hospital, 5th Cross Rd, Sai Nagar, Anantapur, Andhra Pradesh 515001, India"
+                                            title="open in maps" target="-blank" rel="noreferrer noopener">Open in
+                                            maps</a>
+                                    </li>
+                                    <li class="hspChargesLi">Partially Empanelled</li>
+                                    <li class="hspPhoneLi">
+                                        <ul class="flex-cc noBullets phoneUl">
+                                            <li><a href="#">7207266081</a></li>
+                                            <li class="vertLine"></li>
+                                            <li><a href="#">7569300279</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hspAddressLi">5th Cross Rd, Sai Nagar, Anantapur, Andhra Pradesh 515001,
+                                        India</li>
+                                </ul>
+                            </div>
+                            <div class="bedData flex-cc col">
+                                <table>
+                                    <tr>
+                                        <th></th>
+                                        <th>
+                                            Without Oxygen
+                                        </th>
+                                        <th>
+                                            With Oxygen
+                                        </th>
+                                        <th>
+                                            ICU
+                                        </th>
+                                        <th>
+                                            ICU with Ventilator
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Available
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>8</span>
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>2</span>
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>6</span>
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>3</span>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Total
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>8</span>
+                                        </td>
+                                        <td>
+                                            <span>5</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="hospitalItem card flex-cc">
+                            <div class="hospitalDetails">
+                                <ul class="flex-cc col noBullets">
+                                    <li class="hspNameLi flex-cc">
+                                        <h4>Asha Hospital</h4>
+                                        <a class="hspDetailsLink"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Asha Hospital, # 7/201, Court Road, Rahamat Nagar, Anantapur, Andhra Pradesh 515001, India"
+                                            title="open in maps" target="-blank" rel="noreferrer noopener">Open in
+                                            maps</a>
+                                    </li>
+                                    <li class="hspChargesLi">Partially Empanelled</li>
+                                    <li class="hspPhoneLi">
+                                        <ul class="flex-cc noBullets phoneUl">
+                                            <li><a href="#">08554274194</a></li>
+                                            <li class="vertLine"></li>
+                                            <li><a href="#">8096002131</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hspAddressLi"># 7/201, Court Road, Rahamat Nagar, Anantapur, Andhra
+                                        Pradesh 515001, India</li>
+                                </ul>
+                            </div>
+                            <div class="bedData flex-cc col">
+                                <table>
+                                    <tr>
+                                        <th></th>
+                                        <th>
+                                            Without Oxygen
+                                        </th>
+                                        <th>
+                                            With Oxygen
+                                        </th>
+                                        <th>
+                                            ICU
+                                        </th>
+                                        <th>
+                                            ICU with Ventilator
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Available
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>8</span>
+                                        </td>
+                                        <td class="full_beds">
+                                            <span>10</span>
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>6</span>
+                                        </td>
+                                        <td class="zero_beds">
+                                            <span>0</span>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Total
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>8</span>
+                                        </td>
+                                        <td>
+                                            <span>5</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="hospitalItem card flex-cc">
+                            <div class="hospitalDetails">
+                                <ul class="flex-cc col noBullets">
+                                    <li class="hspNameLi flex-cc">
+                                        <h4>Sri Anand Hospital</h4>
+                                        <a class="hspDetailsLink"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=Sri Anand Hospital, Kamalanagar, Anantapur, Andhra Pradesh 515001, India"
+                                            title="open in maps" target="-blank" rel="noreferrer noopener">Open in
+                                            maps</a>
+                                    </li>
+                                    <li class="hspChargesLi">Partially Empanelled</li>
+                                    <li class="hspPhoneLi">
+                                        <ul class="flex-cc noBullets phoneUl">
+                                            <li><a href="#">0855 4239494</a></li>
+                                            <li class="vertLine"></li>
+                                            <li><a href="#">7093931206</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hspAddressLi">Kamalanagar, Anantapur, Andhra Pradesh 515001, India</li>
+                                </ul>
+                            </div>
+                            <div class="bedData flex-cc col">
+                                <table>
+                                    <tr>
+                                        <th></th>
+                                        <th>
+                                            Without Oxygen
+                                        </th>
+                                        <th>
+                                            With Oxygen
+                                        </th>
+                                        <th>
+                                            ICU
+                                        </th>
+                                        <th>
+                                            ICU with Ventilator
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Available
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>2</span>
+                                        </td>
+                                        <td class="zero_beds">
+                                            <span>0</span>
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>6</span>
+                                        </td>
+                                        <td class="zero_beds">
+                                            <span>0</span>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Total
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>8</span>
+                                        </td>
+                                        <td>
+                                            <span>5</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="hospitalItem card flex-cc">
+                            <div class="hospitalDetails">
+                                <ul class="flex-cc col noBullets">
+                                    <li class="hspNameLi flex-cc">
+                                        <h4>K.K NURSING HOME</h4>
+                                        <a class="hspDetailsLink"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=K.K NURSING HOME, Old Town, Anantapur, Andhra Pradesh 515001, India"
+                                            title="open in maps" target="-blank" rel="noreferrer noopener">Open in
+                                            maps</a>
+                                    </li>
+                                    <li class="hspChargesLi">Partially Empanelled</li>
+                                    <li class="hspPhoneLi">
+                                        <ul class="flex-cc noBullets phoneUl">
+                                            <li><a href="#">08554222133</a></li>
+                                            <li class="vertLine"></li>
+                                            <li><a href="#">6301583617</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hspAddressLi">Old Town, Anantapur, Andhra Pradesh 515001, India</li>
+                                </ul>
+                            </div>
+                            <div class="bedData flex-cc col">
+                                <table>
+                                    <tr>
+                                        <th></th>
+                                        <th>
+                                            Without Oxygen
+                                        </th>
+                                        <th>
+                                            With Oxygen
+                                        </th>
+                                        <th>
+                                            ICU
+                                        </th>
+                                        <th>
+                                            ICU with Ventilator
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Available
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>8</span>
+                                        </td>
+                                        <td class="full_beds">
+                                            <span>10</span>
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>6</span>
+                                        </td>
+                                        <td class="zero_beds">
+                                            <span>0</span>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Total
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>8</span>
+                                        </td>
+                                        <td>
+                                            <span>5</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="hospitalItem card flex-cc">
+                            <div class="hospitalDetails">
+                                <ul class="flex-cc col noBullets">
+                                    <li class="hspNameLi flex-cc">
+                                        <h4>GGH</h4>
+                                        <a class="hspDetailsLink"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=GGH, Government Hospital Road, near Arvind Colony, Gulzarpet, Anantapur, Andhra Pradesh 515001, India"
+                                            title="open in maps" target="-blank" rel="noreferrer noopener">Open in
+                                            maps</a>
+                                    </li>
+                                    <li class="hspChargesLi">Government</li>
+                                    <li class="hspPhoneLi">
+                                        <ul class="flex-cc noBullets phoneUl">
+                                            <li><a href="#">085542 75043</a></li>
+                                            <li class="vertLine"></li>
+                                            <li><a href="#">9849905852</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hspAddressLi">Government Hospital Road, near Arvind Colony, Gulzarpet,
+                                        Anantapur, Andhra Pradesh 515001, India</li>
+                                </ul>
+                            </div>
+                            <div class="bedData flex-cc col">
+                                <table>
+                                    <tr>
+                                        <th></th>
+                                        <th>
+                                            Without Oxygen
+                                        </th>
+                                        <th>
+                                            With Oxygen
+                                        </th>
+                                        <th>
+                                            ICU
+                                        </th>
+                                        <th>
+                                            ICU with Ventilator
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Available
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>8</span>
+                                        </td>
+                                        <td class="full_beds">
+                                            <span>10</span>
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>2</span>
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>4</span>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Total
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>4</span>
+                                        </td>
+                                        <td>
+                                            <span>6</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="hospitalItem card flex-cc">
+                            <div class="hospitalDetails">
+                                <ul class="flex-cc col noBullets">
+                                    <li class="hspNameLi flex-cc">
+                                        <h4>RDT Hospital</h4>
+                                        <a class="hspDetailsLink"
+                                            href="https://www.google.com/maps/search/?api=1&amp;query=RDT Hospital, Lenin Nagar, Anantapur, Andhra Pradesh 515002, India"
+                                            title="open in maps" target="-blank" rel="noreferrer noopener">Open in
+                                            maps</a>
+                                    </li>
+                                    <li class="hspChargesLi">Partially Empanelled</li>
+                                    <li class="hspPhoneLi">
+                                        <ul class="flex-cc noBullets phoneUl">
+                                            <li><a href="#">08559244267</a></li>
+                                            <li class="vertLine"></li>
+                                            <li><a href="#">9989441014</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="hspAddressLi">Lenin Nagar, Anantapur, Andhra Pradesh 515002, India</li>
+                                </ul>
+                            </div>
+                            <div class="bedData flex-cc col">
+                                <table>
+                                    <tr>
+                                        <th></th>
+                                        <th>
+                                            Without Oxygen
+                                        </th>
+                                        <th>
+                                            With Oxygen
+                                        </th>
+                                        <th>
+                                            ICU
+                                        </th>
+                                        <th>
+                                            ICU with Ventilator
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Available
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>8</span>
+                                        </td>
+                                        <td class="full_beds">
+                                            <span>10</span>
+                                        </td>
+                                        <td class="available_beds">
+                                            <span>6</span>
+                                        </td>
+                                        <td class="zero_beds">
+                                            <span>0</span>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Total
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>10</span>
+                                        </td>
+                                        <td>
+                                            <span>8</span>
+                                        </td>
+                                        <td>
+                                            <span>5</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -619,7 +1068,7 @@
                 <h3 class="flex-cc">
                     Vaccination Centres in - <span class="flex-cc"> Ananthapur </span>
                 </h3>
-                
+
                 <div id="vaccCentreTabWrapper">
                     <div class="filters flex-cc">
                         <ul class="flex-cc noBullets">
@@ -652,7 +1101,8 @@
                                             <li><a href="#">9849771947</a></li>
                                         </ul>
                                     </li>
-                                    <li class="vcAddressLi">Subash Rd, Adimurthy Nagar, Gulzarpet, Anantapur, Andhra Pradesh 515001, India</li>
+                                    <li class="vcAddressLi">Subash Rd, Adimurthy Nagar, Gulzarpet, Anantapur, Andhra
+                                        Pradesh 515001, India</li>
                                 </ul>
                             </div>
                             <div class="vaccData flex-cc col">
@@ -737,7 +1187,8 @@
                                             <li><a href="#">7780124053</a></li>
                                         </ul>
                                     </li>
-                                    <li class="vcAddressLi">Tadipatri Rd, Vasavi Nagar, Shaikpet, Anantapur, Andhra Pradesh 5150101, India</li>
+                                    <li class="vcAddressLi">Tadipatri Rd, Vasavi Nagar, Shaikpet, Anantapur, Andhra
+                                        Pradesh 5150101, India</li>
                                 </ul>
                             </div>
                             <div class="vaccData flex-cc col">
@@ -822,7 +1273,8 @@
                                             <li><a href="#">6700124053</a></li>
                                         </ul>
                                     </li>
-                                    <li class="vcAddressLi">Jntua College Rd, Saibaba Nagar, Keshavpet, Anantapur, Andhra Pradesh 5850001, India</li>
+                                    <li class="vcAddressLi">Jntua College Rd, Saibaba Nagar, Keshavpet, Anantapur,
+                                        Andhra Pradesh 5850001, India</li>
                                 </ul>
                             </div>
                             <div class="vaccData flex-cc col">
@@ -907,8 +1359,9 @@
                                             <li><a href="#">6780124053</a></li>
                                         </ul>
                                     </li>
-                                    <li class="vcAddressLi">Rudravaram Rd, Srinivasa Nagar, Dhoolpet, Anantapur, Andhra Pradesh 53 m              cmnb
-                                    n50101, India</li>
+                                    <li class="vcAddressLi">Rudravaram Rd, Srinivasa Nagar, Dhoolpet, Anantapur, Andhra
+                                        Pradesh 53 m cmnb
+                                        n50101, India</li>
                                 </ul>
                             </div>
                             <div class="vaccData flex-cc col">

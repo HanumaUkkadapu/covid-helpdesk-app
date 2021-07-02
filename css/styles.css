@@ -355,7 +355,7 @@ body > section {
 }
 #disclaimer .icon {
     --dim: 10px;
-    margin: 0 var(--dim) 0 calc( -1 * var(--dim) );
+    margin: 0 var(--dim) 0 calc(-1 * var(--dim));
     font-size: 24px;
 }
 
@@ -441,12 +441,12 @@ body > section {
 .medStoreHead {
     text-align: center;
 }
-#medStoreTabContainer .container{
+#medStoreTabContainer .container {
     display: grid;
     grid-gap: 24px;
     grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
 }
-.med{
+.med {
     padding: 16px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 6px;
@@ -458,10 +458,10 @@ body > section {
     align-items: center;
 }
 .med:hover {
-  background: #fff8da;
+    background: #fff8da;
 }
 
-.storecontainerL{
+.storecontainerL {
     height: 180px;
     max-width: 180px;
     margin-right: 16px;
@@ -470,7 +470,7 @@ body > section {
     justify-content: center;
     align-items: center;
 }
-.storecontainerL img{
+.storecontainerL img {
     height: 100%;
 }
 .storecontainerR {
@@ -482,43 +482,42 @@ body > section {
     flex-flow: column nowrap;
     justify-content: space-evenly;
 }
-.storecontainerR > *{
+.storecontainerR > * {
     margin: 0;
     margin: 4px 0;
 }
 .storecontainerR h4 {
-    color:green;
+    color: green;
 }
-.storecontainerR > div.flex-cc{
+.storecontainerR > div.flex-cc {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
 }
-.storecontainerR div a{
+.storecontainerR div a {
     margin: 2px 0;
     padding: 8px 16px;
     border-radius: 16px;
     text-decoration: none;
     background-color: #bedcff;
 }
-.storecontainerR div a:hover{
+.storecontainerR div a:hover {
     text-decoration: underline;
 }
-.storecontainerR div a i{
+.storecontainerR div a i {
     margin-right: 4px;
 }
-.storecontainerR div .btn{
+.storecontainerR div .btn {
     color: white;
     background: var(--usafa-blue);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.storecontainerR div .btn .icon{
+.storecontainerR div .btn .icon {
     margin-left: 6px;
     font-size: 14px;
 }
-
 
 /*** Gayatri * END ********************/
 
@@ -585,7 +584,7 @@ body > section {
     overflow: hidden;
 }
 .card:hover > * {
-  background: #fff8da;/*#D3E7FF;*/
+    background: #fff8da; /*#D3E7FF;*/
 }
 
 #hospitalData {
@@ -685,14 +684,29 @@ a.hspDetailsLink:hover {
     justify-content: center;
     align-items: stretch;
 }
-.bedData > ul.noBullets {
-    margin: 3px 0;
-    justify-content: space-around;
-    align-items: stretch;
+.bedData table,
+.bedData th,
+.bedData tr,
+.bedData td {
+    border: 1px solid rgba(0,0,0,0.2);
+    border-collapse: collapse;
 }
-.bedData > ul.noBullets > li {
-    width: 25%;
+.bedData tr {
+    width: 100%;
     text-align: center;
+}
+.bedData th,
+.bedData td{
+    padding: 1px 2px;
+}
+.bedData td {
+    width: 20%;
+}
+.bedData .zero_beds {
+    background-color: rgb(231, 104, 104);
+}
+.bedData .available_beds, .bedData .full_beds {
+    background-color: #9be9a8;
 }
 
 /*** Siva * END ***********************/
@@ -848,18 +862,18 @@ li.vcAddressLi {
     margin: 0;
     padding: 2px;
 }
-.vaccDataTable td span{
+.vaccDataTable td span {
     display: inline-block;
     width: 100%;
     max-width: 100px;
     padding: 3px 0;
     background-color: #999;
 }
-.vaccDataTable td span.booked{
+.vaccDataTable td span.booked {
     background-color: brown;
     color: white;
 }
-.vaccDataTable td span.na{
+.vaccDataTable td span.na {
     background-color: #d6d6d6;
     color: #666;
 }
@@ -891,25 +905,22 @@ footer div span i.fa-heart {
 /*** Media Queries ***************************************/
 
 @media (max-width: 1024px) {
-
     .hospitalDetails {
-        width: 57%;
+        width: 43%;
     }
     .bedData {
-        width: 43%;
+        width: 57%;
     }
     li.hspNameLi h4 {
         font-size: 22px;
     }
     li.hspChargesLi,
-    li.hspPhoneLi .phoneUl li {
-        font-size: 14px;
-    }
-    .bedData > ul.noBullets > li {
+    li.hspPhoneLi .phoneUl li,
+    .bedData table {
         font-size: 14px;
     }
 
-    li.vcNameLi h4{
+    li.vcNameLi h4 {
         font-size: 22px;
     }
     #vaccCentreTabContainer .filters,
@@ -918,35 +929,25 @@ footer div span i.fa-heart {
     .vaccDataTable {
         font-size: 14px;
     }
-
 }
-
 
 @media (max-width: 960px) {
 
-    .hospitalDetails {
-        width: 55%;
-    }
-    .bedData {
+    .hospitalDetails, .vaccCentreDetails {
         width: 45%;
     }
-
-    .vaccCentreDetails {
-        width: 45%;
-    }
-    .vaccData {
+    .bedData, .vaccData {
         width: 55%;
     }
-
 }
 
 @media (max-width: 900px) {
-    
     li.hspNameLi h4 {
         font-size: 20px;
     }
-    .bedData > ul.noBullets > li,
-    li.hspAddressLi {
+    
+    li.hspAddressLi,
+    .bedData table{
         font-size: 12px;
     }
 
@@ -959,7 +960,6 @@ footer div span i.fa-heart {
     .vaccDataTable {
         font-size: 12px;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -982,22 +982,24 @@ footer div span i.fa-heart {
 }
 
 @media (max-width: 720px) {
-    .vaccCentreData {
+
+    .hospitalData, .vaccCentreData {
         align-items: stretch;
     }
-    .vaccCentreItem {
+    .hospitalItem, .vaccCentreItem {
         flex-flow: column nowrap;
         justify-content: center;
         align-items: stretch;
     }
-    .vaccCentreDetails {
+    .hospitalDetails, .vaccCentreDetails {
         width: 100%;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         border-right: none;
     }
-    .vaccData {
+    .bedData, .vaccData {
         width: 100%;
     }
+    
 }
 
 @media (max-width: 700px) {
@@ -1042,23 +1044,6 @@ footer div span i.fa-heart {
 
     /*** Siva ******************/
 
-    .hospitalData {
-        align-items: stretch;
-    }
-    .hospitalItem {
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: stretch;
-    }
-    .hospitalDetails {
-        width: 100%;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-        border-right: none;
-    }
-    .bedData {
-        width: 100%;
-    }
-    .bedData li,
     li.hspAddressLi,
     .phoneUl a {
         font-size: 12px;
@@ -1073,7 +1058,6 @@ footer div span i.fa-heart {
         padding: 0px 10px;
         font-size: 12px;
     }
-
 }
 
 /***************************************/
@@ -1132,21 +1116,20 @@ footer div span i.fa-heart {
     .tabContentWrapper > section {
         width: 92vw;
     }
-  
+
     /*** Gayatri ***********/
-    #medStoreTabContainer .container{
+    #medStoreTabContainer .container {
         grid-gap: 24px;
         grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     }
-    .med *:not(h3,h4){
+    .med *:not(h3, h4) {
         font-size: 12px;
     }
-    .storecontainerR div a{
+    .storecontainerR div a {
         padding: 7px 12px;
     }
-    
 
-    footer > div.flex-cc{
+    footer > div.flex-cc {
         flex-flow: column nowrap;
         align-items: center;
     }
@@ -1177,11 +1160,9 @@ footer div span i.fa-heart {
     .tabBtn .material-icons {
         font-size: 18px;
     }
-
 }
 
 @media (max-width: 440px) {
-    
     #searchSection {
         font-size: 14px;
     }
@@ -1197,41 +1178,42 @@ footer div span i.fa-heart {
         font-size: 16px;
     }
 
-  
-    .med{
+    .med {
         flex-flow: column nowrap;
     }
-    .storecontainerL, .storecontainerR{
+    .storecontainerL,
+    .storecontainerR {
         width: 100%;
     }
-    .storecontainerL{
+    .storecontainerL {
         height: 80px;
         margin: 0;
         margin-bottom: 8px;
         overflow: hidden;
     }
-    .storecontainerL img{
+    .storecontainerL img {
         height: auto;
         width: 100%;
     }
-    .storecontainerR{
+    .storecontainerR {
         height: auto;
     }
-    .storecontainerR, .storecontainerR div a, .storecontainerR div .btn .icon{
+    .storecontainerR,
+    .storecontainerR div a,
+    .storecontainerR div .btn .icon {
         font-size: 12px;
     }
-    .storecontainerR div a{
+    .storecontainerR div a {
         padding: 6px 12px;
     }
 
     footer,
     footer div span {
-
         font-size: 14px;
     }
 }
 
-@media (max-height: 660px){
+@media (max-height: 660px) {
     #searchWrapper select,
     #searchWrapper button,
     #searchWrapper label {
