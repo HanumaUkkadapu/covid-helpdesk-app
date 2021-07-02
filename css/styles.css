@@ -457,6 +457,9 @@ body > section {
     justify-content: center;
     align-items: center;
 }
+.med:hover {
+  background: #fff8da;
+}
 
 .storecontainerL{
     height: 180px;
@@ -580,6 +583,9 @@ body > section {
     border-radius: 4px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+}
+.card:hover > * {
+  background: #fff8da;/*#D3E7FF;*/
 }
 
 #hospitalData {
