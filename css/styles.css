@@ -489,11 +489,22 @@ body > section {
     justify-content: space-between;
     align-items: center;
 }
-.storecontainerR div .btn{
+.storecontainerR div a{
+    margin: 2px 0;
     padding: 8px 16px;
+    border-radius: 16px;
+    text-decoration: none;
+    background-color: #bedcff;
+}
+.storecontainerR div a:hover{
+    text-decoration: underline;
+}
+.storecontainerR div a i{
+    margin-right: 4px;
+}
+.storecontainerR div .btn{
     color: white;
     background: var(--usafa-blue);
-    border-radius: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -565,6 +576,7 @@ body > section {
     padding: 6px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
@@ -612,7 +624,7 @@ li.hspNameLi h4 {
     font-size: 24px;
 }
 li.hspChargesLi {
-    background: var(--alicia-blue);
+    background: #bedcff;
     margin-bottom: 6px;
     padding: 4px 8px;
     border-radius: 4px;
@@ -781,18 +793,16 @@ li.vcChargesLi span:last-child {
     margin-right: 0;
 }
 li.vcChargesLi span.paid {
-    background-color: brown;
-    color: white;
+    background-color: #f28f3b;
 }
 li.vcChargesLi span.free {
-    background-color: green;
-    color: white;
+    background-color: #80ed99;
 }
 li.vcChargesLi span.vacc {
-    background-color: #5ab;
+    background-color: #48cae4;
 }
 li.vcChargesLi span.age {
-    background-color: yellow;
+    background-color: #cebeff;
 }
 
 li.vcPhoneLi .phoneUl {
@@ -1120,6 +1130,13 @@ footer div span i.fa-heart {
         grid-gap: 24px;
         grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     }
+    .med *:not(h3,h4){
+        font-size: 12px;
+    }
+    .storecontainerR div a{
+        padding: 7px 12px;
+    }
+    
 
     footer > div.flex-cc{
         flex-flow: column nowrap;
@@ -1152,6 +1169,7 @@ footer div span i.fa-heart {
     .tabBtn .material-icons {
         font-size: 18px;
     }
+
 }
 
 @media (max-width: 440px) {
@@ -1187,10 +1205,12 @@ footer div span i.fa-heart {
     .storecontainerR{
         height: auto;
     }
-    .storecontainerR, .storecontainerR div .btn, .storecontainerR div .btn .icon{
+    .storecontainerR, .storecontainerR div a, .storecontainerR div .btn .icon{
         font-size: 12px;
     }
-
+    .storecontainerR div a{
+        padding: 6px 12px;
+    }
 
     footer,
     footer div span {
