@@ -81,6 +81,7 @@ header.flex-cc {
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
+    z-index: 1;
 }
 
 #logo {
