@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
 :root {
     --usafa-blue: #00509d;
@@ -81,6 +82,7 @@ header.flex-cc {
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
+    z-index: 1;
 }
 
 #logo {
@@ -266,11 +268,24 @@ table td {
 .img_pre {
     width: 23%;
     margin: 4px auto;
-	display: flex;
-	align-items: center;
+    padding: 2px;
+    border: 3px solid transparent;
+    display: flex;
+    align-items: center;
+}
+.img_pre:hover{
+    border-color: var(--blue-crayola);
+    transform: scale(1.02);
+}
+.img_pre:hover{
+
 }
 .img_pre img{
 	width: 100%;
+}
+.tlimg{
+    width: 100%;
+    height: 100%;
 }
 
 /************************/
