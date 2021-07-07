@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
 :root {
     --usafa-blue: #00509d;
@@ -281,6 +282,10 @@ table td {
 }
 .img_pre img{
 	width: 100%;
+}
+.tlimg{
+    width: 100%;
+    height: 100%;
 }
 
 /************************/
