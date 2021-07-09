@@ -47,7 +47,7 @@ let vaccCentreSect,
         Free: [],
     },
     vcdCentIDs = [];
-loadJSON("../json/data_Disrticts_IDs.json").then((data) => {
+loadJSON("./json/data_Disrticts_IDs.json").then((data) => {
     distIDs = data;
 });
 

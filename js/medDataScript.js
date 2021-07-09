@@ -26,7 +26,7 @@ let medStoreSect,
         "store.jpg",
     ];
 
-loadJSON("../json/medStoreData.json").then((data) => {
+loadJSON("./json/medStoreData.json").then((data) => {
     medStoreData = data;
     filterMedData(medStoreData);
 });
