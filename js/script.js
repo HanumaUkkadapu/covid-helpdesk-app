@@ -231,22 +231,22 @@ function init() {
 
     setSearchbtnStatus();
     searchBtn.addEventListener("click", (e) => {
-        let resLink = document.getElementById("resLink");
+        let resLinkLi = document.getElementById("resLinkLi");
         let resTabDiv = document.getElementById("resTabWrapper");
         let resSect = document.getElementById("resultSection");
         //console.log(resTabDiv == undefined, resSect == undefined);
 
         if (
-            !(resLink == undefined) &&
+            !(resLinkLi == undefined) &&
             !(resTabDiv == undefined) &&
             !(resSect == undefined)
         ) {
-            resLink.remove();
+            resLinkLi.remove();
             resTabDiv.remove();
             resSect.remove();
         }
 
-        let resultLink = `<li>
+        let resultLink = `<li id="resLinkLi" >
         <a href="#resTabWrapper" id="resLink">
             Results
             <span class="material-icons">list_alt</span>
