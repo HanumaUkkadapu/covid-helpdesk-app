@@ -1,0 +1,422 @@
+[
+  {
+    "District": "Anantapur",
+    "Store Name": "Siva Sankar Medical Stores",
+    "Contact No": "085542 20856",
+    "Address": "Clock Tower, Shop No. 11, Municipal, Anantapur, Andhra Pradesh 515001",
+    "Working Hours": "8am-10pm"
+  },
+  {
+    "District": "Anantapur",
+    "Store Name": "Sri Lakshmi Sreenivasa Medical stores",
+    "Contact No": "098664 15540",
+    "Address": "Republic of India, R.F road, Anantapur, Andhra Pradesh",
+    "Working Hours": "8am-10:30pm"
+  },
+  {
+    "District": "Anantapur",
+    "Store Name": "Shanmuga Medical Store",
+    "Contact No": "094407 05211",
+    "Address": "17/277, Gooty Rd, Old Town, Anantapur, Andhra Pradesh 515005",
+    "Working Hours": "9am-10:30pm"
+  },
+  {
+    "District": "Anantapur",
+    "Store Name": "Teja Medical & Fancy",
+    "Contact No": "094405 66656",
+    "Address": "Dr No.15-654, Opp. Ponduru Khadi Bandar, Besides Mamatha Furniture Srikantam Circle, Raju Rd, Kamalanagar, Anantapur, Andhra Pradesh 515001",
+    "Working Hours": "9:30am-10pm"
+  },
+  {
+    "District": "Chittoor",
+    "Store Name": "Neela medical agency",
+    "Contact No": "085722 28208",
+    "Address": "11-344, Church St, Thotapalyam, Chittoor, Andhra Pradesh 517001",
+    "Working Hours": "9:15am-9:30pm"
+  },
+  {
+    "District": "Chittoor",
+    "Store Name": "Swarna medical shop",
+    "Contact No": "095736 87882",
+    "Address": "Doraiswamy Iyengar Rd, Thotapalyam, Chittoor, Andhra Pradesh 517001",
+    "Working Hours": "9am-7:30pm"
+  },
+  {
+    "District": "Chittoor",
+    "Store Name": "Vasavi Medical store",
+    "Contact No": "062814 22399",
+    "Address": "Punganur Rd, Madanapalle, Andhra Pradesh 517247",
+    "Working Hours": "9am-10pm"
+  },
+  {
+    "District": "Chittoor",
+    "Store Name": "Jootheswar Medical Agecies",
+    "Contact No": "085722 22769",
+    "Address": "Thotapalyam, Chittoor, Andhra Pradesh 517001",
+    "Working Hours": "9am-9pm"
+  },
+  {
+    "District": "Chittoor",
+    "Store Name": "MedPlus Chittoor Sundarayya Street",
+    "Contact No": "085722 36309",
+    "Address": "D No 17/424 Sundarayya Street, Andhra Pradesh 517001",
+    "Working Hours": "7:30am-10:30pm"
+  },
+  {
+    "District": "East Godavari",
+    "Store Name": "Jan Aushadhi Store",
+    "Contact No": "098856 00280",
+    "Address": "D.No:-13-1-1 To 6, Shopno:-2, Batchu Complex, Ground Floor, Vemula Vari Centre, Sivalayam St, Peddapuram, Andhra Pradesh 533437",
+    "Working Hours": "9am-9pm"
+  },
+  {
+    "District": "East Godavari",
+    "Store Name": "K. Jagajjanani Rao & Sons Medical Stores",
+    "Contact No": "088522 41258",
+    "Address": "Door No. 19, 1-218, MAIN Rd, Peddapuram, Andhra Pradesh 533437",
+    "Working Hours": "8am-11pm"
+  },
+  {
+    "District": "East Godavari",
+    "Store Name": "Surya Medical Stores,Teki",
+    "Contact No": "099494 16740",
+    "Address": "3-10,East Godavari district, Teki, Andhra Pradesh 533307",
+    "Working Hours": "8am-9pm"
+  },
+  {
+    "District": "East Godavari",
+    "Store Name": "Satya Deva Medical stores",
+    "Contact No": "098485 35039",
+    "Address": "Main road, near policestation, Annavaram, Andhra Pradesh 533406",
+    "Working Hours": "7:30am-10pm"
+  },
+  {
+    "District": "East Godavari",
+    "Store Name": "Sri Ganesh Medical And General Stores",
+    "Contact No": "088692 50698",
+    "Address": "Uppada - Pithapuram Rd, Kotagummam Area, Pithapuram, Andhra Pradesh 533450",
+    "Working Hours": "9am-10:15pm"
+  },
+  {
+    "District": "Guntur",
+    "Store Name": "Sudheshna Medical Stores",
+    "Contact No": "0863 221 0142",
+    "Address": "Opp.Chinna Mahalakshmma Temple, Soma Vari Street, Kakumanu,Christian Pet, Kothapeta, Guntur, Andhra Pradesh 522001",
+    "Working Hours": "9am-10:30pm"
+  },
+  {
+    "District": "Guntur",
+    "Store Name": "New Ravi Medical Stores",
+    "Contact No": "0863 235 7577",
+    "Address": "4/18, 4thLine, BRODIPET, GUNTUR, Guntur, Andhra Pradesh 522002",
+    "Working Hours": "9am-10:30pm"
+  },
+  {
+    "District": "Guntur",
+    "Store Name": "Sujatha Medical Stores",
+    "Contact No": "099669 05012",
+    "Address": "#12-15-12, Kakumanu Vari Street, Kothapeta, Guntur, Andhra Pradesh 522001",
+    "Working Hours": "9am-9:30pm"
+  },
+  {
+    "District": "Guntur",
+    "Store Name": "Sri Siva Medical Stores",
+    "Contact No": "098495 48929",
+    "Address": "Kakumanu Vari Veedi, Kothapeta, Guntur, Andhra Pradesh",
+    "Working Hours": "10am-10pm"
+  },
+  {
+    "District": "Guntur",
+    "Store Name": "Chandra Medical Stores",
+    "Contact No": "092464 33554",
+    "Address": "Do.No.12-25-59,Besides Indian Gas Office, Kakumanuvari Street, Kothapet,Guntur, Andhra Pradesh 522001",
+    "Working Hours": "10am-9pm"
+  },
+  {
+    "District": "Kadapa",
+    "Store Name": "Anna Sanjeevani Generic Medical Stores",
+    "Contact No": "092985 59235",
+    "Address": "Koti Reddy Cir, NGO Colony, Maria Puram, Kadapa, Andhra Pradesh 516001",
+    "Working Hours": "9am-11pm"
+  },
+  {
+    "District": "Kadapa",
+    "Store Name": "Bharath Medical Stores",
+    "Contact No": "085622 42040",
+    "Address": "20/349, D.C. Road, YV Street, Chinna Chowk, Kadapa, Andhra Pradesh 516001",
+    "Working Hours": "10am-2:30pm"
+  },
+  {
+    "District": "Kadapa",
+    "Store Name": "Gayatri Medical Agencies",
+    "Contact No": "098851 57859",
+    "Address": "D. No : 18/509, BKM Street, Kadapa, Andhra Pradesh 516001",
+    "Working Hours": "9:30am-10pm"
+  },
+  {
+    "District": "Kadapa",
+    "Store Name": "Sri Venkateswara Medical Store",
+    "Contact No": "098666 99346",
+    "Address": "21/271, S.F.S. Street, Kadapa, Andhra Pradesh 516001",
+    "Working Hours": "8:30am-9:30pm"
+  },
+  {
+    "District": "Krishna",
+    "Store Name": "Radha Krishna Medical Stores",
+    "Contact No": "085238 46289",
+    "Address": "Opp. Andhra Bank, Eluru Road, Gudivada, Vijayawada, Andhra Pradesh 521301",
+    "Working Hours": "9am-9:30pm"
+  },
+  {
+    "District": "Krishna",
+    "Store Name": "Vijaya Durga Medicals",
+    "Contact No": "0866 242 0646",
+    "Address": "11-43-12, Yendurivari Street, Vijayawada, Andhra Pradesh 520001",
+    "Working Hours": "10am-9pm"
+  },
+  {
+    "District": "Krishna",
+    "Store Name": "Sri Durga Srinivasa Medical Store",
+    "Contact No": "0866 257 3250",
+    "Address": "No. 27-37-79, Vijayawada Rd, Opp. Ragavaiah Park, Governor Peta, Vijayawada, Andhra Pradesh 520002",
+    "Working Hours": "9:50am-10pm"
+  },
+  {
+    "District": "Krishna",
+    "Store Name": "Aravinda Medical Stores",
+    "Contact No": "0866 256 5720",
+    "Address": "No. 11-31-71, Park Road, 1 Town, Near Samarang Chowk, Kaleswara Rao Market, Vijayawada, Andhra Pradesh 520001",
+    "Working Hours": "10am-9:30pm"
+  },
+  {
+    "District": "Kurnool",
+    "Store Name": "D.R Medical Stores",
+    "Contact No": "099665 63407",
+    "Address": "Gayathree Estates, Deva Nagar, Kurnool, Andhra Pradesh 518002",
+    "Working Hours": "9am-10:30pm"
+  },
+  {
+    "District": "Kurnool",
+    "Store Name": "Guru Raghavendra Medical & Fancy Store",
+    "Contact No": "085182 23002",
+    "Address": "Gandhi Nagar, Kurnool, Andhra Pradesh 518001",
+    "Working Hours": "8:30am-10:30pm"
+  },
+  {
+    "District": "Kurnool",
+    "Store Name": "New Mamatha Medical Stores",
+    "Contact No": "085183 29837",
+    "Address": "Opp. Government Hospital, Budhawar Peta, Kurnool, Andhra Pradesh 518002",
+    "Working Hours": "9am-9pm"
+  },
+  {
+    "District": "Kurnool",
+    "Store Name": "Gowrinath Medical and General Stores",
+    "Contact No": "085182 22589",
+    "Address": "Postal Colony, Kurnool, Andhra Pradesh 518004",
+    "Working Hours": "8am-10:25pm"
+  },
+  {
+    "District": "Nellore",
+    "Store Name": "Anna Sanjeevani Generic Medical Stores",
+    "Contact No": "096661 41006",
+    "Address": "Subedarpet, Subhash Chandra Bose Road, Brindavanam, near to Bose Statue, Andhra Pradesh 524001",
+    "Working Hours": "10am-7pm"
+  },
+  {
+    "District": "Nellore",
+    "Store Name": "Sabareesh Medical Agencies",
+    "Contact No": "096182 64900",
+    "Address": "14/3/68/2, Trunk Road, Devireddy Vari Veedhi, Kapu Street, Nellore, Andhra Pradesh 524001",
+    "Working Hours": "9am-9pm"
+  },
+  {
+    "District": "Nellore",
+    "Store Name": "AB Medicals",
+    "Contact No": "097038 80051",
+    "Address": "Door No 25-2-921,Opposite Gold fields, GNT Rd, near Nippo factory, Vedayapalem, Nellore, Andhra Pradesh 524004",
+    "Working Hours": "8am-10:30pm"
+  },
+  {
+    "District": "Nellore",
+    "Store Name": "Prabha Medicals",
+    "Contact No": "098667 21955",
+    "Address": "Trunk Rd, near Gandhi statue, Somasekara Puram, Nellore, Andhra Pradesh 524001",
+    "Working Hours": "9am-9pm"
+  },
+  {
+    "District": "Nellore",
+    "Store Name": "Venkata Ramana Medicals & Fancy",
+    "Contact No": "0861 233 9781",
+    "Address": "Room No.2, N.M.C. Complex, Subedarpet, Nellore, Andhra Pradesh 524001",
+    "Working Hours": "9am-10pm"
+  },
+  {
+    "District": "Nellore",
+    "Store Name": "Maruthi Medical Stores",
+    "Contact No": "0861 233 0099",
+    "Address": "Pogathota, Nellore, Andhra Pradesh 524001",
+    "Working Hours": "9am-9pm"
+  },
+  {
+    "District": "Prakasam",
+    "Store Name": "Sri Venkat Ramana Medical and General Stores",
+    "Contact No": "098858 83879",
+    "Address": "House No. 1, 214, Kamepalli - Kondapi Rd, Kondapi, Andhra Pradesh 523270",
+    "Working Hours": "8:30am-9:15pm"
+  },
+  {
+    "District": "Prakasam",
+    "Store Name": "Ramgiri Medical Shop",
+    "Contact No": "098666 32006",
+    "Address": "Railway Station Rd, Singarayakonda, Andhra Pradesh 523101",
+    "Working Hours": "6am-11pm"
+  },
+  {
+    "District": "Prakasam",
+    "Store Name": "Sri Pathuri Medical Shop",
+    "Contact No": "095055 55119",
+    "Address": "kothapatnam bus stand, 2 town police station center, Road, East Kammapalem, Ongole, Andhra Pradesh 523001",
+    "Working Hours": "8am-9pm"
+  },
+  {
+    "District": "Prakasam",
+    "Store Name": "Himalaya Medical & Fancy",
+    "Contact No": "094933 28144",
+    "Address": "Trunk Road, Singarayakonda, Andhra Pradesh 523101",
+    "Working Hours": "9am-10:30pm"
+  },
+  {
+    "District": "Srikakulam",
+    "Store Name": "BALAJI MEDICALS",
+    "Contact No": "091334 33334",
+    "Address": "OPPSITE FOREST OFFICE DAY AND NIGHT JN, Andhra Pradesh 532001",
+    "Working Hours": "8:30am-9:30pm"
+  },
+  {
+    "District": "Srikakulam",
+    "Store Name": "Medical Stores",
+    "Contact No": "094407 06913",
+    "Address": "Singupuram Main Road, Singupuram, Srikakulam, Andhra Pradesh 532185",
+    "Working Hours": "10am-9pm"
+  },
+  {
+    "District": "Srikakulam",
+    "Store Name": "Generic Medical Shop",
+    "Contact No": "077996 79191",
+    "Address": "3-2-35, Near S.B.I-ATM, Ilicipuram, Meher Nagar, Srikakulam, Andhra Pradesh 532001",
+    "Working Hours": "9am-9pm"
+  },
+  {
+    "District": "Srikakulam",
+    "Store Name": "Vijji Medical Stores",
+    "Contact No": "098664 10680",
+    "Address": "Market Road, near Neelamma Thalli Temple, Srikakulam, Andhra Pradesh 532001",
+    "Working Hours": "9am-9pm"
+  },
+  {
+    "District": "Visakhapatnam",
+    "Store Name": "Vijaya Medical Stores",
+    "Contact No": "089127 23618",
+    "Address": "Shop No. 14-34-1, KGH Down Rd, Opposite KGH Clock Tower, M. R. Peta, Maharani Peta, Visakhapatnam, Andhra Pradesh 530002",
+    "Working Hours": "9am-10:30pm"
+  },
+  {
+    "District": "Visakhapatnam",
+    "Store Name": "Life Medical Stores",
+    "Contact No": "081429 67111",
+    "Address": "2, 45-34-1, Sangam Office Junction, 1, Akkayyapalem Main Rd, Akkayyapalem, Visakhapatnam, Andhra Pradesh 530016",
+    "Working Hours": "9:30am-10:30pm"
+  },
+  {
+    "District": "Visakhapatnam",
+    "Store Name": "Sri Venkata Rama Medical Stores",
+    "Contact No": "099480 48979",
+    "Address": "B C Road, Gajuwaka, Visakhapatnam, Andhra Pradesh 530026",
+    "Working Hours": "7am-11pm"
+  },
+  {
+    "District": "Visakhapatnam",
+    "Store Name": "Gupta Medical & General Stores",
+    "Contact No": "089127 45008",
+    "Address": "49-34-20 Sridevi BR Enclave, Akkayyapalem, Visakhapatnam, Andhra Pradesh 530016",
+    "Working Hours": "8:30am-9:30pm"
+  },
+  {
+    "District": "Visakhapatnam",
+    "Store Name": "Sri Padmavathi Medical Stores",
+    "Contact No": "0891 667 1261",
+    "Address": "47-7-9, Seethammapeta Main Rd, Opposite SBI, Enclave, Dwaraka Nagar, Visakhapatnam, Andhra Pradesh 530016",
+    "Working Hours": "8:30am-11pm"
+  },
+  {
+    "District": "Vizianagaram",
+    "Store Name": "Ramesh Medical & General Stores",
+    "Contact No": "089222 24397",
+    "Address": "Three Lamps Area, Kaspa West, Vizianagaram, Andhra Pradesh 535002",
+    "Working Hours": "8:30am-11pm"
+  },
+  {
+    "District": "Vizianagaram",
+    "Store Name": "Generic Medical Shop",
+    "Contact No": "089222 72700",
+    "Address": "Cantonment, near Maruthi Nagar Ganesh Temple, Vizianagaram, Andhra Pradesh 535003",
+    "Working Hours": "9:30am-9pm"
+  },
+  {
+    "District": "Vizianagaram",
+    "Store Name": "Sri Srinivasa Medicals",
+    "Contact No": "089222 34027",
+    "Address": "Near DTDC, A.G. Road, Kota Junction, Vizianagaram, Andhra Pradesh 535002",
+    "Working Hours": "10am-9pm"
+  },
+  {
+    "District": "Vizianagaram",
+    "Store Name": "Sri Vasavi Medicals",
+    "Contact No": "089222 29362",
+    "Address": "Shop No. 7, I.D.S.M.T. Complex, Ground Floor, Near New Poorna Junction, Vizianagaram, Andhra Pradesh 535001",
+    "Working Hours": "9am-9pm"
+  },
+  {
+    "District": "West Godavari",
+    "Store Name": "Medical Shop",
+    "Contact No": "088142 27517",
+    "Address": "Main Rd, Palakollu, Andhra Pradesh 534260",
+    "Working Hours": "9am-10pm"
+  },
+  {
+    "District": "West Godavari",
+    "Store Name": "Sri Ganesh Medical & General Stores",
+    "Contact No": "098498 18974",
+    "Address": "ZP Road, West Godavari, Near Panchyat Office, Bommidi, Andhra Pradesh 534411",
+    "Working Hours": "9am-9pm"
+  },
+  {
+    "District": "West Godavari",
+    "Store Name": "Kommuri Veerabhadrayya Medical Stores",
+    "Contact No": "088132 21018",
+    "Address": "Main Bazar, Gandhi Bomma Center, Nidadavole, Andhra Pradesh 534301",
+    "Working Hours": "8am-10pm"
+  },
+  {
+    "District": "West Godavari",
+    "Store Name": "Satya Medical & General Stores",
+    "Contact No": "098496 23449",
+    "Address": "Main Road, Pulla, Andhra Pradesh 534401",
+    "Working Hours": "8:30am-9:30pm"
+  },
+  {
+    "District": "West Godavari",
+    "Store Name": "Sai Maruthi 24hours Medical Shop",
+    "Contact No": "090303 15162",
+    "Address": "near ganganamma temple road jangareddygudem, Kovvur, Andhra Pradesh 534447",
+    "Working Hours": "24hrs"
+  },
+  {
+    "District": "West Godavari",
+    "Store Name": "Sri Krishna Medical Stores",
+    "Contact No": "090527 47501",
+    "Address": "Palakol Rd, Achanta, Andhra Pradesh 534123",
+    "Working Hours": "8am-10:30pm"
+  }
+]

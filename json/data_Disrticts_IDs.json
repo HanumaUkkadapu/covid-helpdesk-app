@@ -1,0 +1,41 @@
+{
+        "Anantapur": {
+            "district_id": 9
+        },
+        "Chittoor": {
+            "district_id": 10
+        },
+        "East godavari": {
+            "district_id": 11
+        },
+        "Guntur": {
+            "district_id": 5
+        },
+        "Krishna": {
+            "district_id": 4
+        },
+        "Kurnool": {
+            "district_id": 7
+        },
+        "Prakasam": {
+            "district_id": 12
+        },
+        "Spsr nellore": {
+            "district_id": 13
+        },
+        "Srikakulam": {
+            "district_id": 14
+        },
+        "Visakhapatnam": {
+            "district_id": 8
+        },
+        "Vizianagaram": {
+            "district_id": 15
+        },
+        "West godavari": {
+            "district_id": 16
+        },
+        "Y.s.r.": {
+            "district_id": 6
+        }
+}
