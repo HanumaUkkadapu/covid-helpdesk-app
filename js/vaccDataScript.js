@@ -102,6 +102,8 @@ function putVCHeaderData(vcSect, distName) {
 }
 
 function filterVCData(vcData) {
+    
+    vaccCentreData = [];
     let historyIDs = [],
         centID,
         duplicates = [];
