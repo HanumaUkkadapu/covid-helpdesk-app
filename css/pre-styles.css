@@ -243,6 +243,15 @@ table {
 table th,
 table td {
     padding: 8px;
+    text-align: center;
+}
+table td a.flex-cc{
+    align-items: center;
+    text-decoration: none;
+}
+table td a .icon{
+    margin-left: 3px;
+    font-size: 16px;
 }
 
 .sources{
@@ -297,15 +306,8 @@ table td {
     border-color: var(--blue-crayola);
     transform: scale(1.02);
 }
-.img_pre:hover{
-
-}
 .img_pre img{
 	width: 100%;
-}
-.tlimg{
-    width: 100%;
-    height: 100%;
 }
 
 /************************/
