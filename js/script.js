@@ -419,17 +419,17 @@ function locateMe() {
     }
 
     function showInfoMsg(status, msg) {
-        infoModel.classList.toggle(`throw-${status}`);
+        infoModel.classList.add(`throw-${status}`);
         // iMsgSWrap,
         let icon = status == "success" ? "done" : "error" ;
         iMsgicon.textContent = `${icon}`;
         iMsgCont.textContent = `${msg}`;
         setTimeout(()=>{
-            infoModel.classList.toggle(`throw-${status}`);
+            infoModel.classList.remove(`throw-${status}`);
             // iMsgSWrap,
             iMsgicon.textContent = "info";
             iMsgCont.textContent = `limit reached!`;
-        }, 3000);
+        }, 2400);
     }
 
 }
