@@ -84,10 +84,18 @@
                     <option value="Y.s.r.">YSR District, Kadapa</option>
                 </select>
                 <span class="flex-cc">OR</span>
-                <button id="locateMeBtn" class="flex-cc" disabled>
-                    <span>Locate Me</span>
-                    <span class="material-icons">location_searching</span>
-                </button>
+                <div class="lBtnWrap flex-cc col">
+                    <div id="info-model">
+                        <span id="info-msg-wrap" class="flex-cc">
+                            <span id="msg-icon" class="material-icons icon">info</span><!--done-->
+                            <span id="msg-span">limit reached!</span>
+                        </span>
+                    </div>
+                    <button id="locateMeBtn" class="flex-cc">
+                        <span>Locate Me</span>
+                        <span class="material-icons">location_searching</span>
+                    </button>
+                </div>
             </div>
             <div class="flex-cc col" id="typeChkWrapper">
                 <span class="flex-cc">Search near by</span>

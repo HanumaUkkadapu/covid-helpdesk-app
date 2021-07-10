@@ -101,7 +101,7 @@ header.flex-cc {
     justify-content: space-between;
     align-items: center;
     align-self: stretch;
-    z-index: 1;
+    z-index: 2;
 }
 
 #logo {
@@ -272,7 +272,7 @@ body > section {
 }
 
 #distSel,
-#locateMeBtn {
+.lBtnWrap {
     width: 40%;
     flex: 2 1 auto;
     font-size: 18px;
@@ -291,12 +291,55 @@ body > section {
     background-repeat: no-repeat;
     background-size: 32px;
 }
+
+.lBtnWrap.col{
+    position: relative;
+    align-items: stretch;
+}
+#info-model{
+    --acc-clr: black;
+    --bg-clr: #ddd;
+    --trnslt: 58px;
+    position: absolute;
+	padding: 6px 12px;
+    margin: 0 1px;
+	color: var(--acc-clr);
+    background-color: var(--bg-clr);
+	border: 2px solid var(--acc-clr);
+	border-radius: 8px;
+	font-size: 14px;
+	transition: transform cubic-bezier(.08,.6,0,.99) 200ms;
+}
+#info-model.throw-error{
+    --acc-clr: #e03930;
+    --bg-clr: rgb(255, 225, 225);
+	transform: translatey(var(--trnslt));
+}
+#info-model.throw-success{
+    --acc-clr: #189418;
+    --bg-clr: rgb(225, 255, 225);
+    transform: translatey(var(--trnslt));
+}
+#info-msg-wrap{
+    align-items: center;
+}
+#info-msg-wrap > span{
+    height: 100%;
+}
+#info-msg-wrap .icon{
+    font-size: 18px;
+    margin: 0;
+    margin-right: 4px;
+}
+
 #locateMeBtn {
     color: white;
     background-color: var(--blue-crayola);
     font-weight: 600;
+    font-size: 18px;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 #locateMeBtn:hover {
     background-color: #7199ff;
@@ -1098,7 +1141,7 @@ footer div span i.fa-heart {
         margin: 6px 0;
     }
     #distSel,
-    #locateMeBtn {
+    .lBtnWrap {
         width: auto;
     }
 

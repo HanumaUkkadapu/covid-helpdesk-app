@@ -38,9 +38,13 @@ let root, body, menuBtn, navEl, navLinks, tabBtns;
 /**** Hanuma - START ****/
 let searchSect,
     distSel,
+    infoModel,
+    iMsgSWrap,
+    iMsgicon,
+    iMsgCont,
     locateMeBtn,
     distName,
-    distNameReadable,
+    dstNmReadable,
     typeCheckBoxes,
     typeValues = ["", "", ""],
     chkSelNo,
@@ -71,6 +75,12 @@ function init() {
 
     searchSect = document.getElementById("searchSection");
     distSel = document.getElementById("distSel");
+    
+    infoModel = document.getElementById("info-model");
+    iMsgSWrap = document.getElementById("info-msg-wrap");
+    iMsgicon = document.getElementById("msg-icon");
+    iMsgCont = document.getElementById("msg-span");
+    
     locateMeBtn = document.getElementById("locateMeBtn");
     typeCheckBoxes = document.querySelectorAll("#typeChkWrapper > div input");
     searchBtn = document.getElementById("searchBtn");
@@ -79,7 +89,7 @@ function init() {
     distSel.addEventListener("input", (e) => {
         //console.log('value changed');
         distName = distSel.options[distSel.selectedIndex].value;
-        distNameReadable = distSel.options[distSel.selectedIndex].textContent;
+        dstNmReadable = distSel.options[distSel.selectedIndex].textContent;
         // console.log(`selected option: ${locValue}`);
         if (!distSel.classList.contains("selected")) {
             distSel.classList.add("selected");
@@ -343,10 +353,13 @@ function locateMe() {
             // console.log(position.coords.longitude);
         },
         (error) => {
-            console.log(error.message);
-            console.log(`Couldn't locate. Try again`);
-            locateMeBtn.children[0].textContent = `Please enable location access.!`;
+            // console.log(error.message);
+            console.log("Couldn't locate. Try again");
+            let msg = error.message == "User denied geolocation prompt" ? "Please enable location access and try again.!" : "Unknown error. Please try later.!";
+            showInfoMsg("error", msg);
+            locateMeBtn.children[0].textContent = "Locate Me";
             locateMeBtn.children[1].textContent = "location_searching";
+            locateMeBtn.classList.remove("selected");
         }
     );
 
@@ -368,26 +381,57 @@ function locateMe() {
             return arr.join(" ");
         })();
         // console.log(locInfo, mandalName, districtName);
-        locateMeBtn.children[0].textContent = `${mandalName}, ${districtName}`;
-        locateMeBtn.children[1].textContent = "my_location";
         distName = districtName;
-        distNameReadable = districtNameReadable;
+        dstNmReadable = distConv2[`${districtNameReadable}`];
 
-        distSel.selectedIndex = 0;
-        distSel.classList.remove("selected");
-        // console.log(
-        //     `distSel.selected: ${distSel.classList.contains("selected")}`
-        // );
-        if (!locateMeBtn.classList.contains("selected")) {
-            locateMeBtn.classList.add("selected");
-            // console.log(
-            //     `locateMeBtn.selected: ${locateMeBtn.classList.contains(
-            //         "selected"
-            //     )}`
-            // );
+        if (distConv2[`${dstNmReadable}`] != undefined) proceedForward(`${mandalName}, ${dstNmReadable}`);
+        else {
+            locateMeBtn.children[0].textContent = "Locate Me";
+            locateMeBtn.children[1].textContent = "location_searching";
+            locateMeBtn.classList.remove("selected");
+
+            console.log("Sorry! Service only in AP");
+            let [status, msg] = ["error", "You are not in AP. Please select a option from the above dropdown menu"];
+            showInfoMsg(status, msg);
         }
+
+        function proceedForward(distStr) {
+            locateMeBtn.children[0].textContent = distStr;
+        locateMeBtn.children[1].textContent = "my_location";
+            distSel.selectedIndex = 0;
+            distSel.classList.remove("selected");
+            // console.log(
+            //     `distSel.selected: ${distSel.classList.contains("selected")}`
+            // );
+            if (!locateMeBtn.classList.contains("selected")) {
+                locateMeBtn.classList.add("selected");
+                // console.log(
+                //     `locateMeBtn.selected: ${locateMeBtn.classList.contains(
+                //         "selected"
+                //     )}`
+                // );
+            }
+            let [status, msg] = ["success", "Location access successful.!"];
+            showInfoMsg(status, msg);
+        }
+
         setSearchbtnStatus();
     }
+
+    function showInfoMsg(status, msg) {
+        infoModel.classList.toggle(`throw-${status}`);
+        // iMsgSWrap,
+        let icon = status == "success" ? "done" : "error" ;
+        iMsgicon.textContent = `${icon}`;
+        iMsgCont.textContent = `${msg}`;
+        setTimeout(()=>{
+            infoModel.classList.toggle(`throw-${status}`);
+            // iMsgSWrap,
+            iMsgicon.textContent = "info";
+            iMsgCont.textContent = `limit reached!`;
+        }, 3000);
+    }
+
 }
 
 function setSearchbtnStatus() {
