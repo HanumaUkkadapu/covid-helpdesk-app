@@ -51,6 +51,7 @@ let searchSect,
     searchBtn,
     tabContentWrapper,
     disclaimerDiv,
+    link2bottom,
     showAUBtn,
     aboutUsDiv,
     closeAUBtn,
@@ -93,6 +94,12 @@ function init() {
     typeCheckBoxes = document.querySelectorAll("#typeChkWrapper > div input");
     searchBtn = document.getElementById("searchBtn");
     disclaimerDiv = document.getElementById("disclaimer");
+    link2bottom = document.getElementById("link2bottom");
+
+    link2bottom.addEventListener("click", (e) => {
+        e.preventDefault();
+        showCFBtn.click();
+    });
 
     distSel.addEventListener("input", (e) => {
         //console.log('value changed');
@@ -363,7 +370,6 @@ function init() {
         aboutUsDiv.classList.remove("open");
         body.classList.remove("menu-open");
     });
-
 
     showCFBtn.addEventListener("click", () => {
         contactDiv.classList.add("open");
