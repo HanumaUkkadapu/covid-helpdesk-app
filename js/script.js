@@ -49,7 +49,14 @@ let searchSect,
     typeValues = ["", "", ""],
     chkSelNo,
     searchBtn,
-    disclaimerDiv;
+    disclaimerDiv,
+    showAUBtn,
+    aboutUsDiv,
+    closeAUBtn,
+    showCFBtn,
+    contactDiv,
+    contactForm,
+    closeCFBtn;
 /**** Hanuma - END ****/
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -75,12 +82,12 @@ function init() {
 
     searchSect = document.getElementById("searchSection");
     distSel = document.getElementById("distSel");
-    
+
     infoModel = document.getElementById("info-model");
     iMsgSWrap = document.getElementById("info-msg-wrap");
     iMsgicon = document.getElementById("msg-icon");
     iMsgCont = document.getElementById("msg-span");
-    
+
     locateMeBtn = document.getElementById("locateMeBtn");
     typeCheckBoxes = document.querySelectorAll("#typeChkWrapper > div input");
     searchBtn = document.getElementById("searchBtn");
@@ -246,8 +253,7 @@ function init() {
         let resSect = document.getElementById("resultSection");
         //console.log(resTabDiv == undefined, resSect == undefined);
 
-        if (
-            !(resLinkLi == undefined) &&
+        if (!(resLinkLi == undefined) &&
             !(resTabDiv == undefined) &&
             !(resSect == undefined)
         ) {
@@ -336,6 +342,40 @@ function init() {
         }, 2000);
     });
 
+    showAUBtn = document.getElementById("showAUBtn");
+    aboutUsDiv = document.getElementById("aboutUsDiv");
+    closeAUBtn = document.getElementById("closeAUBtn");
+    showCFBtn = document.getElementById("showCFBtn");
+    contactDiv = document.getElementById("contactDiv");
+    contactForm = document.getElementById("contactForm");
+    closeCFBtn = document.getElementById("closeCFBtn");
+
+    showAUBtn.addEventListener("click", () => {
+        aboutUsDiv.classList.add("open");
+        body.classList.add("menu-open");
+    });
+    closeAUBtn.addEventListener("click", () => {
+        aboutUsDiv.classList.remove("open");
+        body.classList.remove("menu-open");
+    });
+
+
+    showCFBtn.addEventListener("click", () => {
+        contactDiv.classList.add("open");
+        body.classList.add("menu-open");
+    });
+    closeCFBtn.addEventListener("click", () => {
+        contactDiv.classList.remove("open");
+        body.classList.remove("menu-open");
+    });
+    contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Contact form submitted successfully");
+        contactDiv.classList.remove("open");
+        contactForm.reset();
+        body.classList.remove("menu-open");
+    });
+
     /**** Hanuma - END ****/
 }
 
@@ -397,7 +437,7 @@ function locateMe() {
 
         function proceedForward(distStr) {
             locateMeBtn.children[0].textContent = distStr;
-        locateMeBtn.children[1].textContent = "my_location";
+            locateMeBtn.children[1].textContent = "my_location";
             distSel.selectedIndex = 0;
             distSel.classList.remove("selected");
             // console.log(
@@ -421,10 +461,10 @@ function locateMe() {
     function showInfoMsg(status, msg) {
         infoModel.classList.add(`throw-${status}`);
         // iMsgSWrap,
-        let icon = status == "success" ? "done" : "error" ;
+        let icon = status == "success" ? "done" : "error";
         iMsgicon.textContent = `${icon}`;
         iMsgCont.textContent = `${msg}`;
-        setTimeout(()=>{
+        setTimeout(() => {
             infoModel.classList.remove(`throw-${status}`);
             // iMsgSWrap,
             iMsgicon.textContent = "info";
@@ -478,6 +518,7 @@ function activateTabBtns() {
         });
     });
 }
+
 function activateNavLinks() {
     navLinks = document.querySelectorAll("#nav_el a");
 

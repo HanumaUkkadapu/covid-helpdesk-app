@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COVID_supplies_Dashboard_AP</title>
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!--
@@ -18,6 +17,7 @@
 
     <link rel="shortcut icon" href="img/favicon.webp" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/commonStyles.css">
     <script src="js/script.js" type="module" defer></script>
     <script src="js/medDataScript.js" type="module" defer></script>
     <script src="js/hspDataScript.js" type="module" defer></script>
@@ -26,14 +26,8 @@
 
 <body class="flex-cc col">
     <header class="flex-cc">
-        <a id="logo" href="#" tabindex="0">
-            <h1 class="flex-cc">
-                <span id="logo1" class="flex-cc col">
-                    <span id="covid">COVID</span>
-                    <span class="flex-cc" id="helpDesk">HELP DESK</span>
-                </span>
-                <span id="ap">AP</span>
-            </h1>
+        <a class="logo" href="#" tabindex="0">
+            <img src="./img/logo.svg" alt="Logo">
         </a>
         <button id="menu" class="flex-cc">
             <svg width="40" height="32" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -87,8 +81,9 @@
                 <div class="lBtnWrap flex-cc col">
                     <div id="info-model">
                         <span id="info-msg-wrap" class="flex-cc">
-                            <span id="msg-icon" class="material-icons icon">info</span><!--done-->
-                            <span id="msg-span">limit reached!</span>
+                            <span id="msg-icon" class="material-icons icon">info</span>
+                        <!--done-->
+                        <span id="msg-span">limit reached!</span>
                         </span>
                     </div>
                     <button id="locateMeBtn" class="flex-cc">
@@ -133,10 +128,149 @@
             <nav id="footerNav">
                 <ul class="noBullets flex-cc">
                     <li>
-                        <a href="#">About us</a>
+                        <button class="flex-cc" id="showAUBtn">About us</button>
+                        <div id="aboutUsDiv" class="flex-cc col">
+                            <div class="flex-cc col">
+                                <h2 class="flex-cc">
+                                    About the team
+                                    <button class="flex-cc closeBtn" id="closeAUBtn"><span class="material-icons icon">close</span></button>
+                                </h2>
+                                <div class="profileWrapper">
+                                    <div class="flex-cc profileCard hanuma">
+                                        <div class="flex-cc col pImgWrap">
+                                            <div class="flex-cc profileLinks">
+                                                <ul class="flex-cc noBullets">
+                                                    <li class="flex-cc">
+                                                        <a href="https://github.com/HanumaUkkadapu" title="GitHub" target="_blank" rel="noreferrer noopener" class="flex-cc"><i class="fab fa-github"></i></a>
+                                                    </li>
+                                                    <li class="flex-cc">
+                                                        <a href="https://in.linkedin.com/in/tulasi-veera-hanuma-ukkadapu-1bb04612a" title="LinkedIn" target="_blank" rel="noreferrer noopener" class="flex-cc"><i class="fab fa-linkedin"></i></a>
+                                                    </li>
+                                                    <li class="flex-cc">
+                                                        <a href="mailto:utvhanuma@gmail.com" target="_blank" rel="noreferrer noopener" class="flex-cc"><i class="fas fa-at"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flex-cc col pIntroWrap">
+                                            <p class="profileName">Tulasi Veera Hanuma Ukkadapu</p>
+                                            <p class="flex-cc profileIntro">I am an Engineering student from Andhra Pradesh. I like building responsive web layouts and prototyping with Arduino. I am proficient in HTML, CSS, JS, Responsive Web Design and keen to learn new things.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex-cc profileCard siva">
+                                        <div class="flex-cc col pImgWrap">
+                                            <div class="flex-cc profileLinks">
+                                                <ul class="flex-cc noBullets">
+                                                    <li class="flex-cc">
+                                                        <a href="https://github.com/sivakumarraju00" title="GitHub" target="_blank" rel="noreferrer noopener" class="flex-cc"><i class="fab fa-github"></i></a>
+                                                    </li>
+                                                    <li class="flex-cc">
+                                                        <a href="https://www.linkedin.com/in/siva-kumar-raju-sagineti-854527173/" title="LinkedIn" target="_blank" rel="noreferrer noopener" class="flex-cc"><i class="fab fa-linkedin"></i></a>
+                                                    </li>
+                                                    <li class="flex-cc">
+                                                        <a href="mailto:sivakumarraju00@gmail.com" target="_blank" rel="noreferrer noopener" class="flex-cc"><i class="fas fa-at"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flex-cc col pIntroWrap">
+                                            <p class="profileName">Siva Kumar Raju Sagineti</p>
+                                            <p class="flex-cc profileIntro">I am a B.Sc(Chemistry) Graduate. I'm passionate about making an interactive user interface and responsive websites. I'm also familiar with HTML5, CSS3, JavaScript, Node.Js, Bootstrap, jQuery and JSON.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex-cc profileCard tabassum">
+                                        <div class="flex-cc col pImgWrap">
+                                            <div class="flex-cc profileLinks">
+                                                <ul class="flex-cc noBullets">
+                                                    <li class="flex-cc">
+                                                        <a href="https://github.com/tabassum56" title="GitHub" target="_blank" rel="noreferrer noopener" class="flex-cc"><i class="fab fa-github"></i></a>
+                                                    </li>
+                                                    <li class="flex-cc">
+                                                        <a href="https://www.linkedin.com/in/shaik-surayya-tabassum-91654a151" title="LinkedIn" target="_blank" rel="noreferrer noopener" class="flex-cc"><i class="fab fa-linkedin"></i></a>
+                                                    </li>
+                                                    <li class="flex-cc">
+                                                        <a href="mailto:tabsum.0074@gmail.com" target="_blank" rel="noreferrer noopener" class="flex-cc"><i class="fas fa-at"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flex-cc col pIntroWrap">
+                                            <p class="profileName">Shaik Surayya Tabassum</p>
+                                            <p class="flex-cc profileIntro">I am an BTech Graduate, passionate about making web designs. I'm familiar with MS Office, HTML, CSS and Javascript. Looking for an permanent role to work as a Front end Web developer.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex-cc profileCard gayatri">
+                                        <div class="flex-cc col pImgWrap">
+                                            <div class="flex-cc profileLinks">
+                                                <ul class="flex-cc noBullets">
+                                                    <li class="flex-cc">
+                                                        <a href="https://github.com/27-Sri-Gayatri" title="GitHub" target="_blank" rel="noreferrer noopener" class="flex-cc"><i class="fab fa-github"></i></a>
+                                                    </li>
+                                                    <li class="flex-cc">
+                                                        <a href="mailto:tangiralasrigayatri27@gmail.com" target="_blank" rel="noreferrer noopener" class="flex-cc"><i class="fas fa-at"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flex-cc col pIntroWrap">
+                                            <p class="profileName">Tangirala Sri Gayatri Devi</p>
+                                            <p class="flex-cc profileIntro">I am an engineering student. I am day to day learner , love to explore new things and solve complex problems using technology.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex-cc profileCard basha">
+                                        <div class="flex-cc col pImgWrap">
+                                            <div class="flex-cc profileLinks">
+                                                <ul class="flex-cc noBullets">
+                                                    <li class="flex-cc">
+                                                        <a href="https://github.com/mehu7856" title="GitHub" target="_blank" rel="noreferrer noopener" class="flex-cc"><i class="fab fa-github"></i></a>
+                                                    </li>
+                                                    <li class="flex-cc">
+                                                        <a href="https://www.linkedin.com/in/mahaboob-basha-6a4a93204" title="LinkedIn" target="_blank" rel="noreferrer noopener" class="flex-cc"><i class="fab fa-linkedin"></i></a>
+                                                    </li>
+                                                    <li class="flex-cc">
+                                                        <a href="mailto:mahaboobntr79@gmail.com" target="_blank" rel="noreferrer noopener" class="flex-cc"><i class="fas fa-at"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="flex-cc col pIntroWrap">
+                                            <p class="profileName">Shaik Mahaboob basha</p>
+                                            <p class="flex-cc profileIntro">Iam an B.Tech Graduate,passionate about making web design. i'm familar with HTML,CSS,Java script,Python .Looking for an permanent role to work as an Front end Web developer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                     <li>
-                        <a href="#">Contact us</a>
+                        <button class="flex-cc" id="showCFBtn">Contact us</button>
+                        <div id="contactDiv" class="flex-cc col">
+                            <form action="" id="contactForm" class="flex-cc col">
+                                <div class="header flex-cc">
+                                    <img class="logo_img" src="./img/logo.svg" alt="">
+                                    <button class="flex-cc closeBtn" id="closeCFBtn"><span class="material-icons icon">close</span></button>
+                                </div>
+                                <label class="flex-cc col">
+                                    Name*
+                                    <input type="text" required>
+                                </label>
+                                <label class="flex-cc col">
+                                    Email*
+                                    <input type="email" required>
+                                </label>
+                                <label class="flex-cc col">
+                                    Message*
+                                    <input type="text" required>
+                                </label>
+                                <label class="flex-cc col">
+                                    Additional details
+                                    <textarea></textarea>
+                                </label>
+                                <span id="reqFldSpan" class="flex-cc">Fields marked with asterisk are required</span>
+                                <button type="submit" id="submitCFBtn">Send<i class="fas fa-paper-plane icon"></i></button>
+                            </form>
+                        </div>
                     </li>
                 </ul>
             </nav>

@@ -1,4 +1,19 @@
-let root, body, menuBtn, navEl, navLinks, tblLinks, langsel, eng_div, tel_div;
+let root,
+    body,
+    menuBtn,
+    navEl,
+    navLinks,
+    tblLinks,
+    langsel,
+    eng_div,
+    tel_div,
+    showAUBtn,
+    aboutUsDiv,
+    closeAUBtn,
+    showCFBtn,
+    contactDiv,
+    contactForm,
+    closeCFBtn;
 
 window.addEventListener("DOMContentLoaded", () => {
     init();
@@ -29,13 +44,13 @@ function init() {
         });
     });
 
-    tblLinks.forEach((link)=>{
+    tblLinks.forEach((link) => {
         // console.log(link.getAttribute("href"));
         let hRef = link.getAttribute("href");
         let prnt = link.parentElement;
         let el = `<a class="flex-cc" href="${hRef}" target="_blank" rel="noreferrer noopener">Download<span class="material-icons icon">open_in_new</span></a>`;
         link.remove();
-        prnt.insertAdjacentHTML("beforeend",el);
+        prnt.insertAdjacentHTML("beforeend", el);
     });
 
     tel_div.style.display = "none";
@@ -49,5 +64,39 @@ function init() {
             eng_div.style.display = "none";
             tel_div.style.display = "flex";
         }
+    });
+
+    showAUBtn = document.getElementById("showAUBtn");
+    aboutUsDiv = document.getElementById("aboutUsDiv");
+    closeAUBtn = document.getElementById("closeAUBtn");
+    showCFBtn = document.getElementById("showCFBtn");
+    contactDiv = document.getElementById("contactDiv");
+    contactForm = document.getElementById("contactForm");
+    closeCFBtn = document.getElementById("closeCFBtn");
+
+    showAUBtn.addEventListener("click", () => {
+        aboutUsDiv.classList.add("open");
+        body.classList.add("menu-open");
+    });
+    closeAUBtn.addEventListener("click", () => {
+        aboutUsDiv.classList.remove("open");
+        body.classList.remove("menu-open");
+    });
+
+
+    showCFBtn.addEventListener("click", () => {
+        contactDiv.classList.add("open");
+        body.classList.add("menu-open");
+    });
+    closeCFBtn.addEventListener("click", () => {
+        contactDiv.classList.remove("open");
+        body.classList.remove("menu-open");
+    });
+    contactForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Contact form submitted successfully");
+        contactDiv.classList.remove("open");
+        contactForm.reset();
+        body.classList.remove("menu-open");
     });
 }
