@@ -426,22 +426,21 @@ function locateMe() {
         let locInfo = data["localityInfo"]["administrative"];
         let mandalName = locInfo[3]["name"].split(" ")[0];
         let districtName = locInfo[2]["name"].split(" ")[0];
-        let districtNameReadable = (() => {
+        dstNmReadable = (() => {
             let arr = locInfo[2]["name"].split(" ");
             arr.pop();
             return arr.join(" ");
         })();
         // console.log(locInfo, mandalName, districtName);
         distName = districtName;
-        dstNmReadable = distConv2[`${districtNameReadable}`];
 
-        if (distConv2[`${dstNmReadable}`] != undefined) proceedForward(`${mandalName}, ${dstNmReadable}`);
+        if (distConv[`${dstNmReadable}`] != undefined) proceedForward(`${mandalName}, ${dstNmReadable}`);
         else {
             locateMeBtn.children[0].textContent = "Locate Me";
             locateMeBtn.children[1].textContent = "location_searching";
             locateMeBtn.classList.remove("selected");
 
-            console.log("Sorry! Service only in AP");
+            console.log(`Sorry! Service only in AP. You are currently in ${dstNmReadable}`);
             let [status, msg] = ["error", "You are not in AP. Please select a option from the above dropdown menu"];
             showInfoMsg(status, msg);
         }
