@@ -119,10 +119,18 @@ header.flex-cc {
 }
 
 .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* background: #eee; */
+    padding: 2px;
     text-decoration: none;
     color: var(--royal-blue-dark);
     border: 2px solid transparent;
+}
+
+.logo img {
+    height: 36px;
 }
 
 .logo:focus {
@@ -492,7 +500,7 @@ nav ul li>button:focus {
 }
 
 .profileName {
-    padding: 12px;
+    padding: 12px 18px;
     color: var(--royal-blue-dark);
     font-size: 22px;
     font-weight: 600;
@@ -504,7 +512,7 @@ nav ul li>button:focus {
 
 .profileIntro {
     margin: 0;
-    padding: 12px;
+    padding: 12px 18px;
     justify-content: flex-start;
 }
 

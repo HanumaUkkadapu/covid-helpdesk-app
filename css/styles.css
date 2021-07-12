@@ -316,8 +316,9 @@ body>section {
 }
 
 .tabContentWrapper {
+    --w: calc(3 * 94vw);
     height: calc(100vh - 160px);
-    width: calc(3 * 94vw);
+    width: var(--w);
     background-color: var(--alicia-blue);
     border: none;
     overflow: hidden;

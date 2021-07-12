@@ -49,6 +49,7 @@ let searchSect,
     typeValues = ["", "", ""],
     chkSelNo,
     searchBtn,
+    tabContentWrapper,
     disclaimerDiv,
     showAUBtn,
     aboutUsDiv,
@@ -309,6 +310,10 @@ function init() {
 
         disclaimerDiv.insertAdjacentHTML("beforebegin", resTabWrapper);
         disclaimerDiv.insertAdjacentHTML("beforebegin", resultSection);
+
+        tabContentWrapper = document.querySelector(".tabContentWrapper");
+        let tabCW = `calc(${fltrArr.length} * 94vw)`;
+        tabContentWrapper.style.setProperty("--w", tabCW);
 
         activateTabBtns();
         activateNavLinks();
