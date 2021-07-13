@@ -19,9 +19,9 @@ env:
   IBM_CLOUD_REGION: us-south
   ICR_NAMESPACE: ${{ secrets.ICR_NAMESPACE }}
   REGISTRY_HOSTNAME: us.icr.io
-  IMAGE_NAME: iks-test
-  IKS_CLUSTER: example-iks-cluster-name-or-id
-  DEPLOYMENT_NAME: iks-test
+  IMAGE_NAME: iks-app-v1
+  IKS_CLUSTER: c3mj70nd02saj6dcoh30
+  DEPLOYMENT_NAME: iks-app-v1
   PORT: 5001
 
 jobs:
