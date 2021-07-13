@@ -56,10 +56,10 @@ function filterHspData(hospitalList) {
     hospitalList.forEach((e, ind) => {
         hspFilterDistrict[e.district]["all"].push(ind);
         // console.log(e.charges, ind);
-        if(e.charges == "Private" || e.charges == "Partially Empanelled"){
-           hspFilterDistrict[e.district]["Private"].push(ind); 
-        }else if(e.charges == "Government" || e.charges == "Arogyasri"){
-            hspFilterDistrict[e.district][e.charges].push(ind); 
+        if (e.charges == "Private" || e.charges == "Partially Empanelled") {
+            hspFilterDistrict[e.district]["Private"].push(ind);
+        } else if (e.charges == "Government" || e.charges == "Arogyasri") {
+            hspFilterDistrict[e.district][e.charges].push(ind);
         }
         if (
             e.available_icu_beds_without_ventilator > 0 ||
@@ -128,14 +128,14 @@ function getDistrictData(distName) {
 }
 
 function filterHData(distName, arr) {
-    let indArr = arr.map((el)=>{
+    let indArr = arr.map((el) => {
         return hspFilterDistrict[distName][el];
     });
     let fltrIndArr, fltrData;
-    if(indArr.length > 0){
-        fltrIndArr = indArr.reduce((acc,currEl,currInd)=>{
-            if(currInd = 0) acc = currEl;
-            else{
+    if (indArr.length > 0) {
+        fltrIndArr = indArr.reduce((acc, currEl, currInd) => {
+            if (currInd = 0) acc = currEl;
+            else {
                 let arr1 = acc.filter(value => currEl.includes(value));
                 acc = arr1;
             }
@@ -143,12 +143,11 @@ function filterHData(distName, arr) {
             return acc;
         });
         // console.log(arr, indArr, fltrIndArr);
-        fltrData = fltrIndArr.map((el)=>{
+        fltrData = fltrIndArr.map((el) => {
             return totalData[el];
         });
-    }
-    else{
-        fltrData = hspFilterDistrict[distName]["all"].map((el)=>{
+    } else {
+        fltrData = hspFilterDistrict[distName]["all"].map((el) => {
             return totalData[el];
         });
     }
@@ -170,24 +169,24 @@ function loadHSPDataToDoc(data) {
 
     for (var i = 0; i < data.length; i++) {
         availObjct.wo_oxygen =
-            data[i].available_beds_without_oxygen > 0
-                ? "available_beds"
-                : "zero_beds";
+            data[i].available_beds_without_oxygen > 0 ?
+            "available_beds" :
+            "zero_beds";
         availObjct.w_oxygen =
-            data[i].available_beds_with_oxygen > 0
-                ? "available_beds"
-                : "zero_beds";
+            data[i].available_beds_with_oxygen > 0 ?
+            "available_beds" :
+            "zero_beds";
         availObjct.wo_ventilator =
-            data[i].available_icu_beds_without_ventilator > 0
-                ? "available_beds"
-                : "zero_beds";
+            data[i].available_icu_beds_without_ventilator > 0 ?
+            "available_beds" :
+            "zero_beds";
         availObjct.w_ventilator =
-            data[i].available_icu_beds_with_ventilator > 0
-                ? "available_beds"
-                : "zero_beds";
-        
+            data[i].available_icu_beds_with_ventilator > 0 ?
+            "available_beds" :
+            "zero_beds";
+
         let address = data[i].hospital_address || data[i].district;
-        let charges = data[i].charges == "Government" || data[i].charges == "Arogyasri" ? "govt" : "private" ;
+        let charges = data[i].charges == "Government" || data[i].charges == "Arogyasri" ? "govt" : "private";
         let hspItem = `  <div class="hospitalItem card flex-cc">
                             <div class="hospitalDetails">
                                 <ul class="flex-cc col noBullets">
@@ -308,6 +307,7 @@ function loadHSPDataToDoc(data) {
 
 export function loadHspData(distName) {
 
+    console.log(distName);
     distName = distName == "Visakhapatnam" ? "Visakhapatanam" : distName;
     // console.log(distConv[distName]); // display name
 
@@ -338,7 +338,7 @@ export function loadHspData(distName) {
         filterHData(distName, hspSelFilters);
         hspSelFilters = [];
     });
-    hspClrFilterBtn.addEventListener("click",()=>{
+    hspClrFilterBtn.addEventListener("click", () => {
         hspFilterIns.forEach((chk) => {
             chk.checked = false;
             chk.parentElement.classList.remove("selected");

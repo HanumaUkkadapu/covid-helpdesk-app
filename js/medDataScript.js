@@ -73,6 +73,7 @@ function loadMDintoDoc(arr) {
 }
 
 export function loadMedData(distName) {
+    console.log(distName);
     // console.log(distConv[distName]); // display name
 
     medStoreSect = document.getElementById("medStoreTabContainer");

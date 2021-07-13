@@ -54,6 +54,7 @@ loadJSON("./json/data_Disrticts_IDs.json").then((data) => {
 function getDistID(distName) {
     return distIDs[distName].district_id;
 }
+
 function getDate() {
     let today = new Date();
     let dd = `${today.getDate()}`.padStart(2, "0");
@@ -102,7 +103,7 @@ function putVCHeaderData(vcSect, distName) {
 }
 
 function filterVCData(vcData) {
-    
+
     vaccCentreData = [];
     let historyIDs = [],
         centID,
@@ -291,113 +292,113 @@ function loadFilteredVCData(dataArr) {
 
         (() => {
             vcICls.COVAXIN.age18plus.d1 =
-                vcDObj.COVAXIN.age18plus.d1 > 0
-                    ? "vc_avlbl"
-                    : vcDObj.COVAXIN.age18plus.d1 == "NA"
-                    ? "vc_na"
-                    : "vc_bkd";
+                vcDObj.COVAXIN.age18plus.d1 > 0 ?
+                "vc_avlbl" :
+                vcDObj.COVAXIN.age18plus.d1 == "NA" ?
+                "vc_na" :
+                "vc_bkd";
             vcICls.COVAXIN.age18plus.d2 =
-                vcDObj.COVAXIN.age18plus.d2 > 0
-                    ? "vc_avlbl"
-                    : vcDObj.COVAXIN.age18plus.d2 == "NA"
-                    ? "vc_na"
-                    : "vc_bkd";
+                vcDObj.COVAXIN.age18plus.d2 > 0 ?
+                "vc_avlbl" :
+                vcDObj.COVAXIN.age18plus.d2 == "NA" ?
+                "vc_na" :
+                "vc_bkd";
             vcICls.COVAXIN.age18to44.d1 =
-                vcDObj.COVAXIN.age18to44.d1 > 0
-                    ? "vc_avlbl"
-                    : vcDObj.COVAXIN.age18to44.d1 == "NA"
-                    ? "vc_na"
-                    : "vc_bkd";
+                vcDObj.COVAXIN.age18to44.d1 > 0 ?
+                "vc_avlbl" :
+                vcDObj.COVAXIN.age18to44.d1 == "NA" ?
+                "vc_na" :
+                "vc_bkd";
             vcICls.COVAXIN.age18to44.d2 =
-                vcDObj.COVAXIN.age18to44.d2 > 0
-                    ? "vc_avlbl"
-                    : vcDObj.COVAXIN.age18to44.d2 == "NA"
-                    ? "vc_na"
-                    : "vc_bkd";
+                vcDObj.COVAXIN.age18to44.d2 > 0 ?
+                "vc_avlbl" :
+                vcDObj.COVAXIN.age18to44.d2 == "NA" ?
+                "vc_na" :
+                "vc_bkd";
             vcICls.COVAXIN.age45plus.d1 =
-                vcDObj.COVAXIN.age45plus.d1 > 0
-                    ? "vc_avlbl"
-                    : vcDObj.COVAXIN.age45plus.d1 == "NA"
-                    ? "vc_na"
-                    : "vc_bkd";
+                vcDObj.COVAXIN.age45plus.d1 > 0 ?
+                "vc_avlbl" :
+                vcDObj.COVAXIN.age45plus.d1 == "NA" ?
+                "vc_na" :
+                "vc_bkd";
             vcICls.COVAXIN.age45plus.d2 =
-                vcDObj.COVAXIN.age45plus.d2 > 0
-                    ? "vc_avlbl"
-                    : vcDObj.COVAXIN.age45plus.d2 == "NA"
-                    ? "vc_na"
-                    : "vc_bkd";
+                vcDObj.COVAXIN.age45plus.d2 > 0 ?
+                "vc_avlbl" :
+                vcDObj.COVAXIN.age45plus.d2 == "NA" ?
+                "vc_na" :
+                "vc_bkd";
             vcICls.COVISHIELD.age18plus.d1 =
-                vcDObj.COVISHIELD.age18plus.d1 > 0
-                    ? "vc_avlbl"
-                    : vcDObj.COVISHIELD.age18plus.d1 == "NA"
-                    ? "vc_na"
-                    : "vc_bkd";
+                vcDObj.COVISHIELD.age18plus.d1 > 0 ?
+                "vc_avlbl" :
+                vcDObj.COVISHIELD.age18plus.d1 == "NA" ?
+                "vc_na" :
+                "vc_bkd";
             vcICls.COVISHIELD.age18plus.d2 =
-                vcDObj.COVISHIELD.age18plus.d2 > 0
-                    ? "vc_avlbl"
-                    : vcDObj.COVISHIELD.age18plus.d2 == "NA"
-                    ? "vc_na"
-                    : "vc_bkd";
+                vcDObj.COVISHIELD.age18plus.d2 > 0 ?
+                "vc_avlbl" :
+                vcDObj.COVISHIELD.age18plus.d2 == "NA" ?
+                "vc_na" :
+                "vc_bkd";
             vcICls.COVISHIELD.age18to44.d1 =
-                vcDObj.COVISHIELD.age18to44.d1 > 0
-                    ? "vc_avlbl"
-                    : vcDObj.COVISHIELD.age18to44.d1 == "NA"
-                    ? "vc_na"
-                    : "vc_bkd";
+                vcDObj.COVISHIELD.age18to44.d1 > 0 ?
+                "vc_avlbl" :
+                vcDObj.COVISHIELD.age18to44.d1 == "NA" ?
+                "vc_na" :
+                "vc_bkd";
             vcICls.COVISHIELD.age18to44.d2 =
-                vcDObj.COVISHIELD.age18to44.d2 > 0
-                    ? "vc_avlbl"
-                    : vcDObj.COVISHIELD.age18to44.d2 == "NA"
-                    ? "vc_na"
-                    : "vc_bkd";
+                vcDObj.COVISHIELD.age18to44.d2 > 0 ?
+                "vc_avlbl" :
+                vcDObj.COVISHIELD.age18to44.d2 == "NA" ?
+                "vc_na" :
+                "vc_bkd";
             vcICls.COVISHIELD.age45plus.d1 =
-                vcDObj.COVISHIELD.age45plus.d1 > 0
-                    ? "vc_avlbl"
-                    : vcDObj.COVISHIELD.age45plus.d1 == "NA"
-                    ? "vc_na"
-                    : "vc_bkd";
+                vcDObj.COVISHIELD.age45plus.d1 > 0 ?
+                "vc_avlbl" :
+                vcDObj.COVISHIELD.age45plus.d1 == "NA" ?
+                "vc_na" :
+                "vc_bkd";
             vcICls.COVISHIELD.age45plus.d2 =
-                vcDObj.COVISHIELD.age45plus.d2 > 0
-                    ? "vc_avlbl"
-                    : vcDObj.COVISHIELD.age45plus.d2 == "NA"
-                    ? "vc_na"
-                    : "vc_bkd";
+                vcDObj.COVISHIELD.age45plus.d2 > 0 ?
+                "vc_avlbl" :
+                vcDObj.COVISHIELD.age45plus.d2 == "NA" ?
+                "vc_na" :
+                "vc_bkd";
             vcICls["SPUTNIK V"].age18plus.d1 =
-                vcDObj["SPUTNIK V"].age18plus.d1 > 0
-                    ? "vc_avlbl"
-                    : vcDObj["SPUTNIK V"].age18plus.d1 == "NA"
-                    ? "vc_na"
-                    : "vc_bkd";
+                vcDObj["SPUTNIK V"].age18plus.d1 > 0 ?
+                "vc_avlbl" :
+                vcDObj["SPUTNIK V"].age18plus.d1 == "NA" ?
+                "vc_na" :
+                "vc_bkd";
             vcICls["SPUTNIK V"].age18plus.d2 =
-                vcDObj["SPUTNIK V"].age18plus.d2 > 0
-                    ? "vc_avlbl"
-                    : vcDObj["SPUTNIK V"].age18plus.d2 == "NA"
-                    ? "vc_na"
-                    : "vc_bkd";
+                vcDObj["SPUTNIK V"].age18plus.d2 > 0 ?
+                "vc_avlbl" :
+                vcDObj["SPUTNIK V"].age18plus.d2 == "NA" ?
+                "vc_na" :
+                "vc_bkd";
             vcICls["SPUTNIK V"].age18to44.d1 =
-                vcDObj["SPUTNIK V"].age18to44.d1 > 0
-                    ? "vc_avlbl"
-                    : vcDObj["SPUTNIK V"].age18to44.d1 == "NA"
-                    ? "vc_na"
-                    : "vc_bkd";
+                vcDObj["SPUTNIK V"].age18to44.d1 > 0 ?
+                "vc_avlbl" :
+                vcDObj["SPUTNIK V"].age18to44.d1 == "NA" ?
+                "vc_na" :
+                "vc_bkd";
             vcICls["SPUTNIK V"].age18to44.d2 =
-                vcDObj["SPUTNIK V"].age18to44.d2 > 0
-                    ? "vc_avlbl"
-                    : vcDObj["SPUTNIK V"].age18to44.d2 == "NA"
-                    ? "vc_na"
-                    : "vc_bkd";
+                vcDObj["SPUTNIK V"].age18to44.d2 > 0 ?
+                "vc_avlbl" :
+                vcDObj["SPUTNIK V"].age18to44.d2 == "NA" ?
+                "vc_na" :
+                "vc_bkd";
             vcICls["SPUTNIK V"].age45plus.d1 =
-                vcDObj["SPUTNIK V"].age45plus.d1 > 0
-                    ? "vc_avlbl"
-                    : vcDObj["SPUTNIK V"].age45plus.d1 == "NA"
-                    ? "vc_na"
-                    : "vc_bkd";
+                vcDObj["SPUTNIK V"].age45plus.d1 > 0 ?
+                "vc_avlbl" :
+                vcDObj["SPUTNIK V"].age45plus.d1 == "NA" ?
+                "vc_na" :
+                "vc_bkd";
             vcICls["SPUTNIK V"].age45plus.d2 =
-                vcDObj["SPUTNIK V"].age45plus.d2 > 0
-                    ? "vc_avlbl"
-                    : vcDObj["SPUTNIK V"].age45plus.d2 == "NA"
-                    ? "vc_na"
-                    : "vc_bkd";
+                vcDObj["SPUTNIK V"].age45plus.d2 > 0 ?
+                "vc_avlbl" :
+                vcDObj["SPUTNIK V"].age45plus.d2 == "NA" ?
+                "vc_na" :
+                "vc_bkd";
         })();
 
         /*************************************************************************************/
@@ -554,6 +555,8 @@ function loadFilteredVCData(dataArr) {
 }
 
 export function loadVaccCentreData(distName) {
+
+    console.log(distName);
     // console.log(distConv[distName]); // display name
 
     vaccCentreSect = document.getElementById("vaccCentreTabContainer");
@@ -582,7 +585,7 @@ export function loadVaccCentreData(distName) {
         filterVData(vaccSelFilters);
         vaccSelFilters = [];
     });
-    vaccClrFilterBtn.addEventListener("click",()=>{
+    vaccClrFilterBtn.addEventListener("click", () => {
         vaccFilterIns.forEach((chk) => {
             chk.checked = false;
             chk.parentElement.classList.remove("selected");

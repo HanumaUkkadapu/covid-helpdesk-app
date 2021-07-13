@@ -44,7 +44,7 @@ let searchSect,
     iMsgCont,
     locateMeBtn,
     distName,
-    dstNmReadable,
+    distNmReadable,
     typeCheckBoxes,
     typeValues = ["", "", ""],
     chkSelNo,
@@ -104,7 +104,7 @@ function init() {
     distSel.addEventListener("input", (e) => {
         //console.log('value changed');
         distName = distSel.options[distSel.selectedIndex].value;
-        dstNmReadable = distSel.options[distSel.selectedIndex].textContent;
+        distNmReadable = distSel.options[distSel.selectedIndex].textContent;
         // console.log(`selected option: ${locValue}`);
         if (!distSel.classList.contains("selected")) {
             distSel.classList.add("selected");
@@ -299,7 +299,7 @@ function init() {
             return secEl;
         });
 
-        // console.log(distName,distNameReadable);
+        // console.log(distName, distNmReadable);
         // console.log(distName, fltrArr);
         // console.log(distName, fltrArr, tabBtnEls, sectionEls);
         // console.log(resTabDiv == undefined, resSect == undefined);
@@ -426,7 +426,7 @@ function locateMe() {
         let locInfo = data["localityInfo"]["administrative"];
         let mandalName = locInfo[3]["name"].split(" ")[0];
         let districtName = locInfo[2]["name"].split(" ")[0];
-        dstNmReadable = (() => {
+        distNmReadable = (() => {
             let arr = locInfo[2]["name"].split(" ");
             arr.pop();
             return arr.join(" ");
@@ -434,18 +434,19 @@ function locateMe() {
         // console.log(locInfo, mandalName, districtName);
         distName = districtName;
 
-        if (distConv2[`${dstNmReadable}`] != undefined) proceedForward(`${mandalName}, ${dstNmReadable}`);
+        if (distConv2[`${distNmReadable}`] != undefined) proceedForward(`${mandalName}, ${distNmReadable}`);
         else {
             locateMeBtn.children[0].textContent = "Locate Me";
             locateMeBtn.children[1].textContent = "location_searching";
             locateMeBtn.classList.remove("selected");
 
-            console.log(`Sorry! Service only in AP. You are currently in ${dstNmReadable}`);
+            console.log(`Sorry! Service only in AP. You are currently in ${distNmReadable}`);
             let [status, msg] = ["error", "You are not in AP. Please select a option from the above dropdown menu"];
             showInfoMsg(status, msg);
         }
 
         function proceedForward(distStr) {
+            distName = distConv2[`${distNmReadable}`];
             locateMeBtn.children[0].textContent = distStr;
             locateMeBtn.children[1].textContent = "my_location";
             distSel.selectedIndex = 0;
