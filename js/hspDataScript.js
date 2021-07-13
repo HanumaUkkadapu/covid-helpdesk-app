@@ -194,7 +194,7 @@ function loadHSPDataToDoc(data) {
                                     <li class="hspNameLi flex-cc">
                                         <h4>${hspName}</h4>
                                         <a class="hspDetailsLink"
-                                            href="https://www.google.com/search?q=${hspName}, ${address}"
+                                            href="https://www.google.com/maps?q=${hspName}, ${address}"
                                             title="open in maps" target="-blank" rel="noreferrer noopener">Open in
                                             maps</a>
                                     </li>
