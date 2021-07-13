@@ -434,7 +434,7 @@ function locateMe() {
         // console.log(locInfo, mandalName, districtName);
         distName = districtName;
 
-        if (distConv[`${dstNmReadable}`] != undefined) proceedForward(`${mandalName}, ${dstNmReadable}`);
+        if (distConv2[`${dstNmReadable}`] != undefined) proceedForward(`${mandalName}, ${dstNmReadable}`);
         else {
             locateMeBtn.children[0].textContent = "Locate Me";
             locateMeBtn.children[1].textContent = "location_searching";
