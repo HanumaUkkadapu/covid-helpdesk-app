@@ -185,15 +185,16 @@ function loadHSPDataToDoc(data) {
             "available_beds" :
             "zero_beds";
 
+        let hspName = data[i].hospital_name.split(",")[0];
         let address = data[i].hospital_address || data[i].district;
         let charges = data[i].charges == "Government" || data[i].charges == "Arogyasri" ? "govt" : "private";
         let hspItem = `  <div class="hospitalItem card flex-cc">
                             <div class="hospitalDetails">
                                 <ul class="flex-cc col noBullets">
                                     <li class="hspNameLi flex-cc">
-                                        <h4>${data[i].hospital_name.split(",")[0]}</h4>
+                                        <h4>${hspName}</h4>
                                         <a class="hspDetailsLink"
-                                            href="https://www.google.com/search?q=rk+hospital+visakhapatnam&newwindow=1&safe=active&rlz=1C1NDCM_enIN870IN870&tbm=lcl&sxsrf=ALeKk031sdxCL0Rwp8wlR5vGEXVtb2pM-Q%3A1624946054051&ei=hrXaYODEAuiO4-EPirSbuAs&oq=rk+hospital+visa&gs_l=psy-ab.3.0.0j0i67k1j0i22i30k1l6.1217929.1224082.0.1224967.8.8.0.0.0.0.244.1364.0j7j1.8.0....0...1c.1.64.psy-ab..0.8.1363...35i39k1j0i273k1j0i433i131k1j0i263i433i20k1j0i263i433i131i20k1j35i457i39k1j0i402k1j0i433i67k1j0i433k1j0i433i131i67k1.0.GVxzB9qYYrs"
+                                            href="https://www.google.com/search?q=${hspName}, ${address}"
                                             title="open in maps" target="-blank" rel="noreferrer noopener">Open in
                                             maps</a>
                                     </li>
@@ -202,11 +203,15 @@ function loadHSPDataToDoc(data) {
                                     }</li>
                                     <li class="hspPhoneLi">
                                         <ul class="flex-cc noBullets phoneUl">
-                                            <li><a href="#">${
+                                            <li><a href="tel:${
+                                                data[i].hospital_phone
+                                            }">${
                                                 data[i].hospital_phone
                                             }</a></li>
                                             <li class="vertLine"></li>
-                                            <li><a href="#">${
+                                            <li><a href="tel:${
+                                                data[i].hospital_poc_phone
+                                            }">${
                                                 data[i].hospital_poc_phone
                                             }</a></li>
                                         </ul>
