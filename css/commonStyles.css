@@ -53,16 +53,6 @@
     background-color: var(--blue-crayola);
 }
 
-.flex-cc {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.col {
-    flex-flow: column nowrap;
-}
-
 html,
 body {
     padding: 0;

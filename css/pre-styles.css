@@ -1,3 +1,14 @@
+.flex-cc {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.col {
+    flex-flow: column nowrap;
+}
+
+
 /**** Main Header * END *****************/
 
 .container {
