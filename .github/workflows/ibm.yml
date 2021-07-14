@@ -16,9 +16,9 @@ on:
 env:
   GITHUB_SHA: ${{ github.sha }}
   IBM_CLOUD_API_KEY: ${{ secrets.IBM_CLOUD_API_KEY }}
-  IBM_CLOUD_REGION: global
+  IBM_CLOUD_REGION: jp-osa
   ICR_NAMESPACE: ${{ secrets.ICR_NAMESPACE }}
-  REGISTRY_HOSTNAME: icr.io
+  REGISTRY_HOSTNAME: jp2.icr.io
   IMAGE_NAME: iks-app-v1
   IKS_CLUSTER: c3n5fahf00t11fpt7r4g
   DEPLOYMENT_NAME: iks-app-v1
