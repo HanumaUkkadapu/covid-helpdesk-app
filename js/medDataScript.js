@@ -49,6 +49,7 @@ function loadMDintoDoc(arr) {
     msDataWrap = document.querySelector("#medStoreTabContainer > .container");
     arr.forEach((el, ind) => {
         let i = ind % imgLinks.length;
+        let openLinkInNewTab = ` target="_blank" rel=noreferrer noopener" `;
         let medEl = `<div class="med card">
     <div class="storecontainerL">
         <img src="img/${imgLinks[i]}" alt="">
@@ -60,10 +61,9 @@ function loadMDintoDoc(arr) {
         <span><i class="fas fa-clock"></i> Working Hours: ${el["Working Hours"]}</span>
         <div class="flex-cc">
             <a href="tel:${el["Contact No"]}" title="${el["Contact No"]}"><i class="fa fa-phone-square"></i>Call</a>
-            <a href="#"><i class="fa fa-map-marker"></i>Location</a>
-            <a href="#" class="btn">
-                Directions
-                <span class="material-icons icon">open_in_new</span>
+            <a ${openLinkInNewTab} href="https://www.google.com/maps?q=${el["Store Name"]}, ${el["Address"]}"><i class="fa fa-map-marker"></i>Location</a>
+            <a ${openLinkInNewTab} rel href="https://www.google.com/maps/dir//${el["Store Name"]}, ${el["Address"]}" class="btn">
+                Directions<span class="material-icons icon">open_in_new</span>
             </a>
         </div>
     </div>
