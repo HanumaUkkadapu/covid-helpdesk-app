@@ -51,6 +51,7 @@ table td a .icon {
     margin-top: 8px;
     padding: 4px;
     background-color: var(--med-champagne);
+    flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
 }
@@ -61,7 +62,7 @@ table td a .icon {
 }
 
 .sources a {
-    margin: 0 6px;
+    margin-left: 6px;
 }
 
 .awareness.flex-cc {
@@ -79,9 +80,14 @@ table td a .icon {
     padding: 10px;
 }
 
+.awareness label {
+    align-items: center;
+}
+
 .awareness select {
     width: 140px;
     padding: 10px;
+    margin-left: 8px;
     border: none;
     background-color: #4e80ff;
     font-size: 18px;
@@ -108,6 +114,132 @@ table td a .icon {
 
 .img_pre img {
     width: 100%;
+}
+
+
+/************ Carousels **************/
+
+.carouselSect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    transform: scale(0);
+    transition: transform 120ms ease-in-out, background-color 120ms ease-in-out;
+    align-items: center;
+    z-index: 3;
+}
+
+.carouselSect.open {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(1);
+}
+
+.imgWrapper {
+    overflow: hidden;
+    align-items: stretch;
+    width: calc(100vw - 160px);
+    height: 100vh;
+}
+
+.imgWrapper>div {
+    width: calc( 12 * 92vw);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.imgWrapper>div .img_wrap {
+    max-height: calc( 100vh - 32px);
+    width: calc( 100vw - 160px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgWrapper>div .img_wrap:hover {
+    transform: none;
+    border-color: transparent;
+}
+
+.imgWrapper>div .img_wrap img {
+    max-height: calc( 100vh - 32px);
+    max-width: calc( 100vw - 160px);
+}
+
+.cNavLink {
+    cursor: pointer;
+    user-select: none;
+    height: 50%;
+    width: 80px;
+    padding: 0;
+    color: white;
+    border: 3px solid transparent;
+    flex: 2 1 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.cNavLink:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cNavLink:focus {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.cNavLink:active {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.cNavLink:disabled {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.cNavLink:disabled:hover {
+    background-color: transparent;
+}
+
+.cNavLink:disabled:active {
+    background-color: transparent;
+}
+
+.cNavLink .cNavIcon {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closeCarouselBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    color: white;
+    border: 3px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closeCarouselBtn:hover {
+    background-color: rgb(140, 0, 0);
+}
+
+.closeCarouselBtn:focus {
+    outline: none;
+    border-color: rgb(210, 0, 0);
+}
+
+.closeCarouselBtn:active {
+    background-color: rgb(210, 0, 0);
 }
 
 
@@ -140,6 +272,25 @@ table td a .icon {
     .img_pre {
         width: 48%;
     }
+    /******** Carousel *************/
+    .imgWrapper {
+        width: calc(100vw - 100px);
+    }
+    .imgWrapper>div {
+        width: calc( 12 * 92vw);
+    }
+    .imgWrapper>div .img_wrap {
+        width: calc( 100vw - 100px);
+    }
+    .imgWrapper>div .img_wrap img {
+        max-width: calc( 100vw - 100px);
+    }
+    .cNavLink {
+        width: 50px;
+    }
+    .cNavLink .cNavIcon {
+        font-size: 28px;
+    }
 }
 
 
@@ -147,22 +298,20 @@ table td a .icon {
 
 @media (max-width: 440px) {
     body {
-        font-size: 14px;
+        font-size: 12px;
     }
     .guidelines h2 {
         font-size: 20px;
     }
-    .awareness h2,
-    .awareness select {
+    .awareness h2 {
         font-size: 16px;
     }
-    .img_pre {
-        width: 85%;
+    .awareness select {
+        width: 100px;
+        font-size: 14px;
     }
-}
-
-@media (max-width: 360px) {
-    .img_pre {
-        width: 90%;
+    /***** Carousel *********/
+    .cNavLink .cNavIcon {
+        font-size: 24px;
     }
 }
